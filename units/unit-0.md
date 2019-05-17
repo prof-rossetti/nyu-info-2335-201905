@@ -1,4 +1,4 @@
-# Onboarding
+# Unit 0: Onboarding
 
 To prepare for the first class, please follow all of the steps below.
 
