@@ -1,8 +1,8 @@
 # Unit 0: Onboarding
 
-To prepare for the first class, please follow all of the steps below.
+Welcome to INFO 2335 (Programming in Python & Fundamentals of Software Development)!
 
-> NOTE: you won't be able to login to Slack until invited by the professor, but you will be able to complete the rest of the steps on your own.
+To prepare for the first class, please complete all of the onboarding activities below.
 
 ## NYU Classes
 
@@ -14,15 +14,15 @@ Read and comprehend [the Syllabus](/SYLLABUS.pdf) in its entirety. If you have a
 
 ## GitHub
 
-Unless you already have one, please take a moment to [create a GitHub account](https://github.com/). We'll use this platform to manage, share, and submit different versions of our Python applications.
+Unless you already have one, please take a moment to [create a GitHub account](https://github.com/). We'll use this platform to manage, share, and submit different versions of our Python projects.
 
-Afterwards, also consider signing up for the [GitHub Student Developer Pack](https://education.github.com/pack), which provides some free resources.
+Afterwards, consider signing up for the [GitHub Student Developer Pack](https://education.github.com/pack), which provides some free resources.
 
-> NOTE: Many students wish to associate their personal identities with their GitHub accounts, to show a portfolio of programming projects. However, if you're concerned about privacy, you have a few options. First, consider choosing a GitHub username which is different than your university-issued net identifier. Second, avoid uploading any personally-identifiable information to your GitHub profile. Third, sign up for the Student Developer Pack, which will allow you to submit projects via private repositories.
+> PRIVACY OPTIONS: Many students wish to associate their personal identities with their GitHub accounts, to display a portfolio of programming projects. However, if you're concerned about privacy, you have a few options. First, consider choosing a GitHub username which is different than your university-issued net identifier. Second, avoid uploading any personally-identifiable information to your GitHub profile. Third, sign up for the Student Developer Pack, which will allow you to submit projects via private repositories.
 
 ## GitHub Desktop
 
-Unless you already have a Git client of choice, please install the [GitHub Desktop software](https://desktop.github.com/) and login with your GitHub account. We'll use this software to upload our Python files to the GitHub platform.
+Unless you already have a Git client of choice, please install the [GitHub Desktop software](https://desktop.github.com/) and login with your GitHub account credentials. We'll use this software to upload our Python projects to the GitHub platform.
 
 ## Onboarding Survey
 
@@ -44,4 +44,4 @@ Unless you already have a programming-class text editor of choice, please instal
 
 ## Slack
 
-When invited by the professor on the first day of class, please join the [course Slack organization](https://nyu-info-2335.slack.com/).
+When invited by the professor on the first day of class, please join the [course Slack organization](https://nyu-info-2335.slack.com/). We'll use this platform to communicate with each other, and to share links and snippets of Python code.
