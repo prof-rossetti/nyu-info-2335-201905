@@ -13,9 +13,13 @@ In this unit, we'll lay a foundation for the rest of the semester by introducing
   + [Information Systems](/notes/info-systems)
   + [Software](/notes/software)
 
+## Reference Documents
+
+  + [The `conda` Utility](/notes/clis/conda.md)
+  + [The `python` Utility](/notes/clis/python.md)
+  + [The `pip` Utility](/notes/clis/pip.md)
+
 ## Activities and Exercises
 
-  + Introduction to [The `conda` Utility](/notes/clis/conda.md)
-  + [Command-line Computing Exercise](/exercises/command-line-computing)
-  + Introduction to [The `python` Utility](/notes/clis/python.md)
-  + Introduction to [The `pip` Utility](/notes/clis/pip.md)
+  + ["Run the App" Exercise](/exercises/run-the-app)
+  + ["Command-line Computing" Exercise](/exercises/command-line-computing)
