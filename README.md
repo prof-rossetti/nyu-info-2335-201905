@@ -10,6 +10,11 @@ This is a repository of instructional materials for a graduate business school e
 ## Instructional Units
 
   + [Unit 0](/units/unit-0.md): Onboarding
+  + [Unit 1](/units/unit-1.md): Information Systems
+  + Unit 2: Software Products and Services
+  + Unit 3: User Interfaces and Experiences (UI/UX)
+  + Unit 4: Data, Databases, and Analytics
+  + Unit 5: Networks and Security
 
 ## [Acknowledgements](/CREDITS.md)
 
