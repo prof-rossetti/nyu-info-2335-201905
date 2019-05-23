@@ -8,7 +8,7 @@ Before we start writing and managing our own Python applications, let's practice
 
 ## Instructions
 
-Visit the source code repository for the Professor's [Robo Advisor App Demo]([_____](https://github.com/prof-rossetti/robo-advisor-demo-2019)) and click "Fork" to copy the repo under your own control.
+Visit the source code repository for the Professor's [Robo Advisor App Demo](https://github.com/prof-rossetti/robo-advisor-demo-2019) and click "Fork" to copy the repo under your own control.
 
 Then download (or "clone") your copy of the repo onto your local machine using GitHub Desktop.
 
