@@ -1,4 +1,4 @@
-# Unit 1: Information Systems
+# Unit 1: Software Products and Services
 
 > Prerequisites: [Onboarding and Development Environment Setup](unit-0.md)
 
