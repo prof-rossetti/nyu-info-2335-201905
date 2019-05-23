@@ -33,27 +33,27 @@ where conda
 
 On a Mac, you can invoke these commands directly in the Terminal.
 
-![](/img/notes/anaconda/mac-terminal.png)
+![](/img/notes/clis/conda/mac-terminal.png)
 
 ### Detection on Windows
 
 However, on Windows, you can alternatively search for the "Anaconda Prompt" application to know whether or not you have it installed.
 
-![](/img/notes/anaconda/windows-detecting-anaconda-prompt.png)
+![](/img/notes/clis/conda/windows-detecting-anaconda-prompt.png)
 
 After the Anaconda Prompt is installed, you can invoke these commands from within it.
 
-![](/img/notes/anaconda/windows-anaconda-prompt.png)
+![](/img/notes/clis/conda/windows-anaconda-prompt.png)
 
 ## Installation
 
 If not yet installed, [download Anaconda Version 3.7](https://www.anaconda.com/download) for either Mac or Windows. NOTE: This might take a while, so prefer to do it over a strong WiFi connection. And feel free to ignore any email capture forms which may pop up afterwards.
 
-![](/img/notes/anaconda/downloading-anaconda-windows.png)
+![](/img/notes/clis/conda/downloading-anaconda-windows.png)
 
 After the download has finished, run the installer program and accept all the default options. The installation will take a few minutes to complete. After a while it may ask you whether or not you'd like to also install a text editor called "VS Code". Since VS Code is the preferred text editor for this course, you can feel free to keep this option checked, and the installer will ensure it is installed.
 
-![](/img/notes/anaconda/anaconda-install-vs-code.png)
+![](/img/notes/clis/conda/anaconda-install-vs-code.png)
 
 > DISCLAIMER: the professor had already installed VS Code before installing Anaconda, so if installing VS Code via Anaconda presents any issues, please report them immediately. Alternatively, you can always install VS Code separately.
 
@@ -114,7 +114,7 @@ which pip #> /anaconda3/envs/my-first-env/bin/pip
 pip --version #> pip 18.1 from /anaconda3/envs/my-first-env/lib/python3.6/site-packages/pip (python 3.6)
 ```
 
-![](/img/notes/anaconda/managing-envs.png)
+![](/img/notes/clis/conda/managing-envs.png)
 
 
 For more information, see notes on [the `python` utility](python.md) and [the `pip` utility](pip.md).
