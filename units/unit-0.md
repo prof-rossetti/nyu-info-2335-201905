@@ -30,10 +30,9 @@ Anaconda provides various command-line utilities for installing and managing dif
 
 Unless it is already installed, download [Anaconda Version 3.7](https://www.anaconda.com/download) for either Mac or Windows. During the installation, you should remember to check the option to "Add Anaconda to my PATH environment variable". See the professor's [Anaconda installation reference](/notes/clis/conda.md#installation) for more details.
 
-
 ## Text Editor
 
-Unless you already have a programming-class text editor of choice, please install the [VS Code text editor](https://code.visualstudio.com/). We'll use this software to save and edit files of Python code.
+Unless you already have a programming-class text editor of choice, please install the [VS Code text editor](https://code.visualstudio.com/). We'll use this software to save and edit files of Python code. See the professor's [VS Code basic configuration reference](/notes/devtools/vs-code.md#basic-configuration) for more details.
 
 ## GitHub Desktop
 
