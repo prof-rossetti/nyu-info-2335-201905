@@ -36,7 +36,7 @@ Unless you already have a programming-class text editor of choice, please instal
 
 ## GitHub Desktop
 
-Unless you already have a Git client of choice, please install the [GitHub Desktop software](https://desktop.github.com/) and login with your GitHub account credentials. We'll use this software to upload our Python projects to the GitHub platform.
+Unless you already have a Git client of choice, please install the [GitHub Desktop software](https://desktop.github.com/) and login with your GitHub account credentials. We'll use this software to upload our Python projects to the GitHub platform. See the professor's [GitHub Desktop configuration reference](/notes/devtools/github-desktop.md#configuration) for more details.
 
 ## Git
 
