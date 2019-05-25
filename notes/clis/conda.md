@@ -49,7 +49,7 @@ After the Anaconda Prompt is installed, you can invoke `conda` commands from wit
 
 If Anaconda is installed the way we need it to be, we should also be able to invoke `conda` commands from within the Git Bash console:
 
-![](/img/notes/dev-tools/git-bash/git-bash-amen.png)
+![](/img/notes/dev-tools/git-bash/git-bash-where-conda.png)
 
 If Git Bash doesn't recognize your `conda` commands, you might have to uninstall Anaconda and when re-installing it, make sure to check the "Add Anaconda to my PATH environment variable" option (see installation instructions below).
 
