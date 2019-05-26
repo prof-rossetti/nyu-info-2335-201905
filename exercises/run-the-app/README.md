@@ -3,7 +3,7 @@
 > Prerequisites:
 >   + [Development Environment Setup](/units/unit-0.md), including creation of a GitHub Account and installation of Anaconda, VS Code, and GitHub Desktop software
 >   + [Software Products and Services](/units/unit-1.md)
->   + [Command-line Computing" Exercise](/exercises/command-line-computing) - recommended, as it will help you learn how to navigate your filesystem via the command-line
+>   + ["Command-line Computing" Exercise](/exercises/command-line-computing) - recommended, as it will help you learn how to navigate your filesystem via the command-line
 
 Before we start writing and managing our own Python applications, let's practice our ability to examine and run existing applications.
 
