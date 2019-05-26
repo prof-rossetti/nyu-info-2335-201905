@@ -40,7 +40,7 @@ After installing, restart your terminal application, where you should now be abl
 ### Installation on Windows
 
 
-Windows users can install Git from https://git-scm.com/downloads. This installation should also install a program called Git Bash, which Windows users will use as their default command-line computing application.
+Windows users can install Git from https://git-scm.com/downloads. This installation should also install a program called [Git Bash](/notes/devtools/git-bash.md), which Windows users will use as their default command-line computing application.
 
 The Git Bash application is where you can execute Git commands (like `git --version`). Depending on how you installed it, your Command Prompt and Anaconda Prompt applications may also have access to the Git CLI, in which case you can run Git commands from within those applications as well.
 

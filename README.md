@@ -17,6 +17,8 @@ This is a repository of instructional materials for a graduate business school e
   + Unit 5: Networks, Application Programming Interfaces (APIs), and Procssing net
   + Unit 6: The Systems Development Lifecycle (SDLC), and Design Thinking
 
+## [Contributor's Guide](/CONTRIBUTING.md)
+
 ## [Acknowledgements](/CREDITS.md)
 
 ## [License](/LICENSE.md)
