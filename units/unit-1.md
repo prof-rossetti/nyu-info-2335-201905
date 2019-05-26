@@ -21,9 +21,10 @@ In this unit, we'll lay a foundation for the rest of the semester by introducing
     + [The `pip` Utility](/notes/clis/pip.md)
     + [The `git` Utility](/notes/clis/git.md)
   + Python Programming:
-    + Printing
-    + Commenting
-    + Debugging
+    + [Syntax and Style](/notes/python/syntax-and-style.md)
+    + [Printing and Logging](/notes/python/printing.md)
+    + [Commenting](/notes/python/comments.md)
+    + [Debugging](/notes/python/debugging.md)
 
 ## Activities and Exercises
 
