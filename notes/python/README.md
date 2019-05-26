@@ -99,6 +99,7 @@ Math and Statistics:
 Services and Connectivity:
 
   + The `requests` Package
+  + The `selenium` Package
   + The `tweepy` Package
   + The `twilio` Package
   + The `spotipy` Package
