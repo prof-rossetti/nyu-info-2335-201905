@@ -22,12 +22,15 @@ pip install flask
 
 ## Usage
 
-Follow the [official tutorial](http://flask.pocoo.org/docs/1.0/tutorial/).
+Follow the [Official Flask Tutorial](http://flask.pocoo.org/docs/1.0/tutorial/).
 
-See also these example applications by the professor and previous students:
+Also reference these example applications by the professor and previous students:
 
-  + [Starter Web App](https://github.com/prof-rossetti/web-app-starter-flask)
-  + [Starter Web App w/ Google Sheets datastore](https://github.com/prof-rossetti/web-app-starter-flask-sheets)
-  + [DineCision App](https://github.com/jessicalee127/DineCision) - includes a web form to capture user location info, then sends a corresponding request to the Yelp API and presents the response back to the user.
-  + [Products API (Flask)](https://github.com/prof-rossetti/products-api-flask) - just a JSON API with no front-end interface, uses CSV datastore.
-  + [Salad System (Flask)](https://github.com/prof-rossetti/salad-system-flask) - includes a front-end interface, and uses an SQL datastore, although it would be possible to use a CSV datastore instead.
+App Name | Functionality Description
+--- | ---
+[Starter Web App](https://github.com/prof-rossetti/web-app-starter-flask) | A basic navigable web application with examples of capturing user inputs through a web form.
+[Starter Web App w/ Google Sheets datastore](https://github.com/prof-rossetti/web-app-starter-flask-sheets) | A basic navigable web application with examples of reading and writing data to and from a Google Sheets datastore.
+[DineCision](https://github.com/jessicalee127/DineCision) by @jessicalee | Prompts the user to input their zipcode via a web form so it can use the Yelp API to provide a dining recommendation.
+[GMR's Algo Machine](https://github.com/s2t2/spotify_app/) by @gmr50 | Prompts the user to login to their Spotify account so it can create new Spotify playlist recommendations on their behalf.
+[Products API](https://github.com/prof-rossetti/products-api-flask) | A JSON API with no front-end interface, uses CSV datastore.
+[Salad System](https://github.com/prof-rossetti/salad-system-flask) | Includes a front-end interface and uses an SQL database as a datastore.
