@@ -21,6 +21,8 @@ git remote -v
 #> origin	https://github.com/YOUR_GITHUB_USERNAME/nyu-info-2335-201905.git (push)
 ```
 
+> NOTE: if you cloned the repo using GitHub Desktop, it may have already automatically configured the "upstream" remote address for you, in which case you can skip the next step about manually configuring the "upstream" remote repo...
+
 Finally, also establish a relationship between your local repo and the "upstream" remote repo, which will allow you to keep your fork up-to-date:
 
 ```sh
