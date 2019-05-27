@@ -4,9 +4,9 @@ Anyone with a GitHub account can propose changes to files in this repository. Th
 
 ## Step 1: Fork the Repository
 
-Fork the course repository via the GitHub.com online interface to create a copy under the ownership of your own GitHub user. After doing so, you should be able to view your fork online at `https://github.com/YOUR_GITHUB_USERNAME/nyu-info-2335-201905`.
+First, "fork" the course repository via the GitHub.com online interface to create a copy under the ownership of your own GitHub user. After doing so, you should be able to view your fork online at `https://github.com/YOUR_GITHUB_USERNAME/nyu-info-2335-201905`.
 
-Clone your fork to download it onto your computer:
+Next, use GitHub Desktop (or Git Bash, see commands below) to "clone", or download, your fork onto your computer:
 
 ```sh
 git clone https://github.com/YOUR_GITHUB_USERNAME/nyu-info-2335-201905.git # this is the HTTPS address, but alternatively you can use the SSH address
@@ -21,9 +21,9 @@ git remote -v
 #> origin	https://github.com/YOUR_GITHUB_USERNAME/nyu-info-2335-201905.git (push)
 ```
 
-> NOTE: if you cloned the repo using GitHub Desktop, it may have already automatically configured the "upstream" remote address for you, in which case you can skip the next step about manually configuring the "upstream" remote repo...
+If you cloned the repo using GitHub Desktop, you may see both an "origin" and an "upstream" address after running that last `git remote -v` command, in which case there is no need to configure the "upstream" remote address manually.
 
-Finally, also establish a relationship between your local repo and the "upstream" remote repo, which will allow you to keep your fork up-to-date:
+Otherwise, you'll need to manually establish a relationship between your local repo and the "upstream" remote repo, which will allow you to keep your fork up-to-date:
 
 ```sh
 git remote add upstream https://github.com/prof-rossetti/nyu-info-2335-201905.git # this is the HTTPS address, but alternatively you can use the SSH address
