@@ -5,7 +5,9 @@
 >   + [Software Products and Services](/units/unit-1.md)
 >   + ["Command-line Computing" Exercise](/exercises/command-line-computing) - recommended, as it will help you learn how to navigate your filesystem via the command-line
 
-Before we start writing and managing our own Python applications, let's practice our ability to examine and run existing applications.
+## Learning Objectives
+
+Before we start writing our own Python applications, let's learn how to run existing applications. This will help us become familiar with various dev tools and command-line utilities we'll be working with throughout the semester.
 
 ## Instructions
 
