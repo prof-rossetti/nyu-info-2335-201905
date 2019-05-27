@@ -13,7 +13,7 @@ git clone https://github.com/YOUR_GITHUB_USERNAME/nyu-info-2335-201905.git # thi
 cd nyu-info-2335-201905
 ```
 
-By cloning, you should see a remote address called "origin" has already been established between your local repository and your forked remote repo.
+By cloning, you should see a remote address called "origin" has already been established between your local repository and your forked remote repository:
 
 ```sh
 git remote -v
@@ -23,7 +23,7 @@ git remote -v
 
 If you cloned the repo using GitHub Desktop, you may see both an "origin" and an "upstream" address after running that last `git remote -v` command, in which case there is no need to configure the "upstream" remote address manually.
 
-Otherwise, you'll need to manually establish a relationship between your local repo and the "upstream" remote repo, which will allow you to keep your fork up-to-date:
+Otherwise, you'll need to manually establish a relationship between your local repository and the "upstream" remote repository, which will allow you to keep your fork up-to-date:
 
 ```sh
 git remote add upstream https://github.com/prof-rossetti/nyu-info-2335-201905.git # this is the HTTPS address, but alternatively you can use the SSH address
@@ -42,9 +42,9 @@ If you have previously forked the course repository and now your fork is out of 
 ```sh
 git branch # make sure you are on the "master" branch
 
-git pull upstream master # update your local repo to reflect the contents of the "upstream" remote repository
+git pull upstream master # update your local repository to reflect the contents of the "upstream" remote repository
 
-git push origin master # update your "origin" remote repo to reflect the contents of your local repo
+git push origin master # update your "origin" remote repository to reflect the contents of your local repository
 ```
 
 > NOTE: after fetching, if you see conflicts when you pull or push, run: `git reset --hard upstream master` to do a hard reset.
