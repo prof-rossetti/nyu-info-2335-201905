@@ -17,6 +17,16 @@ This is a repository of instructional materials for a graduate business school e
   + Unit 5: Networks, Application Programming Interfaces (APIs), and Procssing net
   + Unit 6: The Systems Development Lifecycle (SDLC), and Design Thinking
 
+## External Resources
+
+  + [Python 3 Documentation](https://docs.python.org/3/reference/index.html)
+  + [Python 3 Tutorial](https://docs.python.org/3/tutorial/index.html)
+  + [Python 3 Built-in Functions](https://docs.python.org/3/library/functions.html)
+  + [Python 3 Built-in Constants](https://docs.python.org/3/library/constants.html)
+  + [PEP 8 Style Guide](https://www.python.org/dev/peps/pep-0008/)
+
+## [Contributor's Guide](/CONTRIBUTING.md)
+
 ## [Acknowledgements](/CREDITS.md)
 
 ## [License](/LICENSE.md)

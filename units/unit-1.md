@@ -15,11 +15,13 @@ In this unit, we'll lay a foundation for the rest of the semester by introducing
 
 ## Reference Documents
 
-  + [The `conda` Utility](/notes/clis/conda.md)
-  + [The `python` Utility](/notes/clis/python.md)
-  + [The `pip` Utility](/notes/clis/pip.md)
+  + Command-line Utilities (CLIs):
+    + [The `conda` Utility](/notes/clis/conda.md)
+    + [The `python` Utility](/notes/clis/python.md)
+    + [The `pip` Utility](/notes/clis/pip.md)
+    + [The `git` Utility](/notes/clis/git.md)
 
 ## Activities and Exercises
 
-  + ["Run the App" Exercise](/exercises/run-the-app)
   + ["Command-line Computing" Exercise](/exercises/command-line-computing)
+  + ["Run the App" Exercise](/exercises/run-the-app.md)

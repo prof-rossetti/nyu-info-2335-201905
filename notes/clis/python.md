@@ -1,5 +1,7 @@
 # The `python` Utility
 
+> "Python is a programming language that lets you work quickly and integrate systems more effectively" - [Python Website](https://www.python.org/)
+
 Before you can execute Python programs on your computer, you'll first need to install the Python command-line utility.
 
 Over the past few years there has been a shift in the community from Python Version 2 to Python Version 3. This semester we will be using Python 3, exclusively. We might use different minor versions of Python 3 (like 3.6 or 3.7), depending on the third-party packages we need to use for any given project.
