@@ -6,8 +6,14 @@ Reference:
 
   + https://pypi.org/project/PySimpleGUI/
   + https://github.com/PySimpleGUI/PySimpleGUI
+  + https://github.com/PySimpleGUI/PySimpleGUI/blob/master/PySimpleGUI.py
   + https://pysimplegui.readthedocs.io/en/latest/tutorial/
   + https://pysimplegui.readthedocs.io/en/latest/cookbook/
+  + https://pysimplegui.readthedocs.io/en/latest/#high-level-api-calls-popups
+  + https://pysimplegui.readthedocs.io/en/latest/#listbox-element
+  + https://pysimplegui.readthedocs.io/en/latest/#button-element
+  + https://pysimplegui.readthedocs.io/en/latest/#input-elements
+  + etc...
 
 ## Installation
 
