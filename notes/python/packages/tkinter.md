@@ -1,22 +1,24 @@
-# The `Tkinter` Package
+# The `tkinter` Package
 
 Reference:
 
   + [Docs](https://docs.python.org/3/library/tkinter.html)
   + [Index of Tutorials](https://wiki.python.org/moin/TkInter)
   + [An unofficial, but most helpful, guide](https://www.tutorialspoint.com/python/python_gui_programming.htm):
-    + [Buttons](https://www.tutorialspoint.com/python/tk_button.htm)
-    + [CheckButton](https://www.tutorialspoint.com/python/tk_checkbutton.htm)
-    + [Entry](https://www.tutorialspoint.com/python/tk_entry.htm)
-    + [ListBox](https://www.tutorialspoint.com/python/tk_listbox.htm)
-    + [Message](https://www.tutorialspoint.com/python/tk_message.htm)
-    + [Radio Button](https://www.tutorialspoint.com/python/tk_radiobutton.htm)
+    + [`Button`](https://www.tutorialspoint.com/python/tk_button.htm)
+    + [`CheckButton`](https://www.tutorialspoint.com/python/tk_checkbutton.htm)
+    + [`Entry`](https://www.tutorialspoint.com/python/tk_entry.htm)
+    + [`ListBox`](https://www.tutorialspoint.com/python/tk_listbox.htm)
+    + [`Message`](https://www.tutorialspoint.com/python/tk_message.htm)
+    + [`RadioButton`](https://www.tutorialspoint.com/python/tk_radiobutton.htm)
+    + [`MessageBox`](https://www.tutorialspoint.com/python/tk_messagebox.htm)
+    + [`Menu`](https://www.tutorialspoint.com/python/tk_menu.htm)
 
-The `Tkinter` package provides an application with a graphical user interface capable of being run on a personal computer.
+The `tkinter` package provides an application with a graphical user interface capable of being run on a personal computer.
 
 ## Installation
 
-The `Tkinter` package is most likely already pre-installed in your Python installation.
+The `tkinter` package is most likely already pre-installed in your Python installation.
 
 ## Usage
 
