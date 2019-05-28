@@ -7,6 +7,7 @@ Reference:
   + https://pypi.org/project/PySimpleGUI/
   + https://github.com/PySimpleGUI/PySimpleGUI
   + https://pysimplegui.readthedocs.io/en/latest/tutorial/
+  + https://pysimplegui.readthedocs.io/en/latest/cookbook/
 
 ## Installation
 
@@ -35,8 +36,12 @@ layout = [
 ]
 
 window = sg.Window("My first GUI").Layout(layout)
-button, (name,) = window.Read()
 
+button, values = window.Read()
+
+#print(type(values)) #> dict
+#print(values) #> {0: 'Polly Professor'}
+name = values[0] #> Polly Professor
 print("NAME:", name)
 ```
 
