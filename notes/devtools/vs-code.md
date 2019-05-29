@@ -12,7 +12,7 @@ Regardless of which text editor you choose, you are highly encouraged to configu
 
 ## Basic Configuration
 
-After you have downloaded VS Code, you'll want to take some time to familiarize yourself with its settings and menus.
+After you have downloaded VS Code, you'll want to take some time to familiarize yourself with its [settings](https://code.visualstudio.com/docs/getstarted/settings) and menus.
 
 The Command Pallete (accessible by typing "shift + command + P") is perhaps the biggest time-saving tool, and is worth exploring.
 
