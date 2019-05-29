@@ -72,10 +72,10 @@ General Support:
 
 User Interfaces:
 
-  + The `PySimpleGUI` Package
-  + The `tkinter` Package
-  + The `flask` Package
-  + The `SpeechRecognition` Package
+  + [The `PySimpleGUI` Package](/notes/python/packages/pysimplegui.md)
+  + [The `tkinter` Package](/notes/python/packages/tkinter.md)
+  + [The `flask` Package](/notes/python/packages/flask.md)
+  + [The `speech_recognition` Package](/notes/python/packages/speech_recognition.md)
 
 Data Processing:
 
