@@ -16,15 +16,15 @@ We'll also use this unit to continue practicing our ability to run Python applic
 
 ## Reference Documents
 
-  + Python Programming:
+  + Python Programming (mostly just for your general awareness):
     + [Syntax and Style](/notes/python/syntax-and-style.md)
     + [Comments](/notes/python/comments.md)
     + [Printing and Logging](/notes/python/printing.md)
     + [Debugging](/notes/python/debugging.md)
     + [User Inputs](/notes/python/inputs.md)
   + Python Packages (just for your awareness, not really working with these yet):
-    + [The `PySimpleGUI` Package](/notes/python/packages/pysimplegui.md)
     + [The `tkinter` Package](/notes/python/packages/tkinter.md)
+    + [The `PySimpleGUI` Package](/notes/python/packages/pysimplegui.md)
     + [The `flask` Package](/notes/python/packages/flask.md)
     + [The `speech_recognition` Package](/notes/python/packages/speech_recognition.md)
 
