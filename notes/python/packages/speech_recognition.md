@@ -12,15 +12,42 @@ Reference:
   + https://github.com/Uberi/speech_recognition/blob/master/speech_recognition/__main__.py
   + https://github.com/s2t2/learning-new-sounds
 
-## Installation
 
-First install the `SpeechRecognition` package and its `pyaudio` dependency:
+> NOTE: so far, the professor has only been able to successfully get this package fully working on a Mac (maybe due to some issue with the Professor's Windows computer, or perhaps due to improper Windows installation steps). If you're on a Windows and interested in using this package, please consult with the professor, who will work with you to hopefully [make a breakthrough](https://github.com/s2t2/sounds-app-setup-py/blob/master/CREDITS.md).
+
+## Prerequisites
+
+The `SpeechRecognition` Python package depends on another Python package called [`pyaudio`](http://people.csail.mit.edu/hubert/pyaudio/#downloads), which itself depends on a lower-level library caled `portaudio` (not a Python package).
+
+On Mac OS, use [homebrew](/notes/clis/brew.md) to install `portaudio`:
 
 ```sh
-# see http://people.csail.mit.edu/hubert/pyaudio/#downloads
-pip install pyaudio # on Mac OS, first run: `brew install portaudio`
+# Mac Terminal:
+brew install portaudio
+```
 
-pip install SpeechRecognition # depends on pyaudio
+On Windows, [install these Microsoft Visual C++ Build Tools](https://visualstudio.microsoft.com/downloads/), then afterwards, run the following Anaconda command to install `portaudio`:
+
+```sh
+# Windows Git Bash:
+conda install -c conda-forge portaudio
+```
+
+## Installation
+
+Note: this package may not yet work in Python 3.7, so when creating your Anaconda virtual environment, specify version 3.6 instead:
+
+```sh
+conda create -n sounds-env python=3.6
+conda activate sounds-env
+```
+
+Use Pip to install the package and its `pyaudio` dependency:
+
+```sh
+pip install pyaudio # depends on the lower-level "portaudio" library
+
+pip install SpeechRecognition # depends on the "pyaudio" Python package
 ```
 
 ## Usage
@@ -55,9 +82,11 @@ with sr.Microphone() as mic:
     print("Say something!")
     audio = client.listen(mic)
 
+# returns the transcript with the highest confidence:
 transcript = client.recognize_google(audio)
 #> 'how old is the Brooklyn Bridge'
 
+# returns all transcripts:
 response = client.recognize_google(audio, show_all=True)
 #> {
 #>   'alternative': [
