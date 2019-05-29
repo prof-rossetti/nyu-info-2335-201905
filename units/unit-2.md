@@ -1,4 +1,4 @@
-# Unit 1: User Interfaces and Experiences (UI/UX)
+# Unit 2: User Interfaces and Experiences (UI/UX)
 
 > Prerequisites: [Software Products and Services](unit-1.md)
 
