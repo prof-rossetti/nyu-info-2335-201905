@@ -12,13 +12,13 @@ Regardless of which text editor you choose, you are highly encouraged to configu
 
 ## Basic Configuration
 
-After you have downloaded VS Code, you'll want to take some time to familiarize yourself with its settings and menus.
+After you have downloaded VS Code, you'll want to take some time to familiarize yourself with its [settings](https://code.visualstudio.com/docs/getstarted/settings) and menus.
 
 The Command Pallete (accessible by typing "shift + command + P") is perhaps the biggest time-saving tool, and is worth exploring.
 
 ### Shell Commands
 
-Follow [these steps](https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line) to enable VS Code shell commands.
+On a Windows, you may not need to take any action. But on a Mac, follow [these steps](https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line) to enable VS Code shell commands.
 
 ![](/img/notes/dev-tools/vs-code/vs-code-enable-shell-commands.png)
 
