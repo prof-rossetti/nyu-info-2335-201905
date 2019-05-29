@@ -28,6 +28,7 @@ Also reference these example applications by the professor and previous students
 
 App Name | Functionality Description
 --- | ---
+[Rock-Paper-Scissors (Flask)](https://github.com/prof-rossetti/rock-paper-scissors-flask) | Prompts the user to select an option from a dropdown menu, then processes that selection and displays the results on another page.
 [Starter Web App](https://github.com/prof-rossetti/web-app-starter-flask) | A basic navigable web application with examples of capturing user inputs through a web form.
 [Starter Web App w/ Google Sheets datastore](https://github.com/prof-rossetti/web-app-starter-flask-sheets) | A basic navigable web application with examples of reading and writing data to and from a Google Sheets datastore.
 [DineCision](https://github.com/jessicalee127/DineCision) by @jessicalee | Prompts the user to input their zipcode via a web form so it can use the Yelp API to provide a dining recommendation.
