@@ -12,9 +12,9 @@ This is a repository of instructional materials for a graduate business school e
   + [Unit 0](/units/unit-0.md): Onboarding
   + [Unit 1](/units/unit-1.md): Software Products and Services
   + [Unit 2](/units/unit-2.md): User Interfaces and Experiences (UI/UX)
-  + Unit 3: Python Language Overview, and Processing Data in Memory
+  + [Unit 3](/units/unit-3.md): Python Language Overview, and Processing Data in Memory
   + Unit 4: Datastores, and Processing Data from CSV Files
-  + Unit 5: Networks, Application Programming Interfaces (APIs), and Procssing net
+  + Unit 5: Networks, Application Programming Interfaces (APIs), and Processing net
   + Unit 6: The Systems Development Lifecycle (SDLC), and Design Thinking
 
 ## External Resources

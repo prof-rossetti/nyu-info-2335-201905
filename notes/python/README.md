@@ -22,14 +22,14 @@ A curated, high-level overview of the Python programming language:
   + [Comments](comments.md)
   + [Printing and Logging](printing.md)
   + [Debugging](debugging.md)
-  + Datatypes:
-    + Null Values
-    + Booleans
-    + Strings
-    + Numbers
-    + Dates and Times
-    + Lists and Sets
-    + Dictionaries
+  + [Datatypes](datatypes):
+    + [Null Values](datatypes/none.py)
+    + [Booleans](datatypes/booleans.py)
+    + [Strings](datatypes/strings.py)
+    + [Numbers](datatypes/numbers.py)
+    + [Dates and Times](datatypes/dates-times.py)
+    + [Lists and Sets](datatypes/lists.py)
+    + [Dictionaries](datatypes/dictionaries.py)
   + Variables
   + Functions
   + Control Flow
