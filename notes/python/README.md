@@ -23,19 +23,19 @@ A curated, high-level overview of the Python programming language:
   + [Printing and Logging](printing.md)
   + [Debugging](debugging.md)
   + [Datatypes](datatypes):
-    + [Null Values](datatypes/none.py)
-    + [Booleans](datatypes/booleans.py)
-    + [Strings](datatypes/strings.py)
-    + [Numbers](datatypes/numbers.py)
-    + [Dates and Times](datatypes/dates-times.py)
-    + [Lists and Sets](datatypes/lists.py)
-    + [Dictionaries](datatypes/dictionaries.py)
+    + [Null Values](datatypes/none.md)
+    + [Booleans](datatypes/booleans.md)
+    + [Strings](datatypes/strings.md)
+    + [Numbers](datatypes/numbers.md)
+    + [Dates and Times](datatypes/dates-times.md)
+    + [Lists and Sets](datatypes/lists.md)
+    + [Dictionaries](datatypes/dictionaries.md)
+    + Custom Classes
   + Variables
   + Functions
   + Control Flow
   + Handling and Raising Errors
   + File Management
-  + Custom Classes
 
 ### Built-in Python Modules
 
@@ -67,7 +67,6 @@ Math and Statistics:
 General Support:
 
   + The `dotenv` Package
-  + The `pipenv` Package
   + The `pytest` Package
 
 User Interfaces:
@@ -83,7 +82,6 @@ Data Processing:
   + The `gspread` Package
   + The `psycopg` Package
   + The `pymysql` Package
-  + The `BeautifulSoup` Package
 
 Data Visualization:
 
@@ -96,11 +94,18 @@ Math and Statistics:
   + The `nltk` Package
   + The `keras` Package
 
-Services and Connectivity:
+Internet Connectivity:
 
   + The `requests` Package
   + The `selenium` Package
-  + The `tweepy` Package
-  + The `twilio` Package
+  + The `BeautifulSoup` Package
+
+Sending Messages:
+
+  + [The `sendgrid` Package](/notes/python/packages/sendgrid.md)
+  + [The `twilio` Package](/notes/python/packages/twilio.md)
+  + [The `tweepy` Package](/notes/python/packages/tweepy.md)
+
+Other Services:
+
   + The `spotipy` Package
-  + The `sendgrid` Package
