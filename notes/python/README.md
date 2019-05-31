@@ -18,22 +18,22 @@ See also these official reference materials:
 
 A curated, high-level overview of the Python programming language:
 
-  + [Syntax and Style](syntax-and-style.md)
-  + [Comments](comments.md)
-  + [Printing and Logging](printing.md)
-  + [Debugging](debugging.md)
-  + [Datatypes](datatypes):
-    + [Null Values](datatypes/none.md)
-    + [Booleans](datatypes/booleans.md)
-    + [Strings](datatypes/strings.md)
-    + [Numbers](datatypes/numbers.md)
-    + [Dates and Times](datatypes/dates-times.md)
-    + [Lists and Sets](datatypes/lists.md)
-    + [Dictionaries](datatypes/dictionaries.md)
-    + Custom Classes
-  + Variables
-  + Functions
-  + Control Flow
+  + [Syntax and Style](/notes/python/syntax-and-style.md)
+  + [Comments](/notes/python/comments.md)
+  + [Printing and Logging](/notes/python/printing.md)
+  + [Debugging](/notes/python/debugging.md)
+  + [Datatypes](/notes/python/datatypes):
+    + [Null Values](/notes/python/datatypes/none.md)
+    + [Booleans](/notes/python/datatypes/booleans.md)
+    + [Strings](/notes/python/datatypes/strings.md)
+    + [Numbers](/notes/python/datatypes/numbers.md)
+    + [Dates and Times](/notes/python/datatypes/dates-times.md)
+    + [Lists and Sets](/notes/python/datatypes/lists.md)
+    + [Dictionaries](/notes/python/datatypes/dictionaries.md)
+    + [Custom Classes](/notes/python/datatypes/classes.md)
+  + [Variables](/notes/python/variables.md)
+  + [Functions](/notes/python/functions.md)
+  + [Control Flow](/notes/python/control-flow.md)
   + Handling and Raising Errors
   + File Management
 
