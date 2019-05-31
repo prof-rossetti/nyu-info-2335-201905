@@ -11,6 +11,7 @@ In this unit, we will take a high-level guided tour of the Python programming la
 ## Discussions and Notes
 
   + Object-oriented Programming (OOP)
+  + [Environment Variables](/notes/environment-variables.md)
 
 ## Reference Documents
 
@@ -23,10 +24,16 @@ In this unit, we will take a high-level guided tour of the Python programming la
       + [Dates and Times](/notes/python/datatypes/dates-times.md)
       + [Lists and Sets](/notes/python/datatypes/lists.md)
       + [Dictionaries](/notes/python/datatypes/dictionaries.md)
-      + [Custom Classes](/notes/python/datatypes/classes.md)
+      + [Custom Classes](/notes/python/datatypes/classes.md) (just for your awareness)
     + [Variables](/notes/python/variables.md)
     + [Functions](/notes/python/functions.md)
     + [Control Flow](/notes/python/control-flow.md)
+    + [Errors](/notes/python/errors.md) (just for your awareness)
+    + [File Management](/notes/python/file-management.md)
+    + [Modules](/notes/python/modules):
+      + [The `os` Module](/notes/python/modules/os.md)
+    + [Packages](/notes/python/packages):
+      + [The `dotenv` Package](/notes/python/packages/dotenv.md)
 
 ## Activities and Exercises
 

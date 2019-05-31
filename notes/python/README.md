@@ -34,27 +34,27 @@ A curated, high-level overview of the Python programming language:
   + [Variables](/notes/python/variables.md)
   + [Functions](/notes/python/functions.md)
   + [Control Flow](/notes/python/control-flow.md)
-  + Handling and Raising Errors
-  + File Management
+  + [Errors](/notes/python/errors.md)
+  + [File Management](/notes/python/file-management.md)
 
-### Built-in Python Modules
+### [Built-in Python Modules](/notes/python/modules)
 
 General Support:
 
   + [The `pprint` Module](/notes/python/modules/pprint.md)
-  + The `os` Module
+  + [The `os` Module](/notes/python/modules/os.md)
 
 Dates and Times:
 
-  + The `datetime` Module
-  + The `time` Module
+  + [The `datetime` Module](/notes/python/modules/datetime.md)
+  + [The `time` Module](/notes/python/modules/time.md)
 
 Data Processing:
 
-  + The `collections` Module
-  + The `itertools` Module
-  + The `csv` Module
-  + The `json` Module
+  + [The `collections` Module](/notes/python/modules/collections.md)
+  + [The `itertools` Module](/notes/python/modules/itertools.md)
+  + T[he `csv` Module](/notes/python/modules/csv.md)
+  + [The `json` Module](/notes/python/modules/json.md)
 
 Math and Statistics:
 
@@ -62,12 +62,12 @@ Math and Statistics:
   + The `random` Module
   + The `statistics` Module
 
-### Third-party Python Packages
+### [Third-party Python Packages](/notes/python/packages)
 
 General Support:
 
-  + The `dotenv` Package
-  + The `pytest` Package
+  + [The `dotenv` Package](/notes/python/packages/dotenv.md)
+  + [The `pytest` Package](/notes/python/packages/pytest.md)
 
 User Interfaces:
 
@@ -78,7 +78,7 @@ User Interfaces:
 
 Data Processing:
 
-  + The `pandas` Package
+  + [The `pandas` Package](/notes/python/packages/pandas.md)
   + The `gspread` Package
   + The `psycopg` Package
   + The `pymysql` Package
@@ -94,11 +94,11 @@ Math and Statistics:
   + The `nltk` Package
   + The `keras` Package
 
-Internet Connectivity:
+Internet Connectivity (HTTP Requests and Web Scraping):
 
-  + The `requests` Package
+  + [The `requests` Package](/notes/python/packages/requests.md)
+  + [The `BeautifulSoup` Package](/notes/python/packages/beautifulsoup.md)
   + The `selenium` Package
-  + The `BeautifulSoup` Package
 
 Sending Messages:
 
