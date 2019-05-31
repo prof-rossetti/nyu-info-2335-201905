@@ -94,8 +94,8 @@ rm index.html
 Edit and save a file, using a command-line utility provided by your preferred text editor (just choose one of these, depending on which editor you're using):
 
 ```sh
-code my_message.txt # VS Code
-atom my_message.txt # Atom, requires "Install Shell Commands" from the Atom Settings
+code my_message.txt # VS Code text editor, may first require installation of shell commands from the settings
+atom my_message.txt # Atom text editor, may first require installation of shell commands from the settings
 ```
 
 Print file contents:
