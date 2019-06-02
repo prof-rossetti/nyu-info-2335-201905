@@ -7,33 +7,45 @@
 
 ## Learning Objectives
 
-  + Gain familiarity with the Python programming language, with a focus on variables conditional logic.
-  + Practice processing and validating user inputs.
-  + Practice using a text editor to edit and save Python scripts.
-  + Practice version control using GitHub Desktop.
+  + Gain familiarity with the Python programming language, with a focus on variables, functions, and conditional logic.
+  + Practice processing and validating user inputs in Python.
+  + Practice using a text editor to edit and save files of Python code.
+  + Learn how to incorporate version control practices into your development process.
   + Observe the relationship between application logic and automated tests, and start to get a feel for what logic to test and why.
 
 ## Instructions
 
-Iteratively develop a Python application which will allow a user to play a game of Rock-Paper-Scissors against an AI (computer) opponent. The game should adhere to the "Basic Requirements" below.
+Iteratively develop a Python application which will allow a human user to play a game of Rock-Paper-Scissors against an AI (computer) opponent. The game's functionality should adhere to the "Basic Requirements" below.
 
-As you progress, you are encouraged to incorporate version control practices into your development process by using GitHub Desktop to intermittently "commit", or save different versions of, your code along the way.
+Before attempting to implement the requirements, take some time to set up your project repository according to the "Setup" instructions below. After doing so, you'll have a remote repo on GitHub.com and a local copy on your computer within which to develop.
 
-Before attempting to implement the requirements, take some time to set up your exercise repository.
+as you reach key development milestones, use the command-line or GitHub Desktop software to intermittently "commit", or save new versions of, your code. And remember to push / sync / upload your work back up to your remote project repository on GitHub.com at least once before you're done.
 
 ## Setup
 
-Use GitHub Desktop or your command-line application (Terminal on Mac, or Git Bash on Windows), to create a new local repository on your Desktop called "rock-paper-scissors-exercise", and navigate there from the command-line.
+### Repo Setup
+
+Use the GitHub.com online interface to create a new remote project repository called something like "rock-paper-scissors-exercise". When prompted by the GitHub.com online interface, let's get in the habit of adding a "README.md" file and a Python ".gitignore" file (and also optionally a "LICENSE") during the repo creation process. After this process is complete, you should be able to view the repo on GitHub.com at an address like `https://github.com/YOUR_USERNAME/rock-paper-scissors-exercise`.
+
+After creating the remote repo, use GitHub Desktop software or the command-line to download or "clone" it onto your computer. Choose a familiar download location like the Desktop.
+
+After cloning the repo, navigate there from the command-line:
 
 ```sh
-git init ~/Desktop/rock-paper-scissors-exercise # (or create the repo manually via GitHub Desktop)
 cd ~/Desktop/rock-paper-scissors-exercise
 ```
 
-Use your text editor or the command-line to create new files in that repo:
+Use your text editor or the command-line to create a file in that repo called "game.py", and then place the following contents inside:
 
-```sh
+```py
+# game.py
+
+print("Rock, Paper, Scissors, Shoot!")
 ```
+
+Make sure to save Python files like this whenever you're done editing them. After setting up a virtual environment, we will be ready to run this file.
+
+### Environment Setup
 
 Create and activate a new Anaconda virtual environment:
 
@@ -42,13 +54,52 @@ conda create -n game-env python=3.7 # (first time only)
 conda activate game-env
 ```
 
-From within the virtual environment, install the `pytest` package (can feel free to do this later, only if you are tackling the "Automated Testing" further exploration challenge):
+From within the virtual environment, install the `pytest` package:
 
 ```sh
+# NOTE: we won't need pytest until/unless addressing the optional "Automated Testing" challenge,
+# so you can feel free to skip this now and return later...
+
 pip install pytest
 ```
 
-Alright, now you
+From within the virtual environment, demonstrate your ability to run the Python script from the command-line:
+
+```sh
+python game.py
+```
+
+If you see the "Rock, Paper, Scissors, Shoot!" message, you're ready to move on to project development. This would be a great time to make any desired modifications to your project's "README.md" file, and then make your first commit, with a message like "Setup the repo".
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## Basic Requirements
 
