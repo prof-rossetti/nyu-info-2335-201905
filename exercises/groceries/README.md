@@ -11,7 +11,6 @@
   + Learn how to write your first Python script from scratch!
   + Practice processing an information input into a desired information output.
 
-
 ## Setup
 
 Create a new directory on your Desktop called "python-datatypes", then navigate there from the command-line.

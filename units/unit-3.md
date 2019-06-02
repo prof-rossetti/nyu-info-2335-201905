@@ -37,6 +37,6 @@ In this unit, we will take a high-level guided tour of the Python programming la
 
 ## Activities and Exercises
 
-  + ["Rock, Paper, Scissors" Exercise](/exercises/rock-paper-scissors.md)
-  + ["Groceries" Exercise](/exercises/groceries.md)
+  + ["Rock, Paper, Scissors" Exercise](/exercises/rock-paper-scissors/README.md)
+  + ["Groceries" Exercise](/exercises/groceries/README.md)
   + "Shopping Cart" Project

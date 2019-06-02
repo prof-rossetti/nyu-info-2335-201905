@@ -24,6 +24,7 @@ This is a repository of instructional materials for a graduate business school e
   + [Python 3 Built-in Functions](https://docs.python.org/3/library/functions.html)
   + [Python 3 Built-in Constants](https://docs.python.org/3/library/constants.html)
   + [PEP 8 Style Guide](https://www.python.org/dev/peps/pep-0008/)
+  + [Markdown Cheatsheet](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
 
 ## [Contributor's Guide](/CONTRIBUTING.md)
 
