@@ -28,7 +28,7 @@ If you are able to implement the basic requirements with relative ease, or if yo
 
 ### Repo Setup
 
-Use the GitHub.com online interface to create a new remote project repository called something like "rock-paper-scissors-exercise". When prompted by the GitHub.com online interface, let's get in the habit of adding a "README.md" file and a Python ".gitignore" file (and also optionally a "LICENSE") during the repo creation process. After this process is complete, you should be able to view the repo on GitHub.com at an address like `https://github.com/YOUR_USERNAME/rock-paper-scissors-exercise`.
+Use the GitHub.com online interface to create a new remote project repository called something like "rock-paper-scissors-exercise". When prompted by the GitHub.com online interface, let's get in the habit of adding a "README.md" file and a Python-flavored ".gitignore" file (and also optionally a "LICENSE") during the repo creation process. After this process is complete, you should be able to view the repo on GitHub.com at an address like `https://github.com/YOUR_USERNAME/rock-paper-scissors-exercise`.
 
 After creating the remote repo, use GitHub Desktop software or the command-line to download or "clone" it onto your computer. Choose a familiar download location like the Desktop.
 
@@ -72,7 +72,7 @@ From within the virtual environment, demonstrate your ability to run the Python 
 python game.py
 ```
 
-If you see the "Rock, Paper, Scissors, Shoot!" message, you're ready to move on to project development. This would be a great time to make any desired modifications to your project's "README.md" file, and then make your first commit, with a message like "Setup the repo".
+If you see the "Rock, Paper, Scissors, Shoot!" message, you're ready to move on to project development. This would be a great time to make any desired modifications to your project's "README.md" file (like adding instructions for how to setup the app like you've just done), and then make your first commit, with a message like "Setup the repo".
 
 ## Basic Requirements
 
@@ -80,7 +80,7 @@ If you see the "Rock, Paper, Scissors, Shoot!" message, you're ready to move on 
 
 The application should prompt the user to input, or otherwise select, an option (i.e. "rock", "paper", or "scissors") via command-line interface (CLI).
 
-> HINT: use the `input()` function to capture user inputs
+> HINT: use [the `input()` function](/notes/python/inputs.md) to capture user inputs
 
 ### Validating User Inputs
 
@@ -105,7 +105,7 @@ The application should compare the user's selection to the computer player's sel
   3. Scissors beats Paper
   4. Rock vs Rock, Paper vs Paper, and Scissors vs Scissors each results in a "tie"
 
-> HINT: use one or more `if` statements
+> HINT: use one or more [`if` statements](/notes/python/control-flow.md#if-statements) (recommended approach), or it may also be possible to use a pre-configured [dictionary object](/notes/python/datatypes/dictionaries.md) containing all possible outcomes
 
 ### Displaying Results
 
