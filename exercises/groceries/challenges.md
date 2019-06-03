@@ -6,7 +6,7 @@ If you were able to implement the [basic requirements](README.md) with relative 
 
 ### Departments
 
-> Prerequisites: [Lists](/notes/python/datatypes/lists.md) and List Comprehensions
+> Prerequisites: [Lists](/notes/python/datatypes/lists.md) and the ["List Comprehensions" Exercise](/exercises/list-comprehensions/README.md)
 
 In addition to displaying the products in a human-friendly format, also display the departments in a human-friendly format. For each department, include the number of products associated with that department.
 
