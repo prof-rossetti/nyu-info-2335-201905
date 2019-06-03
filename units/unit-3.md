@@ -42,4 +42,4 @@ In this unit, we will take a high-level guided tour of the Python programming la
   + ["Rock, Paper, Scissors" Exercise](/exercises/rock-paper-scissors/README.md)
   + ["Groceries" Exercise](/exercises/groceries/README.md)
   + ["List Comprehensions" Exercise](/exercises/list-comprehensions/README.md)
-  + "Shopping Cart" Project
+  + "Shopping Cart" Project - TBA
