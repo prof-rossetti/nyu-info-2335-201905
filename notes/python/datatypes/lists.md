@@ -202,6 +202,8 @@ arr #> [1, 2, 3, 4]
 arr2 #> [100, 200, 300, 400]
 ```
 
+### Mapping
+
 Lists can be looped "in-place" using Python's built-in `map()` function. The `map()` function takes two parameters. The first parameter is the name of a pre-defined function to perform on each item in the list. The function should accept a single parameter representing a single list item. The second parameter is the actual list to be operated on:
 
 ```python
