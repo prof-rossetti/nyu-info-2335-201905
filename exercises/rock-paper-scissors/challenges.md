@@ -1,6 +1,6 @@
-# "Rock, Paper, Scissors" Exercise
+# "Rock, Paper, Scissors" Exercise - Further Exploration
 
-## Further Exploration
+## Challenges
 
 If you were able to implement the [basic requirements](README.md) with relative ease, or if you are interested in a challenge, consider expanding the scope to include one or more of the challenges below.
 

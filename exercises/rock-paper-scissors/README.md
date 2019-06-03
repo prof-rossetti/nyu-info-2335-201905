@@ -7,21 +7,21 @@
 
 ## Learning Objectives
 
-  + Gain familiarity with the Python programming language, with a focus on variables, functions, and conditional logic.
+  + Gain familiarity with the Python programming language, focusing on variables, functions, and conditional logic.
   + Practice processing and validating user inputs in Python.
   + Practice using a text editor to edit and save files of Python code.
   + Learn how to incorporate version control practices into your development process.
-  + Observe the relationship between application logic and automated tests, and start to get a feel for what logic to test and why.
+  + Optional Challenge: Observe the relationship between application logic and automated tests, and start to get a feel for what logic to test and why.
 
 ## Instructions
 
-Iteratively develop a Python application which will allow a human user to play a game of Rock-Paper-Scissors against an AI (computer) opponent. The game's functionality should adhere to the "Basic Requirements" below.
+Iteratively develop a Python application which will allow a human user to play a game of Rock-Paper-Scissors against a computer (AI) opponent. The game's functionality should adhere to the "Basic Requirements" below.
 
-Before attempting to implement the requirements, take some time to set up your project repository according to the "Setup" instructions below. After doing so, you'll have a remote repo on GitHub.com and a local copy on your computer within which to develop.
+Before attempting to implement the basic requirements, take some time to configure your project repository according to the "Setup" instructions below. After doing so, you'll have a remote repo on GitHub.com and a local copy on your computer within which to develop.
 
-As you reach key development milestones, use the command-line or GitHub Desktop software to intermittently "commit", or save new versions of, your code. And remember to push / sync / upload your work back up to your remote project repository on GitHub.com at least once before you're done.
+When developing, as you reach key milestones, use the command-line or GitHub Desktop software to intermittently "commit", or save new versions of, your code. And remember to push / sync / upload your work back up to your remote project repository on GitHub.com at least once before you're done.
 
-If you are able to implement the basic requirements with relative ease, or if you are interested in a challenge, consider addressing one or more of the ["Further Exploration" challenges](further.md).
+If you are able to implement the basic requirements with relative ease, or if you are interested in a challenge, consider addressing one or more of the ["Further Exploration" challenges](challenges.md).
 
 
 ## Setup
@@ -115,7 +115,7 @@ Oh, the computer won. It's ok.
 Thanks for playing. Please play again!
 ```
 
-## [Further Exploration](further.md)
+## [Further Exploration Challenges](challenges.md)
 
 ## Submission
 
