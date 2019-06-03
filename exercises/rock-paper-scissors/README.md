@@ -80,9 +80,21 @@ If you see the "Rock, Paper, Scissors, Shoot!" message, you're ready to move on 
 
 The application should prompt the user to input, or otherwise select, an option (i.e. "rock", "paper", or "scissors") via command-line interface (CLI).
 
+> HINT: use the `input()` function to capture user inputs
+
+### Validating User Inputs
+
+The application should compare the user's selection against the list of valid options (i.e. "rock", "paper", "scissors") to determine whether the user has selected a valid option.
+
+If the selection is invalid, the program should fail gracefully by displaying a friendly message to the user, and preventing further program execution. The program should not try to further process an invalid input, as it may lead to runtime errors.
+
+> HINT: use the `exit()` or `quit()` keywords to stop the program
+
 ### Simulating Computer Selection
 
 The application should select one of the options (i.e. "rock", "paper", or "scissors") at random, and assign that as the computer player's choice.
+
+> HINT: use the `choice()` function provided by [the `random` module](/notes/python/modules/random.md)
 
 ### Determining the Winner
 
@@ -92,6 +104,8 @@ The application should compare the user's selection to the computer player's sel
   2. Paper beats Rock
   3. Scissors beats Paper
   4. Rock vs Rock, Paper vs Paper, and Scissors vs Scissors each results in a "tie"
+
+> HINT: use one or more `if` statements
 
 ### Displaying Results
 

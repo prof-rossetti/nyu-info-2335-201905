@@ -4,31 +4,25 @@
 
 If you were able to implement the [basic requirements](README.md) with relative ease, or if you are interested in a challenge, consider expanding the scope to include one or more of the challenges below.
 
-### Validating User Inputs
-
-The application should either not allow the user to input an invalid selection (perhaps as a result of following the "Graphical User Interface" challenge below), or it should validate those inputs.
-
-To validate the inputs, compare the user's selection against the list of valid options to determine whether the user has selected a valid option. And if the selection is invalid, the program should fail gracefully by displaying a friendly message to the user, and stopping further program execution. The program should not try to further process an invalid input, as it may lead to runtime errors.
-
 ### UI / UX Improvements
 
-Besides allowing and needing to handle invalid inputs, are there any issues with the basic command-line interface (CLI)? For example, does it elicit biased responses from the user due to the user's desire to type the easiest option (i.e. "rock")? Should the user enter numbers (e.g. "1", "2", or "3") or single-letters (e.g. "R", "P", "S") instead of entire words?
+> Prerequisites: [Interface Capabilities Exercise](/exercises/interface-capabilities.md)
 
-Besides these and other possible improvements to the command-line interface (CLI), provide the best user experience possible?
+Are there any issues with the basic command-line interface (CLI)? For example, does it elicit biased responses from the user due to the user's desire to type the easiest option (i.e. "rock")? Should the user enter numbers (e.g. "1", "2", or "3") or single-letters (e.g. "R", "P", "S") instead of entire words?
 
-How could you modify the user interface to improve the user experience? Should there be images involved? Some other kind of selection mechanism like a dropdown, list-box, or large press-able buttons?
-
-
- For example, would you like to implement the user interface as a native GUI using the PySimpleGUI package, or as a browser / web application using the Flask package? See the professor's example Rock-Paper-Scissors applications for guidance and examples of how to do this.
-
+How could you modify the user interface to improve the user experience? Would a graphical user interface (GUI) lead to a better user experience? What if it featured a different selection mechanism like a dropdown, list-box, or three separate large buttons?
 
 ### Automated Tests
 
-So by now you've probably been running the app manually to determin whether or not it is behaving as desired. But due to the randomness of the computer's generated selection, you might have to run many iterations of the game before you are able to _______ it determines the winner under all possible scenarios.
+> Prerequisites: [The `pytest` Package](/notes/python/packages/pytest.md)
 
-Are you able to abstract any of the gameplay logic, like the determination of the winning selection, into a custom function? Doing so will allow you to test that function's logic in isolation.
+So by now you've probably been running the app manually to determine whether or not it is behaving as desired. But due to the randomness of the computer's selection, you might've had to run many iterations of the game before you are able to see how it functions under all possible scenarios.
 
-Create another file in your repo called "game_test.py" and place inside the following contents:
+As a best practice, let's learn how to automate those manual testing efforts, and use these automated tests to cover all possible edge-case scenarios.
+
+Before we test some of the program's logic, we need to abstract that logic into a custom functions (e.g. `determine_winner()`) which we can test in isolation. And we'll need to update the organizational structure of our game script to include the infamous `` construction, to prevent the rest of the game's functionality from being executed when we attempt to import and test the `determine_winner()` function in isolation.
+
+After making these organizational adjustments to your "game.py" file, add another file called "game_test.py" and place inside the following contents:
 
 ```py
 # game_test.py
@@ -54,3 +48,7 @@ Then use the `pytest` package to run the test:
 ```sh
 pytest game_test.py
 ```
+
+If tests fail, update the logic of the `determine_winner()` function in the "game.py" file until the tests pass.
+
+Nice, you're testing like a Pro!
