@@ -20,7 +20,7 @@ So by now you've probably been running the app manually to determine whether or 
 
 As a best practice, let's learn how to automate those manual testing efforts, and use these automated tests to cover all possible edge-case scenarios.
 
-Before we test some of the program's logic, we need to abstract that logic into a custom functions (e.g. `determine_winner()`) which we can test in isolation. And we'll need to update the organizational structure of our game script to include the infamous `` construction, to prevent the rest of the game's functionality from being executed when we attempt to import and test the `determine_winner()` function in isolation.
+Before we test some of the program's logic, we need to abstract that logic into one or more custom functions (e.g. `determine_winner()`) which we can test in isolation. And we'll need to update the organizational structure of our game script to include the infamous `if __name__ == "__main__"` convention, to prevent the rest of the game's functionality from being executed when we attempt to import and test the `determine_winner()` function in isolation.
 
 After making these organizational adjustments to your "game.py" file, add another file called "game_test.py" and place inside the following contents:
 
