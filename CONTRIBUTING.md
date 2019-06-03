@@ -48,19 +48,21 @@ git remote -v
 
 ### Refreshing your Fork
 
-If you have previously forked the course repository and now your fork is out of date / behind the "upstream" course repository, then follow these steps to **refresh your fork** from the command-line (Terminal or Git Bash):
+If you have previously forked the course repository and now your fork is out of date / behind the "upstream" course repository, then follow these steps to refresh your fork from the command-line (Terminal or Git Bash):
 
 ```sh
-git branch # make sure you are on the "master" branch
+git branch # make sure you are on the "master" branch, or switch to it
 
-git pull upstream master # update your local repository to reflect the contents of the "upstream" remote repository
+# update your local repository to reflect the contents of the "upstream" remote repository:
+git pull upstream master
 
-git push origin master # update your "origin" remote repository to reflect the contents of your local repository
+# update your "origin" remote repository to reflect the contents of your local repository:
+git push origin master
 ```
 
-> NOTE: after fetching, if you see conflicts when you pull or push, run: `git reset --hard upstream master` to do a hard reset.
+> NOTE: if you see a message about "conflicts" when you pull or push, run: `git reset --hard upstream master` to do a hard reset
 
-> WARNING: refreshing your fork will delete any previous changes you have committed there that aren't reflected in the "upstream" course repository. So make sure any outstanding Pull Requests have been merged before refreshing your fork!
+> WARNING: refreshing your fork will delete any previous changes you have committed there that aren't reflected in the "upstream" course repository, so make sure any outstanding Pull Requests have been merged before refreshing your fork!
 
 
 ## Step 2: Revise File Contents
@@ -73,8 +75,8 @@ After committing (and perhaps pushing / synching if necessary), you should be ab
 
 ## Step 3: Submit a Pull Request
 
-After your fork contains the changes you'd like to be included into the course repository, navigate to the "upstream" course repository and create a Pull Request (PR) using the GitHub.com online interface. In the PR message, describe what changes you made and why.
+After your remote fork contains the changes you'd like to be included into the course repository, create a Pull Request (PR) against the the "upstream" course repository using the GitHub.com online interface. In the PR message, describe what changes you made and why.
 
-An instructor should review your PR within a timely manner. If the instructor accepts your changes, the instructor will merge them into the course repository's master branch, at which point you should be able to view your changes reflected in the "upstream" course repository. Else if there are issues with the submission, the instructor should provide further instruction by commenting on the PR, and may close it.
+An instructor should review your PR within a timely manner. If the instructor accepts your changes, the instructor will merge them into the course repository's master branch, at which point you should be able to view your changes reflected in the remote "upstream" course repository. Else if there are issues with the submission, the instructor should provide further instruction by commenting on the PR, and may close it.
 
 Congratulations! :clap: Thanks! :pray:
