@@ -4,21 +4,47 @@
 >   + [Software Products and Services](/units/unit-1.md)
 >   + [User Interfaces and Experiences (UI/UX)](/units/unit-2.md)
 >   + [Python Language Overview](/units/unit-3.md)
+>   + ["Rock, Paper, Scissors" Exercise](/exercises/rock-paper-scissors/README.md)
 
 ## Learning Objectives
 
-  + Gain familiarity with the Python programming language and its building-blocks, or "datatypes".
-  + Learn how to write your first Python script from scratch!
-  + Practice processing an information input into a desired information output.
+  + Gain familiarity with the Python programming language, focusing on datatypes and looping.
+  + Practice processing in-memory Python data structures into a desired information output.
+  + Practice using a text editor to edit and save files of Python code.
+  + Practice incorporating version control into your development process.
+  + Practice importing and accessing functionality provided by Python modules.
+  + Optional Challenge: Observe the relationship between application logic and automated tests, and start to get a feel for what logic to test and why.
+
+## Instructions
+
+Iteratively develop a Python program which will process a provided data structure into a desired human-friendly output. The program's functionality should adhere to the "Basic Requirements" below.
+
+Before attempting to implement the basic requirements, take some time to configure your project repository according to the "Setup" instructions below. After doing so, you'll have a remote repo on GitHub.com and a local copy on your computer within which to develop.
+
+When developing, as you reach key milestones, use the command-line or GitHub Desktop software to intermittently "commit", or save new versions of, your code. And remember to push / sync / upload your work back up to your remote project repository on GitHub.com at least once before you're done.
+
+If you are able to implement the basic requirements with relative ease, or if you are interested in a challenge, consider addressing one or more of the ["Further Exploration" challenges](challenges.md). Otherwise, if you need help breaking the problem up into more manageable pieces, consult the ["Guided Checkpoints"](checkpoints.md).
 
 ## Setup
 
-Create a new directory on your Desktop called "python-datatypes", then navigate there from the command-line.
+### Repo Setup
 
-Within that directory, create a new file called `groceries.py` and place inside the following code:
+Use the GitHub.com online interface to create a new remote project repository called something like "groceries-exercise". When prompted by the GitHub.com online interface, let's get in the habit of adding a "README.md" file and a Python-flavored ".gitignore" file (and also optionally a "LICENSE") during the repo creation process. After this process is complete, you should be able to view the repo on GitHub.com at an address like `https://github.com/YOUR_USERNAME/groceries-exercise`.
 
-```python
+After creating the remote repo, use GitHub Desktop software or the command-line to download or "clone" it onto your computer. Choose a familiar download location like the Desktop.
+
+After cloning the repo, navigate there from the command-line:
+
+```sh
+cd ~/Desktop/groceries-exercise
+```
+
+Use your text editor or the command-line to create a file in that repo called "groceries.py", and then place the following contents inside:
+
+```py
 # groceries.py
+
+#from pprint import pprint
 
 products = [
     {"id":1, "name": "Chocolate Sandwich Cookies", "department": "snacks", "aisle": "cookies cakes", "price": 3.50},
@@ -44,23 +70,42 @@ products = [
 ] # based on data from Instacart: https://www.instacart.com/datasets/grocery-shopping-2017
 
 print(products)
+# pprint(products)
 
 # TODO: write some Python code here to produce the desired output
 ```
 
-Create and activate a new Anaconda virtual environment (e.g. "groceries-env"), or feel free to use the "base" environment because we don't need to install any packages to complete this exercise.
+Make sure to save Python files like this whenever you're done editing them. After setting up a virtual environment, we will be ready to run this file.
 
-Within the virtual environment, run the Python script and watch it print the list of products:
+### Environment Setup
+
+Create and activate a new Anaconda virtual environment:
+
+```sh
+conda create -n groceries-env python=3.7 # (first time only)
+conda activate groceries-env
+```
+
+From within the virtual environment, install the `pytest` package:
+
+```sh
+# NOTE: we won't need pytest until/unless addressing the optional "Automated Testing" challenge,
+# so you can feel free to skip this now and return later...
+
+pip install pytest
+```
+
+From within the virtual environment, demonstrate your ability to run the Python script from the command-line:
 
 ```sh
 python groceries.py
 ```
 
-Great, setup is complete and you are now ready to start development.
+If you see the provided "products" data structure, you're ready to move on to project development. This would be a great time to make any desired modifications to your project's "README.md" file (like adding instructions for how to setup and run the app like you've just done), and then make your first commit, with a message like "Setup the repo".
 
-## Instructions
+## Basic Requirements
 
-Inside the Python script, write Python code which will transform the data into the following output:
+Inside the "groceries.py" script, write Python code which will transform the provided data structure into the following output:
 
     --------------
     THERE ARE 20 PRODUCTS:
@@ -85,43 +130,18 @@ Inside the Python script, write Python code which will transform the data into t
      + Saline Nasal Mist ($16.00)
      + Smart Ones Classic Favorites Mini Rigatoni With Vodka Cream Sauce ($6.99)
      + Sparkling Orange Juice & Prickly Pear Beverage ($2.99)
-    --------------
-    THERE ARE 10 DEPARTMENTS:
-    --------------
-     + Babies (1 product)
-     + Beverages (5 products)
-     + Dairy Eggs (1 product)
-     + Dry Goods Pasta (1 product)
-     + Frozen (4 products)
-     + Household (1 product)
-     + Meat Seafood (1 product)
-     + Pantry (2 products)
-     + Personal Care (2 products)
-     + Snacks (2 products)
 
-## Checkpoints
+## [Guided Checkpoints](checkpoints.md)
 
-The "checkpoint" steps below provide one example strategy for breaking-up the larger problem into smaller, more manageable pieces. Feel free but not obligated to follow these checkpoints, working through one step at a time before moving on to the next.
+## [Further Exploration Challenges](challenges.md)
 
-### Checkpoint 1 - Printing Products
+## Submission
 
-  1. Print all products (already done for you! :smiley_cat:).
-  2. Print the number of products.
-  3. Print the first product.
-  4. Print the name of the first product.
-  5. Print the name of each product.
-  6. Print in alphabetical order the name of each product.
-  7. Print in alphabetical order the name and price of each product.
-  8. Print in alphabetical order the name and price of each product, where the price is rounded to two decimal places.
+Submission of this exercise is optional, but if you'd like to take this opportunity to practice the project submission process, consult the [Contributor's Guide](/CONTRIBUTING.md) and follow the steps below:
 
-### Checkpoint 2 - Printing Departments
+  1. Push your local project repository to GitHub, so you can visit your remote project repository at a URL like `https://github.com/YOUR_USERNAME/groceries-exercise`
+  2. Fork the ["upstream" course repository](https://github.com/prof-rossetti/nyu-info-2335-201905) (or refresh your existing fork)
+  3. Update the ["submissions.csv"](submissions.csv) file in your remote fork of the course repository to include an entry linking to your remote project repository URL
+  4. Finally, submit a Pull Request for the changes in your remote fork of the course repository to be accepted back into the "upstream" course repository
 
-  1. Print the number of unique departments.
-  2. Print the name of each unique department.
-  3. Print in alphabetical order the name of each unique department.
-  4. Print in alphabetical order the name of each unique department, as well as the number of products associated with that department.
-  5. Print in alphabetical order the name of each unique department, as well as the number of products associated with that department, and properly differentiate between "products" plural and "product" singular, depending on how many there are.
-
-## Submission Instructions
-
-In a subsequent class, the professor will guide you through the process uploading your code to GitHub.
+This process may seem a little unfamiliar at the moment, but it will become more familiar with each repetition.

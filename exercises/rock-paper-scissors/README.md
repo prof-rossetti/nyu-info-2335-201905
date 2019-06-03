@@ -11,6 +11,7 @@
   + Practice processing and validating user inputs in Python.
   + Practice using a text editor to edit and save files of Python code.
   + Learn how to incorporate version control practices into your development process.
+  + Learn how to import and access functionality provided by Python modules.
   + Optional Challenge: Observe the relationship between application logic and automated tests, and start to get a feel for what logic to test and why.
 
 ## Instructions
