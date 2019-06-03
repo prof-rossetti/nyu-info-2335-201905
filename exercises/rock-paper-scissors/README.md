@@ -78,7 +78,7 @@ If you see the "Rock, Paper, Scissors, Shoot!" message, you're ready to move on 
 
 ### Processing User Inputs
 
-The application should prompt the user to input, or otherwise select, an option (i.e. "rock", "paper", or "scissors") via a command-line interface (CLI).
+The application should prompt the user to input, or otherwise select, an option (i.e. "rock", "paper", or "scissors") via command-line interface (CLI).
 
 ### Simulating Computer Selection
 
@@ -86,13 +86,16 @@ The application should select one of the options (i.e. "rock", "paper", or "scis
 
 ### Determining the Winner
 
-The application should compare the user's selection to the computer player's selection, and determine which is the winner.
+The application should compare the user's selection to the computer player's selection, and determine which is the winner. The following logic should govern that determination:
+
+  1. Rock beats Scissors
+  2. Paper beats Rock
+  3. Scissors beats Paper
+  4. Rock vs Rock, Paper vs Paper, and Scissors vs Scissors each results in a "tie"
 
 ### Displaying Results
 
-After determining the winner, the application should display the results to the user.
-
-The game's desired information outputs include:
+After determining the winner, the application should display the results to the user. Desired information outputs include:
 
   + A friendly welcome message
   + The user's selected option
@@ -104,9 +107,9 @@ Example desired output:
 
 ```
 -------------------
-Welcome to my Rock-Paper Scissors game...
+Welcome to my Rock-Paper-Scissors game...
 -------------------
-Please choose either 'rock', 'paper', or 'scissors':
+Please choose either 'rock', 'paper', or 'scissors': rock
 You chose: 'rock'
 The computer chose: 'paper'
 -------------------
@@ -119,12 +122,11 @@ Thanks for playing. Please play again!
 
 ## Submission
 
-Submission of this exercise is not required, but if you'd like to take this opportunity to practice the project submission process, consult the [Contributor's Guide](/CONTRIBUTING.md) and follow the steps below:
+Submission of this exercise is optional, but if you'd like to take this opportunity to practice the project submission process, consult the [Contributor's Guide](/CONTRIBUTING.md) and follow the steps below:
 
   1. Push your local project repository to GitHub, so you can visit your remote project repository at a URL like `https://github.com/YOUR_USERNAME/rock-paper-scissors-exercise`.
   2. Fork the ["upstream" course repository](https://github.com/prof-rossetti/nyu-info-2335-201905) (or refresh your existing fork).
   3. Update the ["submissions.csv"](submissions.csv) file in your remote fork of the course repository to include an entry linking to your remote project repository URL.
   4. Finally, submit a Pull Request for the changes in your remote fork of the course repository to be accepted back into the "upstream" course repository.
-
 
 This process may seem a little unfamiliar at the moment, but it will become more familiar with each repetition.
