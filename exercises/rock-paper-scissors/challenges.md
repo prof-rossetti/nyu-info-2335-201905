@@ -12,6 +12,11 @@ Are there any issues with the basic command-line interface (CLI)? For example, d
 
 How could you modify the user interface to improve the user experience? Would a graphical user interface (GUI) lead to a better user experience? What if it featured a different selection mechanism like a dropdown, list-box, or three separate large buttons?
 
+Sketch a mockup of your ideal interface on piece of paper or whiteboard, and then implement that desired interface! For implementation guidance, consult the professor's example apps which use different third-party packages to implement different kinds of GUI interfaces:
+
+  + https://github.com/prof-rossetti/rock-paper-scissors-py
+  + https://github.com/prof-rossetti/rock-paper-scissors-flask
+
 ### Automated Tests
 
 > Prerequisites: [The `pytest` Package](/notes/python/packages/pytest.md)
