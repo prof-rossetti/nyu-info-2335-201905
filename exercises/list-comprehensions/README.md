@@ -28,9 +28,15 @@ print("TOTAL COMPREHENSION...")
 # TODO: write python code here
 ```
 
+From within your "base" environment, or any other Anaconda virtual environment, run the script:
+
+```sh
+python total_comprehension.py
+```
+
 ## Instructions
 
-Write Python code which will use the filtering and mapping capabilities of list comprehensions to transform that provided list (e.g. `my_numbers`) in each of the following ways:
+Write Python code in the "total_comprehension.py" file which will use the filtering and mapping capabilities of list comprehensions to transform the provided list (i.e. `my_numbers`) in each of the following ways:
 
   + Use mapping capabilities to multiply each number by 100 (e.g. `[100, 200, 300, 400, 500, 600, 700]`)
   + Use filtering capabilities to return only the numbers greater than three (e.g. `[4, 5, 6, 7]`)

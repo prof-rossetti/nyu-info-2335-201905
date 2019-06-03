@@ -133,7 +133,19 @@ Inside the "groceries.py" script, write Python code which will transform the pro
 
 ## [Guided Checkpoints](checkpoints.md)
 
+Feel free but not obligated to follow these guided "checkpoints", which provide one example strategy for breaking-up the requirements into smaller, more manageable pieces.
+
+## [Guided Screencast](https://www.youtube.com/watch?v=Noy20XaMqho&feature=youtu.be)
+
+For a more in-depth guided exercise walkthrough, follow the screencast, but keep in mind a few caveats:
+
+  1. The screencast will instruct you to use the GitHub.com online interface to "commit", but you should be using GitHub Desktop instead
+  2. Some of the links reference a previous course repository, but you should be able to find related documents in this course repository as well
+  3. The screencast includes a walkthrough of printing departments, which for you is not part of the basic requirements but rather an optional "Further Exploration Challenge"
+
 ## [Further Exploration Challenges](challenges.md)
+
+If you are able to implement the basic requirements with relative ease, consider addressing one or more of these "Further Exploration Challenges" to enrich and expand your learning experience.
 
 ## Submission
 
