@@ -32,6 +32,7 @@ In this unit, we will take a high-level guided tour of the Python programming la
     + [File Management](/notes/python/file-management.md) (just for your awareness)
     + [Modules](/notes/python/modules):
       + [The `os` Module](/notes/python/modules/os.md) (just for your awareness, should have shared this info earlier)
+      + [The `datetime` Module](/notes/python/modules/datetime.md)
       + [The `random` Module](/notes/python/modules/random.md)
     + [Packages](/notes/python/packages):
       + [The `dotenv` Package](/notes/python/packages/dotenv.md) (just for your awareness, should have shared this info earlier)
