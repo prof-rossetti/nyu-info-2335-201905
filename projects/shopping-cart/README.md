@@ -10,14 +10,14 @@
   1. Create a tool to facilitate and streamline a real-world business process.
   2. Practice processing and validating user inputs in Python.
   3. Reinforce introductory Python programming language concepts such as datatypes, functions, variables, and loops.
-  + Practice incorporating version control into your development process.
-  + Optional Challenge: Practice incorporating automated testing into your development process.
+  4. Practice incorporating version control into your development process.
+  5. Optional Challenge: Practice incorporating automated testing into your development process.
 
 ## Business Prompt
 
 Your local corner grocery store has hired you as a technology consultant to help modernize their checkout system.
 
-Currently, when managing inventory, store employees affix a price tag sticker on each grocery item in stock. And when a customer visits the checkout counter with their selected items, a checkout clerk uses a calculator to add product prices and calculate tax and total amount due.
+Currently, when managing inventory, store employees affix a price tag sticker on each grocery item in stock. And when a customer visits the checkout counter with their selected items, a checkout clerk uses a calculator to add product prices, calculate tax, and calculate the total amount due.
 
 Instead, the store owner describes a desired checkout process which involves a checkout clerk scanning each product's barcode to automatically lookup prices, perform tax and total calculations, and print a customer receipt. To facilitate this process, the store owner has authorized the purchase of a few inexpensive barcode scanners, as well as checkout computers capable of running Python applications.
 
@@ -33,7 +33,7 @@ Before attempting to implement the basic requirements, take some time to configu
 
 When developing, as you reach key milestones, use the command-line or GitHub Desktop software to intermittently "commit", or save new versions of, your code. And remember to push / sync / upload your work back up to your remote project repository on GitHub.com at least once before you're done.
 
-If you are able to implement the basic requirements with relative ease, or if you are interested in a challenge, consider addressing one or more of the ["Further Exploration Challenges"](challenges.md). Otherwise, if you need help breaking the problem up into more manageable pieces, consult the ["Guided Checkpoints"](checkpoints.md).
+If you are able to implement the basic requirements with relative ease, or if you are interested in a challenge, consider addressing one or more of the ["Further Exploration Challenges"](challenges.md). Otherwise, if you need help breaking the problem up into more manageable pieces, consult the ["Guided Checkpoints"](checkpoints.md). And if you would like a narrated walkthrough, consult the ["Guided Screencast"](#guided-screencast)
 
 ## Setup
 
@@ -117,7 +117,6 @@ If you see the provided "products" data structure, you're ready to move on to pr
 
 The provided code will facilitate management of the products inventory in the source code, but if you'd like to manage the products inventory via a CSV file instead, download the provided ["products.csv"](/data/products.csv) file and place it into your project directory in a directory called "data". And you can later try to reference that data instead of the provided `products` variable above.
 
-> NOTE: if you use the "products.csv" file, it should be ignored from version control!
 
 
 ## Basic Requirements
