@@ -1,8 +1,6 @@
 # "Rock, Paper, Scissors" Exercise
 
 > Prerequisites:
->   + [Software Products and Services](/units/unit-1.md)
->   + [User Interfaces and Experiences (UI/UX)](/units/unit-2.md)
 >   + [Python Language Overview](/units/unit-3.md)
 
 ## Learning Objectives
@@ -22,7 +20,7 @@ Before attempting to implement the basic requirements, take some time to configu
 
 When developing, as you reach key milestones, use the command-line or GitHub Desktop software to intermittently "commit", or save new versions of, your code. And remember to push / sync / upload your work back up to your remote project repository on GitHub.com at least once before you're done.
 
-If you are able to implement the basic requirements with relative ease, or if you are interested in a challenge, consider addressing one or more of the ["Further Exploration" challenges](challenges.md).
+If you are able to implement the basic requirements with relative ease, or if you are interested in a challenge, consider addressing one or more of the ["Further Exploration Challenges"](challenges.md).
 
 
 ## Setup

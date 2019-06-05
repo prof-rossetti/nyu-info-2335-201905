@@ -21,7 +21,7 @@ In this unit, we will take a high-level guided tour of the Python programming la
       + [Booleans](/notes/python/datatypes/booleans.md)
       + [Strings](/notes/python/datatypes/strings.md)
       + [Numbers](/notes/python/datatypes/numbers.md)
-      + [Dates and Times](/notes/python/datatypes/dates-times.md)
+      + [Dates and Times](/notes/python/datatypes/dates.md)
       + [Lists and Sets](/notes/python/datatypes/lists.md)
       + [Dictionaries](/notes/python/datatypes/dictionaries.md)
       + [Custom Classes](/notes/python/datatypes/classes.md) (intermediate / advanced topic)
@@ -32,7 +32,10 @@ In this unit, we will take a high-level guided tour of the Python programming la
     + [File Management](/notes/python/file-management.md) (just for your awareness)
     + [Modules](/notes/python/modules):
       + [The `os` Module](/notes/python/modules/os.md) (just for your awareness, should have shared this info earlier)
+      + [The `datetime` Module](/notes/python/modules/datetime.md)
       + [The `random` Module](/notes/python/modules/random.md)
+      + [The `operator` Module](https://docs.python.org/3/library/operator.html)
+      + [The `itertools` Module](/notes/python/modules/itertools.md)
     + [Packages](/notes/python/packages):
       + [The `dotenv` Package](/notes/python/packages/dotenv.md) (just for your awareness, should have shared this info earlier)
       + [The `pytest` Package](/notes/python/packages/pytest.md) (intermediate / advanced topic)
@@ -42,4 +45,4 @@ In this unit, we will take a high-level guided tour of the Python programming la
   + ["Rock, Paper, Scissors" Exercise](/exercises/rock-paper-scissors/README.md)
   + ["Groceries" Exercise](/exercises/groceries/README.md)
   + ["List Comprehensions" Exercise](/exercises/list-comprehensions/README.md)
-  + "Shopping Cart" Project - TBA
+  + ["Shopping Cart" Project](/projects/shopping-cart/README.md)
