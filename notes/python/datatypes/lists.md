@@ -187,7 +187,7 @@ for letter in ["a", "b", "c", "d"]:
 #> d
 ```
 
-> TIP: If it helps, you can vocalize this like "For each item in the list of items, do something with that item".
+> TIP: If it helps, you can vocalize this like "for each item in the list of items, do something with that item"
 
 A common pattern is to loop through one list to populate the contents of another:
 
@@ -286,7 +286,7 @@ list(filter(greater_than_two, arr)) #> [4, 8, 16]
 list(filter(really_big, arr)) #> []
 ```
 
-> Note: the `filter()` function returns a list, even if it is empty or only contains one item.
+> Note: depending on how many items matched the filter condition, the resulting filtered list may be empty, or it may contain one item, or it may contain multiple items
 
 When using the filter function, observe this alternative filtering syntax involving the keyword `lambda`:
 
@@ -353,5 +353,8 @@ print(teams_from("New York")) #> [{'city': 'New York', 'name': 'Yankees'}, {'cit
 print(teams_from2("New York")) #> [{'city': 'New York', 'name': 'Yankees'}, {'city': 'New York', 'name': 'Mets'}]
 print(teams_from3("New York")) #> [{'city': 'New York', 'name': 'Yankees'}, {'city': 'New York', 'name': 'Mets'}]
 ```
+
+
+### Grouping
 
 Reference the [`itertools` module](../modules/itertools.md) for additional operations.
