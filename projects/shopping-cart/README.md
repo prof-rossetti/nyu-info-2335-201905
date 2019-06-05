@@ -33,7 +33,7 @@ Before attempting to implement the basic requirements, take some time to configu
 
 When developing, as you reach key milestones, use the command-line or GitHub Desktop software to intermittently "commit", or save new versions of, your code. And remember to push / sync / upload your work back up to your remote project repository on GitHub.com at least once before you're done.
 
-If you are able to implement the basic requirements with relative ease, or if you are interested in a challenge, consider addressing one or more of the ["Further Exploration Challenges"](challenges.md). Otherwise, if you need help breaking the problem up into more manageable pieces, consult the ["Guided Checkpoints"](checkpoints.md). And if you would like a narrated walkthrough, consult the ["Guided Screencast"](#guided-screencast)
+If you are able to implement the basic requirements with relative ease, or if you are interested in a challenge, consider addressing one or more of the ["Further Exploration Challenges"](challenges.md). Otherwise, if you need help breaking the problem up into more manageable pieces, consult the ["Guided Checkpoints"](checkpoints.md). And if you would like a narrated walkthrough, consult the ["Guided Screencast"](#guided-screencast).
 
 ## Setup
 
@@ -115,27 +115,29 @@ If you see the provided "products" data structure, you're ready to move on to pr
 
 ## Data Setup
 
-The provided code will facilitate management of the products inventory in the source code, but if you'd like to manage the products inventory via a CSV file instead, download the provided ["products.csv"](/data/products.csv) file and place it into your project directory in a directory called "data". And you can later try to reference that data instead of the provided `products` variable above.
+The provided code includes a variable called `products` which facilitates management of the products inventory from within the application's source code.
 
+If you'd like to manage the products inventory via a CSV file instead, download the provided ["products.csv"](/data/products.csv) file and place it into your project directory in a directory called "data". And you can later try to reference that data instead of the provided `products` variable.
 
+If you'd like to manage the products inventory via Google Sheet document instead, reference this provided [products sheet](https://docs.google.com/spreadsheets/d/1ItN7Cc2Yn4K90cMIsxi2P045Gzw0y2JHB_EkV4mXXpI/edit?usp=sharing). And you can later try to reference that data instead of the provided `products` variable.
 
 ## Basic Requirements
 
 Write a program that asks the user to input one or more product identifiers, then looks up the prices for each, then prints an itemized customer receipt including the total amount owed.
 
-The program should use a provided list of dictionaries (see setup instructions below) to represent the store owner's database of products and prices.
+The program should use one of the provided datastores (see "Data Setup") to represent the store owner's inventory of products and prices.
 
-The program should prompt the checkout clerk to input the identifier of each shopping cart item, one at a time. At any time the clerk should be able to indicate there are no more shopping cart items by inputting the word `DONE`.
+The program should prompt the checkout clerk to input the identifier of each shopping cart item, one at a time. At any time the clerk should be able to indicate there are no more shopping cart items by inputting the word `DONE` or otherwise indicating they are done with the process.
 
 After the clerk indicates there are no more items, the program should print a custom receipt on the screen. The receipt should include the following components:
 
   + A grocery store name of your choice.
   + A grocery store phone number and/or website URL and/or address of choice.
-  + The date and time of the beginning of the checkout process, formatted in a human-friendly way.
+  + The date and time of the beginning of the checkout process, formatted in a human-friendly way (e.g. `2019-06-06 11:31 AM`).
   + The name and price of each shopping cart item, price being formatted as US dollars and cents (e.g. `$1.50`).
   + The total cost of all shopping cart items, formatted as US dollars and cents (e.g. `$4.50`), calculated as the sum of their prices.
-  + The amount of tax owed, calculated by multiplying the total cost by a District of Columbia sales tax rate of 6%.
-  + The total amount owed, formatted as US dollars and cents (e.g. `$4.77`), calculated by adding together the amount of tax owed plus the total cost of all shopping cart items.
+  + The amount of tax owed (e.g. `$0.39`), calculated by multiplying the total cost by a New York City sales tax rate of `8.75%`. NOTE: for the purposes of this project, groceries are not exempt from sales tax.
+  + The total amount owed, formatted as US dollars and cents (e.g. `$4.89`), calculated by adding together the amount of tax owed plus the total cost of all shopping cart items.
   + A friendly message thanking the customer and/or encouraging the customer to shop again.
 
 The program should be able to process multiple shopping cart items of the same kind, but need not display any groupings or aggregations of those items (although it may optionally do so).
@@ -156,7 +158,7 @@ Please input a product identifier: DONE
 #> GREEN FOODS GROCERY
 #> WWW.GREEN-FOODS-GROCERY.COM
 #> ---------------------------------
-#> CHECKOUT AT: 2019-02-02 11:31 AM
+#> CHECKOUT AT: 2019-06-06 11:31 AM
 #> ---------------------------------
 #> SELECTED PRODUCTS:
 #>  ... Chocolate Sandwich Cookies ($3.50)
@@ -168,8 +170,8 @@ Please input a product identifier: DONE
 #>  ... Chocolate Fudge Layer Cake ($18.50)
 #> ---------------------------------
 #> SUBTOTAL: $61.24
-#> TAX: $3.67
-#> TOTAL: $64.91
+#> TAX: $5.35
+#> TOTAL: $66.59
 #> ---------------------------------
 #> THANKS, SEE YOU AGAIN SOON!
 #> ---------------------------------
