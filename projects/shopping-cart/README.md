@@ -1,22 +1,126 @@
 # "Shopping Cart" Project
 
-![a screencast of a user running a python script from a terminal](https://user-images.githubusercontent.com/1328807/50870741-53442b80-1387-11e9-9180-ab96688c6590.gif)
+> Prerequisites:
+>   + [Python Language Overview](/units/unit-3.md)
+>   + ["Groceries" Exercise](/exercises/groceries/README.md)
+>   + ["List Comprehensions" Exercise](/exercises/list-comprehensions/README.md)
+
+## Learning Objectives
+
+  1. Create a tool to facilitate and streamline a real-world business process.
+  2. Practice processing and validating user inputs in Python.
+  3. Reinforce introductory Python programming language concepts such as datatypes, functions, variables, and loops.
+  + Practice incorporating version control into your development process.
+  + Optional Challenge: Practice incorporating automated testing into your development process.
 
 ## Business Prompt
 
 Your local corner grocery store has hired you as a technology consultant to help modernize their checkout system.
 
-Currently, the store affixes a price tag sticker on each grocery item in stock and uses a calculator at the checkout counter to add up the product prices and calculate tax and total amount due.
+Currently, when managing inventory, store employees affix a price tag sticker on each grocery item in stock. And when a customer visits the checkout counter with their selected items, a checkout clerk uses a calculator to add product prices and calculate tax and total amount due.
 
-Instead, the store owner describes a desired checkout process which involves a checkout clerk scanning each product's barcode to automatically look up product prices, perform tax and total calculations, and print a customer receipt.
+Instead, the store owner describes a desired checkout process which involves a checkout clerk scanning each product's barcode to automatically lookup prices, perform tax and total calculations, and print a customer receipt. To facilitate this process, the store owner has authorized the purchase of a few inexpensive barcode scanners, as well as checkout computers capable of running Python applications.
 
-## Learning Objectives
+The store owner says it would be acceptable but not preferable to manage the inventory of products via the application's source code, but that it would be OK to manage the inventory of products via a local CSV file stored on the checkout computer, and further that it would be "nice to have" a feature which allows them to manage the inventory of products via a centralized Google Sheet spreadsheet document.
 
-  1. Create a tool to facilitate and streamline a business process.
-  2. Gain familiarity with processing and validating user inputs in Python.
-  3. Reinforce introductory Python programming concepts such as datatypes, functions, variables, and loops.
+The store owner also says it would be "nice to have" a feature which collects customer email addresses and sends email receipts to the customer.
 
-## Requirements
+## Instructions
+
+Iteratively develop a Python application which satisfies the store owner's objectives, as described in more detail by the "Basic Requirements" below.
+
+Before attempting to implement the basic requirements, take some time to configure your project repository according to the "Setup" instructions below. After doing so, you'll have a remote repo on GitHub.com and a local copy on your computer within which to develop.
+
+When developing, as you reach key milestones, use the command-line or GitHub Desktop software to intermittently "commit", or save new versions of, your code. And remember to push / sync / upload your work back up to your remote project repository on GitHub.com at least once before you're done.
+
+If you are able to implement the basic requirements with relative ease, or if you are interested in a challenge, consider addressing one or more of the ["Further Exploration Challenges"](challenges.md). Otherwise, if you need help breaking the problem up into more manageable pieces, consult the ["Guided Checkpoints"](checkpoints.md).
+
+## Setup
+
+### Repo Setup
+
+Use the GitHub.com online interface to create a new remote project repository called something like "shopping-cart". When prompted by the GitHub.com online interface, let's get in the habit of adding a "README.md" file and a Python-flavored ".gitignore" file (and also optionally a "LICENSE") during the repo creation process. After this process is complete, you should be able to view the repo on GitHub.com at an address like `https://github.com/YOUR_USERNAME/shopping-cart`.
+
+After creating the remote repo, use GitHub Desktop software or the command-line to download or "clone" it onto your computer. Choose a familiar download location like the Desktop.
+
+After cloning the repo, navigate there from the command-line:
+
+```sh
+cd ~/Desktop/shopping-cart
+```
+
+Use your text editor or the command-line to create a file in that repo called "shopping_cart.py", and then place the following contents inside:
+
+```py
+# shopping_cart.py
+
+#from pprint import pprint
+
+products = [
+    {"id":1, "name": "Chocolate Sandwich Cookies", "department": "snacks", "aisle": "cookies cakes", "price": 3.50},
+    {"id":2, "name": "All-Seasons Salt", "department": "pantry", "aisle": "spices seasonings", "price": 4.99},
+    {"id":3, "name": "Robust Golden Unsweetened Oolong Tea", "department": "beverages", "aisle": "tea", "price": 2.49},
+    {"id":4, "name": "Smart Ones Classic Favorites Mini Rigatoni With Vodka Cream Sauce", "department": "frozen", "aisle": "frozen meals", "price": 6.99},
+    {"id":5, "name": "Green Chile Anytime Sauce", "department": "pantry", "aisle": "marinades meat preparation", "price": 7.99},
+    {"id":6, "name": "Dry Nose Oil", "department": "personal care", "aisle": "cold flu allergy", "price": 21.99},
+    {"id":7, "name": "Pure Coconut Water With Orange", "department": "beverages", "aisle": "juice nectars", "price": 3.50},
+    {"id":8, "name": "Cut Russet Potatoes Steam N' Mash", "department": "frozen", "aisle": "frozen produce", "price": 4.25},
+    {"id":9, "name": "Light Strawberry Blueberry Yogurt", "department": "dairy eggs", "aisle": "yogurt", "price": 6.50},
+    {"id":10, "name": "Sparkling Orange Juice & Prickly Pear Beverage", "department": "beverages", "aisle": "water seltzer sparkling water", "price": 2.99},
+    {"id":11, "name": "Peach Mango Juice", "department": "beverages", "aisle": "refrigerated", "price": 1.99},
+    {"id":12, "name": "Chocolate Fudge Layer Cake", "department": "frozen", "aisle": "frozen dessert", "price": 18.50},
+    {"id":13, "name": "Saline Nasal Mist", "department": "personal care", "aisle": "cold flu allergy", "price": 16.00},
+    {"id":14, "name": "Fresh Scent Dishwasher Cleaner", "department": "household", "aisle": "dish detergents", "price": 4.99},
+    {"id":15, "name": "Overnight Diapers Size 6", "department": "babies", "aisle": "diapers wipes", "price": 25.50},
+    {"id":16, "name": "Mint Chocolate Flavored Syrup", "department": "snacks", "aisle": "ice cream toppings", "price": 4.50},
+    {"id":17, "name": "Rendered Duck Fat", "department": "meat seafood", "aisle": "poultry counter", "price": 9.99},
+    {"id":18, "name": "Pizza for One Suprema Frozen Pizza", "department": "frozen", "aisle": "frozen pizza", "price": 12.50},
+    {"id":19, "name": "Gluten Free Quinoa Three Cheese & Mushroom Blend", "department": "dry goods pasta", "aisle": "grains rice dried goods", "price": 3.99},
+    {"id":20, "name": "Pomegranate Cranberry & Aloe Vera Enrich Drink", "department": "beverages", "aisle": "juice nectars", "price": 4.25}
+] # based on data from Instacart: https://www.instacart.com/datasets/grocery-shopping-2017
+
+print(products)
+# pprint(products)
+
+# TODO: write some Python code here to produce the desired output
+```
+
+Make sure to save Python files like this whenever you're done editing them. After setting up a virtual environment, we will be ready to run this file.
+
+### Environment Setup
+
+Create and activate a new Anaconda virtual environment:
+
+```sh
+conda create -n shopping-env python=3.7 # (first time only)
+conda activate shopping-env
+```
+
+From within the virtual environment, install the `pytest` package:
+
+```sh
+# NOTE: we won't need pytest until/unless addressing the optional "Automated Testing" challenge,
+# so you can feel free to skip this now and return later...
+
+pip install pytest
+```
+
+From within the virtual environment, demonstrate your ability to run the Python script from the command-line:
+
+```sh
+python shopping_cart.py
+```
+
+If you see the provided "products" data structure, you're ready to move on to project development. This would be a great time to make any desired modifications to your project's "README.md" file (like adding instructions for how to setup and run the app like you've just done), and then make your first commit, with a message like "Setup the repo".
+
+## Data Setup
+
+The provided code will facilitate management of the products inventory in the source code, but if you'd like to manage the products inventory via a CSV file instead, download the provided ["products.csv"](/data/products.csv) file and place it into your project directory in a directory called "data". And you can later try to reference that data instead of the provided `products` variable above.
+
+> NOTE: if you use the "products.csv" file, it should be ignored from version control!
+
+
+## Basic Requirements
 
 Write a program that asks the user to input one or more product identifiers, then looks up the prices for each, then prints an itemized customer receipt including the total amount owed.
 
@@ -72,80 +176,32 @@ Please input a product identifier: DONE
 #> ---------------------------------
 ```
 
-## Setup
+## [Guided Checkpoints](checkpoints.md)
 
-### From Starter
+Feel free but not obligated to follow these guided "checkpoints", which provide one example strategy for breaking-up the requirements into smaller, more manageable pieces.
 
-To setup your project repository, either fork and clone the professor's ["Shopping Cart" Starter Repository](https://github.com/prof-rossetti/shopping-cart-starter-py), or follow the steps below to setup your own from scratch.
+## [Guided Screencast](https://youtu.be/3BaGb-1cIr0)
 
-### From Scratch
+For a more in-depth guided exercise walkthrough, follow the screencast, but keep in mind a few caveats:
 
-Take this time to create a new repository on GitHub.com called something like "shopping-cart-project". We'll refer to this as your "remote project repository".
+  1. Some of the links reference a previous course repository, but you should be able to find related documents in this course repository as well
+  2. If there is any discrepancy between requirements referenced in the video and requirements stated in this document, defer to the requirements stated in this document
 
-Clone or download the remote project repository onto your local machine, perhaps on your Desktop. We'll refer to this as your "local project repository".
+## [Further Exploration Challenges](challenges.md)
 
-Navigate to your local project repository from the command-line.
-
-Within the local project repository, create a new file called `shopping_cart.py` and place inside the following contents:
-
-```python
-# shopping_cart.py
-
-products = [
-    {"id":1, "name": "Chocolate Sandwich Cookies", "department": "snacks", "aisle": "cookies cakes", "price": 3.50},
-    {"id":2, "name": "All-Seasons Salt", "department": "pantry", "aisle": "spices seasonings", "price": 4.99},
-    {"id":3, "name": "Robust Golden Unsweetened Oolong Tea", "department": "beverages", "aisle": "tea", "price": 2.49},
-    {"id":4, "name": "Smart Ones Classic Favorites Mini Rigatoni With Vodka Cream Sauce", "department": "frozen", "aisle": "frozen meals", "price": 6.99},
-    {"id":5, "name": "Green Chile Anytime Sauce", "department": "pantry", "aisle": "marinades meat preparation", "price": 7.99},
-    {"id":6, "name": "Dry Nose Oil", "department": "personal care", "aisle": "cold flu allergy", "price": 21.99},
-    {"id":7, "name": "Pure Coconut Water With Orange", "department": "beverages", "aisle": "juice nectars", "price": 3.50},
-    {"id":8, "name": "Cut Russet Potatoes Steam N' Mash", "department": "frozen", "aisle": "frozen produce", "price": 4.25},
-    {"id":9, "name": "Light Strawberry Blueberry Yogurt", "department": "dairy eggs", "aisle": "yogurt", "price": 6.50},
-    {"id":10, "name": "Sparkling Orange Juice & Prickly Pear Beverage", "department": "beverages", "aisle": "water seltzer sparkling water", "price": 2.99},
-    {"id":11, "name": "Peach Mango Juice", "department": "beverages", "aisle": "refrigerated", "price": 1.99},
-    {"id":12, "name": "Chocolate Fudge Layer Cake", "department": "frozen", "aisle": "frozen dessert", "price": 18.50},
-    {"id":13, "name": "Saline Nasal Mist", "department": "personal care", "aisle": "cold flu allergy", "price": 16.00},
-    {"id":14, "name": "Fresh Scent Dishwasher Cleaner", "department": "household", "aisle": "dish detergents", "price": 4.99},
-    {"id":15, "name": "Overnight Diapers Size 6", "department": "babies", "aisle": "diapers wipes", "price": 25.50},
-    {"id":16, "name": "Mint Chocolate Flavored Syrup", "department": "snacks", "aisle": "ice cream toppings", "price": 4.50},
-    {"id":17, "name": "Rendered Duck Fat", "department": "meat seafood", "aisle": "poultry counter", "price": 9.99},
-    {"id":18, "name": "Pizza for One Suprema Frozen Pizza", "department": "frozen", "aisle": "frozen pizza", "price": 12.50},
-    {"id":19, "name": "Gluten Free Quinoa Three Cheese & Mushroom Blend", "department": "dry goods pasta", "aisle": "grains rice dried goods", "price": 3.99},
-    {"id":20, "name": "Pomegranate Cranberry & Aloe Vera Enrich Drink", "department": "beverages", "aisle": "juice nectars", "price": 4.25}
-] # based on data from Instacart: https://www.instacart.com/datasets/grocery-shopping-2017
-
-# TODO: write some Python code here to produce the desired functionality...
-print(products)
-```
-
-Create a new virtual environment named something like "shopping-cart-env" and activate it. Then from inside the virtual environment, execute the Python script to see it print the list of products.
-
-Finally, make your first commit with a message like "Setup project repository", and push these changes to GitHub. Once you see these changes reflected in your remote project repository on GitHub.com, you are ready to start the project development process.
-
-
-
-
-## Development
-
-As you develop your project repository, incrementally "commit" your work along the way. By the time you are finished with development, your project repository should contain a version history including at least a handful of incremental commits.
-
-### Checkpoints
-
-If you're not sure where to start, feel free to adopt the development approach recommended in the ["Shopping Cart" Checkpoints](shopping-cart/checkpoints.md).
-
-### Further Exploration
-
-If you're able to complete the basic project requirements with relative ease, consider addressing one or more of the ["Shopping Cart" Further Exploration Challenges](shopping-cart/further.md) (e.g. writing receipts to file, integrating with a real-life barcode scanner, etc.).
+If you are able to implement the basic requirements with relative ease, consider addressing one or more of these "Further Exploration Challenges" to enrich and expand your learning experience.
 
 ## Submission
 
-To submit your project:
+To submit your work, consult the [Contributor's Guide](/CONTRIBUTING.md) and follow the steps below:
 
-  1. Push your local project repository to GitHub, so you can visit your remote project repository at a URL like `https://github.com/YOUR_USERNAME/shopping-cart-project`.
-  2. Fork the ["upstream" course repository](https://github.com/prof-rossetti/georgetown-opim-243-201901) (or refresh your existing fork).
-  3. Update your forked course repository's ["Shopping Cart" Submissions CSV file](shopping-cart/submissions.csv).
-to include your GitHub username and your project repository's URL.
-  4. Submit a Pull Request for your forked course repository's changes to be accepted into the "upstream" course repository.
+  1. Push your local project repository to GitHub, so you can visit your remote project repository at a URL like `https://github.com/YOUR_USERNAME/shopping-cart`
+  2. Fork the ["upstream" course repository](https://github.com/prof-rossetti/nyu-info-2335-201905) (or refresh your existing fork)
+  3. Update the ["submissions.csv"](submissions.csv) file in your remote fork of the course repository to include an entry linking to your remote project repository URL
+  4. Finally, submit a Pull Request for the changes in your remote fork of the course repository to be accepted back into the "upstream" course repository
+
+This process may seem a little unfamiliar at the moment, but it will become more familiar with each repetition.
+
 
 ## Evaluation
 
@@ -161,6 +217,6 @@ Info Outputs (Receipt) | Displays names and prices of all scanned products | 20%
 Info Outputs (Receipt) | Displays tax and totals | 20%
 Dev Process | Submitted via Git repository which reflects an incremental revision history | 20%
 
-If experiencing execution error(s) while evaluating the application's required functionality, evaluators are advised to reduce the project's grade by anywhere between 15% and 50%, depending on the circumstances and severity of the error(s).
+If experiencing execution error(s) while evaluating the application's required functionality, evaluators are advised to reduce the project's grade by 4% to 25%, depending on the circumstances and severity of the error(s).
 
-In recognition of deliverables which exhibit functionality above and beyond the basic required functionality, evaluators are encouraged to award between 0.5% and 3.0% extra credit "engagement points" to be applied towards the final exam.
+In recognition of deliverables which exhibit functionality above and beyond the basic requirements, evaluators are encouraged to award between 3% and 15% "engagement points" to be applied as extra credit.
