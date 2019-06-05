@@ -119,7 +119,7 @@ The provided code includes a variable called `products` which facilitates manage
 
 If you'd like to manage the products inventory via a CSV file instead, download the provided ["products.csv"](/data/products.csv) file and place it into your project directory in a directory called "data". And you can later try to reference that data instead of the provided `products` variable.
 
-If you'd like to manage the products inventory via Google Sheet document instead, reference this provided [products sheet](https://docs.google.com/spreadsheets/d/1ItN7Cc2Yn4K90cMIsxi2P045Gzw0y2JHB_EkV4mXXpI/edit?usp=sharing). And you can later try to reference that data instead of the provided `products` variable.
+If you'd like to manage the products inventory via Google Sheet document instead, reference this provided [products sheet](https://docs.google.com/spreadsheets/d/1ItN7Cc2Yn4K90cMIsxi2P045Gzw0y2JHB_EkV4mXXpI/edit?usp=sharing). And you can later try to reference that data instead of the provided `products` variable. See the "Google Sheets Datastore" challenge for more info.
 
 ## Basic Requirements
 
@@ -127,20 +127,25 @@ Write a program that asks the user to input one or more product identifiers, the
 
 The program should use one of the provided datastores (see "Data Setup") to represent the store owner's inventory of products and prices.
 
-The program should prompt the checkout clerk to input the identifier of each shopping cart item, one at a time. At any time the clerk should be able to indicate there are no more shopping cart items by inputting the word `DONE` or otherwise indicating they are done with the process.
+The program should prompt the checkout clerk to input the identifier of each shopping cart item, one at a time.
+
+When the clerk inputs a product identifier, the program should validate it, displaying a helpful message like "Hey, are you sure that product identifier is correct? Please try again!" if there are no products matching the given identifier.
+
+At any time the clerk should be able to indicate there are no more shopping cart items by inputting the word `DONE` or otherwise indicating they are done with the process.
 
 After the clerk indicates there are no more items, the program should print a custom receipt on the screen. The receipt should include the following components:
 
-  + A grocery store name of your choice.
-  + A grocery store phone number and/or website URL and/or address of choice.
-  + The date and time of the beginning of the checkout process, formatted in a human-friendly way (e.g. `2019-06-06 11:31 AM`).
-  + The name and price of each shopping cart item, price being formatted as US dollars and cents (e.g. `$1.50`).
-  + The total cost of all shopping cart items, formatted as US dollars and cents (e.g. `$4.50`), calculated as the sum of their prices.
-  + The amount of tax owed (e.g. `$0.39`), calculated by multiplying the total cost by a New York City sales tax rate of `8.75%`. NOTE: for the purposes of this project, groceries are not exempt from sales tax.
-  + The total amount owed, formatted as US dollars and cents (e.g. `$4.89`), calculated by adding together the amount of tax owed plus the total cost of all shopping cart items.
-  + A friendly message thanking the customer and/or encouraging the customer to shop again.
+  + A grocery store name of your choice
+  + A grocery store phone number and/or website URL and/or address of choice
+  + The date and time of the beginning of the checkout process, formatted in a human-friendly way (e.g. `2019-06-06 11:31 AM`)
+  + The name and price of each shopping cart item, price being formatted as US dollars and cents (e.g. `$1.50`)
+  + The total cost of all shopping cart items, formatted as US dollars and cents (e.g. `$4.50`), calculated as the sum of their prices
+  + The amount of tax owed (e.g. `$0.39`), calculated by multiplying the total cost by a New York City sales tax rate of 8.75% (for the purposes of this project, groceries are not exempt from sales tax)
+  + The total amount owed, formatted as US dollars and cents (e.g. `$4.89`), calculated by adding together the amount of tax owed plus the total cost of all shopping cart items
+  + A friendly message thanking the customer and/or encouraging the customer to shop again
 
 The program should be able to process multiple shopping cart items of the same kind, but need not display any groupings or aggregations of those items (although it may optionally do so).
+
 
 ### Example Output
 
@@ -183,7 +188,7 @@ Feel free but not obligated to follow these guided "checkpoints", which provide 
 
 ## [Guided Screencast](https://youtu.be/3BaGb-1cIr0)
 
-For a more in-depth guided exercise walkthrough, follow the screencast, but keep in mind a few caveats:
+For a more in-depth guided exercise walkthrough, feel free but not obligated to follow the screencast, but keep in mind a few caveats:
 
   1. Some of the links reference a previous course repository, but you should be able to find related documents in this course repository as well
   2. If there is any discrepancy between requirements referenced in the video and requirements stated in this document, defer to the requirements stated in this document
@@ -211,13 +216,14 @@ Project submissions will be evaluated according to the requirements set forth ab
 Category | Requirement | Weight
 --- | --- | ---
 Info Inputs | Captures / scans product identifiers | 10%
+Info Inputs | Handles invalid inputs | 10%
 Info Inputs | Handles the "DONE" signal | 10%
 Info Outputs (Receipt) | Displays store info | 10%
 Info Outputs (Receipt) | Displays checkout date and time | 10%
-Info Outputs (Receipt) | Displays names and prices of all scanned products | 20%
-Info Outputs (Receipt) | Displays tax and totals | 20%
+Info Outputs (Receipt) | Displays names and prices of all scanned products | 15%
+Info Outputs (Receipt) | Displays tax and totals | 15%
 Dev Process | Submitted via Git repository which reflects an incremental revision history | 20%
 
-If experiencing execution error(s) while evaluating the application's required functionality, evaluators are advised to reduce the project's grade by 4% to 25%, depending on the circumstances and severity of the error(s).
+If experiencing execution error(s) while evaluating the application's required functionality, evaluators are advised to reduce the project's grade by between 4% and 25%, depending on the circumstances and severity of the error(s).
 
-In recognition of deliverables which exhibit functionality above and beyond the basic requirements, evaluators are encouraged to award between 3% and 15% "engagement points" to be applied as extra credit.
+In recognition of deliverables which exhibit functionality above and beyond the basic requirements, evaluators are encouraged to award between 4% and 15% "engagement points" to be applied as extra credit.
