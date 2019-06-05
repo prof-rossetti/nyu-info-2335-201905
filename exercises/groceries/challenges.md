@@ -55,9 +55,9 @@ Example desired output:
 
 > Prerequisites: [The `pytest` Package](/notes/python/packages/pytest.md)
 
-Before we test some of the program's logic, we need to abstract that logic into one or more custom functions (e.g. `to_usd()`) which we can test in isolation. And we'll need to update the organizational structure of our game script to include the infamous `if __name__ == "__main__"` convention, to prevent the rest of the game's functionality from being executed when we attempt to import and test the `to_usd()` function in isolation.
+Before we test some of the program's logic, we need to abstract that logic into one or more custom functions (e.g. `to_usd()`) which we can test in isolation. And we'll need to update the organizational structure of our script to include the infamous `if __name__ == "__main__"` convention, to prevent the rest of the script's functionality from being executed when we attempt to import and test the `to_usd()` function in isolation.
 
-After making these organizational adjustments to your "groceries.py" file, add another file called "game_test.py" and place inside the following contents:
+After making these organizational adjustments to your "groceries.py" file, add another file called "groceries_test.py" and place inside the following contents:
 
 ```py
 # groceries_test.py
