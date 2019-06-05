@@ -2,29 +2,55 @@
 
 ## Further Exploration Challenges
 
-### Challenge 1: Validating User Inputs
+### Functionality Challenges
 
-When the clerk inputs a product identifier, the program should validate it, displaying a helpful message like "Hey, are you sure that product identifier is correct? Please try again!" if there are no products matching the given identifier.
+#### Handling Pricing per Pound
 
-### Challenge 2: Writing Receipts to File
-
-Create a new directory within the project repository called "receipts".
-
-Instead of, or in addition to, displaying a receipt at the end of the checkout process, the program should write the receipt information into a new `.txt` file saved in the "receipts" directory. The clerk's printer-connected computer should be able to actually print a paper receipt from the information contained in this file.
-
-Each text file should be named according to the date and time the checkout process started (e.g. `/receipts/2017-07-04-15-43-13-579531.txt`, where the numbers represent the year, month, day, 24-hour-style hour, minute, second, and milliseconds/microseconds, respectively).
-
-See [Python file management](/notes/python/file-management.md) for examples of how to write to file.
-
-> NOTE: exclude these receipt files from being tracked in version control by using a ".gitignore" file. If you're not sure, ask the professor.
-
-### Challenge 3: Handling Pricing per Pound
-
-Add a new product called "Organic Bananas" to the products list. Assign it a price of `0.79`, but add another attribute called something like `price_per` to indicate the item is priced per "pound". Update all the other product dictionaries to match the new structure, indicating they are priced per "item".
+Add a new product called "Organic Bananas" to the products inventory. Assign it a price of `0.79`, but add another attribute called something like `price_per` to indicate the item is priced per "pound". Update all the other product dictionaries to match the new structure, indicating they are priced per "item".
 
 When running the program, if the clerk inputs the identifier of the bananas (or any other item that is priced by pound), the program should ask the clerk to input the number of pounds (e.g. `2.2`), then the program should calculate the price accordingly.
 
-### Challenge 4: Integrating with Barcode Scanner
+#### Writing Receipts to File
+
+Instead of, or in addition to, displaying a receipt at the end of the checkout process, the program should write the receipt information into a new ".txt" file saved in a new "receipts" directory inside the project repository. The clerk's printer-connected computer should be able to actually print a paper receipt from the information contained in this file.
+
+Each text file should be named according to the date and time the checkout process started (e.g. "/receipts/2019-07-04-15-43-13-579531.txt", where the numbers represent the year, month, day, 24-hour-style hour, minute, second, and milliseconds/microseconds, respectively).
+
+> HINT: consult the notes on [file management](/notes/python/file-management.md) for examples of how to write to file in Python
+
+> NOTE: exclude these receipt files from being tracked in version control by using a "receipts/.gitignore" file with the following contents:
+>
+>     # data/.gitignore
+>
+>     # see: https://stackoverflow.com/a/5581995/670433
+>
+>     # ignore all files in this "data" directory:
+>     *
+>
+>     # except this ".gitignore" file:
+>     !.gitignore
+
+#### Sending Receipts via Email
+
+Instead of, or in addition to, displaying a receipt at the end of the checkout process, the program should prompt the checkout clerk or the customer to indicate whether the customer would like to receive the receipt by email. And if so, it should prompt the checkout clerk or the customer to input the customer's email address, and then it should send the receipt information to the customer by email. The clerk's network-connected computer should be able to send these emails.
+
+At the very least, the email should display the checkout timestamp and the total price. But ideally it should contain all the receipt information described in the basic requirements.
+
+> HINT: leverage the email-sending capabilities of [the `sendgrid` package](/notes/python/packages/sendgrid.md), and optionally use Sendgrid transactional email templates to further control the formatting of email contents
+
+#### Integrating with a Google Sheets Datastore
+
+Instead of using a hard-coded `products` variable or a "products.csv" file as the application's datastore, use this provided [products Google Sheet document](https://docs.google.com/spreadsheets/d/1ItN7Cc2Yn4K90cMIsxi2P045Gzw0y2JHB_EkV4mXXpI/edit?usp=sharing) instead.
+
+> HINT: leverage the capabilities of [the `gspread` package](/notes/python/packages/gspread.md)
+
+
+
+
+
+
+
+#### Integrating with a Barcode Scanner
 
 Assemble a handful of real products that have barcodes.
 
@@ -32,7 +58,7 @@ Ask to borrow the professor's barcode scanner during class or office hours, or f
 
 Connect the barcode scanner to your computer's USB port, and practice scanning a few of the items, and record the resulting product identifiers.
 
-Adapt the program's `products` variable to reflect the real products and their identifiers. For example:
+Adapt the program's `products` variable (or whatever datastore you're using) to reflect the real products and their identifiers. For example:
 
 ```py
 # shopping_cart.py
@@ -58,34 +84,39 @@ After modifying the product list, try re-running the program, using the barcode 
 
 
 
+
+
+
+
+
+
+
+
+
 <hr>
 
 
+### Automated Testing Challenges
 
-
-## Basic Quality Control Challenges
-
-### Formatting Prices
+#### Testing Price Formatting
 
 Refactor price-formatting logic into a function called something like `to_usd()`, and implement a corresponding test called something like `test_to_usd()`.
 
 Test various scenarios to ensure the price formatting function displays a dollar sign, two decimal places, and a thousands separator.
 
-### Formatting Timestamps
+#### Testing Timestamp Formatting
 
 Refactor timestamp-formatting logic into a function called something like `human_friendly_timestamp()`, and implement a corresponding test called something like `test_human_friendly_timestamp()`.
 
 Test to ensure the function processes any given datetime object into a corresponding human-friendly string.
 
-## Intermediate Quality Control Challenges
-
-### Finding Products
+#### Testing Product Lookups
 
 Refactor product-finding logic into a function called something like `find_product()`, and implement a corresponding test called something like `test_find_product()`.
 
 Test various scenarios to ensure the product lookup function finds and returns the proper product, even if the products are not sorted in order of their unique identifiers. What should happen when the function is passed a numeric identifier vs a string identifier? What should happen when there is no product matching the given identifier?
 
-### Calculating Receipt Totals
+#### Testing Tax and Total Calculations
 
 Refactor subtotal and/or total price calculation logic into one or more function(s) called something like `calculate_total_price()`, and implement a corresponding test(s) called something like `test_calculate_total_price()`.
 
