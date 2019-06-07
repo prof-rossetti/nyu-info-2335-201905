@@ -86,6 +86,8 @@ except Exception as e:
 
 > NOTE: the message was successfully sent if you see a 202 status code
 
+![](/img/notes/python/packages/sendgrid/email-screenshot.png)
+
 > NOTE: this message might take a minute to send, and it might be in your spam folder to start
 
 ### Using Email Templates
@@ -100,11 +102,17 @@ Reference:
 
 Let's try sending a simple receipt:
 
-![](/img/notes/python/packages/sendgrid/receipt.png)
+![](/img/notes/python/packages/sendgrid/receipt-screenshot.png)
 
 Navigate to https://sendgrid.com/dynamic_templates and press the "Create Template" button on the top right. Give it a name like "example-receipt", and click "Save". At this time, you should see your template's unique identifier (e.g. "d-b902ae61c68f40dbbd1103187a9736f0"). Copy this value and store it in an environment variable called `SENDGRID_TEMPLATE_ID`.
 
-Back in the SendGrid platform, click "Add Version" to create a new version of this template and select the "Code Editor" as your desired editing mechanism. At this point you should be able to paste the following HTML into the "Code" tab, and the corresponding example data in the "Test Data" tab:
+![](/img/notes/python/packages/sendgrid/create-template.png)
+
+Back in the SendGrid platform, click "Add Version" to create a new version of this template and select the "Code Editor" as your desired editing mechanism.
+
+![](/img/notes/python/packages/sendgrid/create-template-version.png)
+
+At this point you should be able to paste the following HTML into the "Code" tab, and the corresponding example data in the "Test Data" tab:
 
 ```html
 <img src="https://www.shareicon.net/data/128x128/2016/05/04/759867_food_512x512.png">
@@ -138,15 +146,59 @@ Back in the SendGrid platform, click "Add Version" to create a new version of th
 }
 ```
 
-![](/img/notes/python/packages/sendgrid/receipt.png)
-
-Configure the template's version name and subject by clicking on "Settings" in the left sidebar. Choose an email subject like "Your Receipt from the Green Grocery Store". Then click "Save Template".
+Finally, configure the template's version name and subject by clicking on "Settings" in the left sidebar. Choose an email subject like "Your Receipt from the Green Grocery Store". Then click "Save Template".
 
 ![](/img/notes/python/packages/sendgrid/template-settings.png)
 
 After configuring and saving the email template, we should be able to send an email using the template:
 
 ```py
+import os
+from dotenv import load_dotenv
+from sendgrid import SendGridAPIClient
+from sendgrid.helpers.mail import Mail
 
+load_dotenv()
 
+SENDGRID_API_KEY = os.environ.get("SENDGRID_API_KEY", "OOPS, please set env var called 'SENDGRID_API_KEY'")
+SENDGRID_TEMPLATE_ID = os.environ.get("SENDGRID_TEMPLATE_ID", "OOPS, please set env var called 'SENDGRID_TEMPLATE_ID'")
+MY_ADDRESS = os.environ.get("MY_EMAIL_ADDRESS", "OOPS, please set env var called 'MY_EMAIL_ADDRESS'")
+
+#print("API KEY:", SENDGRID_API_KEY)
+#print("TEMPLATE ID:", SENDGRID_TEMPLATE_ID)
+#print("EMAIL ADDRESS:", MY_ADDRESS)
+
+template_data = {
+    "total_price_usd": "$14.95",
+    "human_friendly_timestamp": "June 1st, 2019 10:00 AM",
+    "products":[
+        {"id":1, "name": "Product 1"},
+        {"id":2, "name": "Product 2"},
+        {"id":3, "name": "Product 3"},
+        {"id":2, "name": "Product 2"},
+        {"id":1, "name": "Product 1"}
+    ]
+} # or construct this dictionary dynamically based on the results of some other process
+
+client = SendGridAPIClient(SENDGRID_API_KEY)
+print("CLIENT:", type(client))
+
+message = Mail(from_email=MY_ADDRESS, to_emails=MY_ADDRESS)
+print("MESSAGE:", type(message))
+
+message.template_id = SENDGRID_TEMPLATE_ID
+
+message.dynamic_template_data = template_data
+
+try:
+    response = client.send(message)
+    print("RESPONSE:", type(response))
+    print(response.status_code)
+    print(response.body)
+    print(response.headers)
+
+except Exception as e:
+    print("OOPS", e)
 ```
+
+![](/img/notes/python/packages/sendgrid/receipt-screenshot.png)
