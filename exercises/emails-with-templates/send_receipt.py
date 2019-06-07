@@ -12,21 +12,12 @@ load_dotenv()
 SENDGRID_API_KEY = os.environ.get("SENDGRID_API_KEY", "OOPS, please set env var called 'SENDGRID_API_KEY'")
 SENDGRID_TEMPLATE_ID = os.environ.get("SENDGRID_TEMPLATE_ID", "OOPS, please set env var called 'SENDGRID_TEMPLATE_ID'")
 MY_ADDRESS = os.environ.get("MY_EMAIL_ADDRESS", "OOPS, please set env var called 'MY_EMAIL_ADDRESS'")
-SUBJ = "Your Receipt from the Green Grocery Store"
 
 #print("API KEY:", SENDGRID_API_KEY)
 #print("TEMPLATE ID:", SENDGRID_TEMPLATE_ID)
 #print("EMAIL ADDRESS:", MY_ADDRESS)
 
-client = SendGridAPIClient(SENDGRID_API_KEY)
-print("CLIENT:", type(client))
-
-message = Mail(from_email=MY_ADDRESS, to_emails=MY_ADDRESS, subject=SUBJ)
-print("MESSAGE:", type(message))
-
-message.template_id = SENDGRID_TEMPLATE_ID # see receipt.html for the template's structure
-
-message.dynamic_template_data = {
+template_data = {
     "total_price_usd": "$14.95",
     "human_friendly_timestamp": "June 1st, 2019 10:00 AM",
     "products":[
@@ -36,7 +27,17 @@ message.dynamic_template_data = {
         {"id":2, "name": "Product 2"},
         {"id":1, "name": "Product 1"}
     ]
-}
+} # or construct this dictionary dynamically based on the results of some other process
+
+client = SendGridAPIClient(SENDGRID_API_KEY)
+print("CLIENT:", type(client))
+
+message = Mail(from_email=MY_ADDRESS, to_emails=MY_ADDRESS)
+print("MESSAGE:", type(message))
+
+message.template_id = SENDGRID_TEMPLATE_ID # see receipt.html for the template's structure
+
+message.dynamic_template_data = template_data
 
 try:
     response = client.send(message)

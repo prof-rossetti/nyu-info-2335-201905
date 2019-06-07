@@ -94,12 +94,9 @@ except Exception as e:
 
 If you'd like further control over the content displayed in the email's body, you can use Sendgrid's email templates.
 
-References:
+Reference:
 
   + https://sendgrid.com/docs/ui/sending-email/how-to-send-an-email-with-dynamic-transactional-templates/
-  + https://sendgrid.com/docs/for-developers/sending-email/using-handlebars/#iterations
-  + https://sendgrid.com/dynamic_templates/
-  + https://github.com/sendgrid/sendgrid-python/blob/master/USAGE.md#templates
 
 Let's try sending a simple receipt:
 
@@ -107,7 +104,7 @@ Let's try sending a simple receipt:
 
 Navigate to https://sendgrid.com/dynamic_templates and press the "Create Template" button on the top right. Give it a name like "example-receipt", and click "Save". At this time, you should see your template's unique identifier (e.g. "d-b902ae61c68f40dbbd1103187a9736f0"). Copy this value and store it in an environment variable called `SENDGRID_TEMPLATE_ID`.
 
-Then back in the SendGrid platform, click "Add Version" to create a new version of this template and select the "Code Editor" as your desired editing mechanism. At this point you should be able to paste the following HTML into the "Code" tab, and the corresponding example data in the "Test Data" tab:
+Back in the SendGrid platform, click "Add Version" to create a new version of this template and select the "Code Editor" as your desired editing mechanism. At this point you should be able to paste the following HTML into the "Code" tab, and the corresponding example data in the "Test Data" tab:
 
 ```html
 <img src="https://www.shareicon.net/data/128x128/2016/05/04/759867_food_512x512.png">
@@ -125,6 +122,7 @@ Then back in the SendGrid platform, click "Add Version" to create a new version 
 </ul>
 ```
 
+> NOTE: this ["handlebars" syntax](https://sendgrid.com/docs/for-developers/sending-email/using-handlebars) is like HTML, but allows us to pass attributes in to customize the contents.
 
 ```py
 {
@@ -142,90 +140,13 @@ Then back in the SendGrid platform, click "Add Version" to create a new version 
 
 ![](/img/notes/python/packages/sendgrid/receipt.png)
 
+Configure the template's version name and subject by clicking on "Settings" in the left sidebar. Choose an email subject like "Your Receipt from the Green Grocery Store". Then click "Save Template".
 
+![](/img/notes/python/packages/sendgrid/template-settings.png)
 
-
-
-
-> NOTE: this syntax is like HTML, but allows us to pass variables in to modify the ____________ called handlebars, heres a reference: [____________](https://sendgrid.com/docs/for-developers/sending-email/using-handlebars)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-We need to pass data to this template. Specifically, this template requires a data structure with attributes called `human_friendly_timestamp`, `total_price_usd`, and a list of `products` each with its own `name` attribute. Something like this dictionary:
-
-
-
-We can pass that those attributes when we send the email:
+After configuring and saving the email template, we should be able to send an email using the template:
 
 ```py
 
-import os
-from dotenv import load_dotenv
-from sendgrid import SendGridAPIClient
-from sendgrid.helpers.mail import Mail
-
-load_dotenv()
-
-SENDGRID_API_KEY = os.environ.get("SENDGRID_API_KEY", "OOPS, please set env var called 'SENDGRID_API_KEY'")
-SENDGRID_TEMPLATE_ID = os.environ.get("SENDGRID_TEMPLATE_ID", "OOPS, please set env var called 'SENDGRID_TEMPLATE_ID'")
-MY_ADDRESS = os.environ.get("MY_EMAIL_ADDRESS", "OOPS, please set env var called 'MY_EMAIL_ADDRESS'")
-
-SUBJ = "Your Receipt from the Green Grocery Store"
-
-client = SendGridAPIClient(SENDGRID_API_KEY)
-print("CLIENT:", type(client)) #> ____________
-
-message = Mail(from_email=MY_ADDRESS, to_emails=MY_ADDRESS, subject=SUBJ)
-print("MESSAGE:", type(message)) #> ________
-
-message.template_id = SENDGRID_TEMPLATE_ID
-
-message.dynamic_template_data = {
-    "total_price_usd": "$14.95",
-    "human_friendly_timestamp": "June 1st, 2019 10:00 AM",
-    "products":[
-        {"id":1, "name": "Product 1"},
-        {"id":2, "name": "Product 2"},
-        {"id":3, "name": "Product 3"},
-        {"id":2, "name": "Product 2"},
-        {"id":1, "name": "Product 1"}
-    ]
-}
-
-try:
-    response = client.send(message)
-    print("RESPONSE:", type(response))
-    print(response.status_code)
-    print(response.body)
-    print(response.headers)
-
-except Exception as e:
-    print("OOPS", e)
 
 ```
