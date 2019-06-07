@@ -130,7 +130,7 @@ At this point you should be able to paste the following HTML into the "Code" tab
 </ul>
 ```
 
-> NOTE: this ["handlebars" syntax](https://sendgrid.com/docs/for-developers/sending-email/using-handlebars) is like HTML, but allows us to pass attributes in to customize the contents.
+> NOTE: the ["handlebars" syntax above](https://sendgrid.com/docs/for-developers/sending-email/using-handlebars) is like HTML, but allows us to construct HTML dynamically based on some data like the example below
 
 ```py
 {
@@ -146,7 +146,9 @@ At this point you should be able to paste the following HTML into the "Code" tab
 }
 ```
 
-Finally, configure the template's version name and subject by clicking on "Settings" in the left sidebar. Choose an email subject like "Your Receipt from the Green Grocery Store". Then click "Save Template".
+
+
+Finally, configure the template's subject by clicking on "Settings" in the left sidebar. Choose an email subject like "Your Receipt from the Green Grocery Store". Then click "Save Template".
 
 ![](/img/notes/python/packages/sendgrid/template-settings.png)
 
@@ -178,7 +180,7 @@ template_data = {
         {"id":2, "name": "Product 2"},
         {"id":1, "name": "Product 1"}
     ]
-} # or construct this dictionary dynamically based on the results of some other process
+} # or construct this dictionary dynamically based on the results of some other process :-D
 
 client = SendGridAPIClient(SENDGRID_API_KEY)
 print("CLIENT:", type(client))
