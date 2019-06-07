@@ -1,4 +1,3 @@
-
 # adapted from:
 #   + https://github.com/mgallea/daily-email/blob/master/app/main.py
 #   + https://github.com/prof-rossetti/notification-service-py/blob/777368fb56cbd8e2d36344db66c7ef7781ad7491/app/send_receipt_template.py
@@ -15,9 +14,9 @@ SENDGRID_TEMPLATE_ID = os.environ.get("SENDGRID_TEMPLATE_ID", "OOPS, please set 
 MY_ADDRESS = os.environ.get("MY_EMAIL_ADDRESS", "OOPS, please set env var called 'MY_EMAIL_ADDRESS'")
 SUBJ = "Your Receipt from the Green Grocery Store"
 
-print(SENDGRID_API_KEY)
-print(SENDGRID_TEMPLATE_ID)
-print(MY_ADDRESS)
+#print("API KEY:", SENDGRID_API_KEY)
+#print("TEMPLATE ID:", SENDGRID_TEMPLATE_ID)
+#print("EMAIL ADDRESS:", MY_ADDRESS)
 
 client = SendGridAPIClient(SENDGRID_API_KEY)
 print("CLIENT:", type(client))

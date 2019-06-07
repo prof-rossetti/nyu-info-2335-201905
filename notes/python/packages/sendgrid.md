@@ -1,5 +1,7 @@
 # The `sendgrid` Package
 
+> Prerequisites: [Environment Variables](/notes/environment-variables.md), [The `dotenv` Package](/notes/python/packages/dotenv.md)
+
 The `sendgrid` package provides some useful emailing capabilities via the [SendGrid Email Delivery Service](https://sendgrid.com/solutions/email-api/). :mailbox_with_mail: :envelope:
 
 Reference:
@@ -12,15 +14,15 @@ Reference:
   + [SendGrid Account Signup](https://signup.sendgrid.com/)
   + [Obtaining API Keys](https://app.sendgrid.com/settings/api_keys)
 
-> NOTE: previous versions of these instructions were applicable for sendgrid package version 5.6.0, but the examples below apply to a more current version (6.0.5)
-
 ## Installation
 
-Install `sendgrid`, if necessary:
+From within a virtual environment, install `sendgrid`, if necessary:
 
 ```sh
 pip install sendgrid==6.0.5
 ```
+
+> NOTE: previous versions of these instructions were applicable for sendgrid package version 5.6.0, but the examples below apply to a more current version (6.0.5)
 
 ## Setup
 
@@ -34,11 +36,61 @@ Send yourself an email:
 
 ```py
 
+import os
+from dotenv import load_dotenv
+from sendgrid import SendGridAPIClient
+from sendgrid.helpers.mail import Mail
+
+load_dotenv()
+
+SENDGRID_API_KEY = os.environ.get("SENDGRID_API_KEY", "OOPS, please set env var called 'SENDGRID_API_KEY'")
+MY_ADDRESS = os.environ.get("MY_EMAIL_ADDRESS", "OOPS, please set env var called 'MY_EMAIL_ADDRESS'")
+
+client = SendGridAPIClient(SENDGRID_API_KEY) #> <class 'sendgrid.sendgrid.SendGridAPIClient>
+print("CLIENT:", type(client))
+
+subject = "Your Receipt from the Green Grocery Store"
+
+html_content = "Hello World"
+#
+# or maybe ...
+#html_content = "Hello <strong>World</strong>"
+#
+# or maybe ...
+#html_list_items = "<li>You ordered: Product 1</li>"
+#html_list_items += "<li>You ordered: Product 2</li>"
+#html_list_items += "<li>You ordered: Product 3</li>"
+#html_content = f"""
+#<h3>Hello this is your receipt</h3>
+#<p>Date: ____________</p>
+#<ol>
+#    {html_list_items}
+#</ol>
+#"""
+print("HTML:", html_content)
+
+message = Mail(from_email=MY_ADDRESS, to_emails=MY_ADDRESS, subject=subject, html_content=html_content)
+
+try:
+    response = client.send(message)
+
+    print("RESPONSE:", type(response)) #> <class 'python_http_client.client.Response'>
+    print(response.status_code) #> 202 indicates SUCCESS
+    print(response.body)
+    print(response.headers)
+
+except Exception as e:
+    print("OOPS", e.message)
+
 ```
+
+> NOTE: the message was successfully sent if you see a 202 status code
+
+> NOTE: this message might take a minute to send, and it might be in your spam folder to start
 
 ### Using Email Templates
 
-> Thanks to @mgallea for [surfacing](https://github.com/mgallea/daily-email/blob/master/app/main.py) these capabilities
+> Thanks to @mgallea for [surfacing](https://github.com/mgallea/daily-email/blob/master/app/main.py) these email template capabilities
 
 If you'd like further control over the content displayed in the email's body, you can use Sendgrid's email templates.
 
@@ -49,34 +101,13 @@ References:
   + https://sendgrid.com/dynamic_templates/
   + https://github.com/sendgrid/sendgrid-python/blob/master/USAGE.md#templates
 
-
-Navigate to __________ and ______________ and store it in an environment variable called `SENDGRID_TEMPLATE_ID`.
-
-
-
-
-
-
-
-
-
-
-Let's try this example email template which represents a grocery receipt:
+Let's try sending a simple receipt:
 
 ![](/img/notes/python/packages/sendgrid/receipt.png)
 
+Navigate to https://sendgrid.com/dynamic_templates and press the "Create Template" button on the top right. Give it a name like "example-receipt", and click "Save". At this time, you should see your template's unique identifier (e.g. "d-b902ae61c68f40dbbd1103187a9736f0"). Copy this value and store it in an environment variable called `SENDGRID_TEMPLATE_ID`.
 
-
-
-
-
-
-
-
-
-
-
-The HTML template used to send this email is:
+Then back in the SendGrid platform, click "Add Version" to create a new version of this template and select the "Code Editor" as your desired editing mechanism. At this point you should be able to paste the following HTML into the "Code" tab, and the corresponding example data in the "Test Data" tab:
 
 ```html
 <img src="https://www.shareicon.net/data/128x128/2016/05/04/759867_food_512x512.png">
@@ -92,10 +123,8 @@ The HTML template used to send this email is:
 	<li>You ordered: {{this.name}}</li>
 {{/each}}
 </ul>
+```
 
-![](/img/notes/python/packages/sendgrid/receipt.png)
-
-We need to pass data to this template. Specifically, this template requires a data structure with attributes called `human_friendly_timestamp`, `total_price_usd`, and a list of `products` each with its own `name` attribute. Something like this dictionary:
 
 ```py
 {
@@ -110,6 +139,47 @@ We need to pass data to this template. Specifically, this template requires a da
     ]
 }
 ```
+
+![](/img/notes/python/packages/sendgrid/receipt.png)
+
+
+
+
+
+
+> NOTE: this syntax is like HTML, but allows us to pass variables in to modify the ____________ called handlebars, heres a reference: [____________](https://sendgrid.com/docs/for-developers/sending-email/using-handlebars)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+We need to pass data to this template. Specifically, this template requires a data structure with attributes called `human_friendly_timestamp`, `total_price_usd`, and a list of `products` each with its own `name` attribute. Something like this dictionary:
+
+
 
 We can pass that those attributes when we send the email:
 
