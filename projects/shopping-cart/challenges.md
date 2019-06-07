@@ -36,7 +36,7 @@ Instead of, or in addition to, displaying a receipt at the end of the checkout p
 
 At the very least, the email should display the checkout timestamp and the total price. But ideally it should contain all the receipt information described in the basic requirements.
 
-> HINT: leverage the email-sending capabilities of [the `sendgrid` package](/notes/python/packages/sendgrid.md), and optionally use Sendgrid transactional email templates to further control the formatting of email contents
+> HINT: leverage the email-sending capabilities of [the `sendgrid` package](/notes/python/packages/sendgrid.md), and optionally use [Sendgrid email templates](/notes/python/packages/sendgrid.md#email-templates) to further control the formatting of email contents
 
 #### Integrating with a Google Sheets Datastore
 

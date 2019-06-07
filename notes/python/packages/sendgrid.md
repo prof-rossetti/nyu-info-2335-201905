@@ -90,7 +90,7 @@ except Exception as e:
 
 > NOTE: this message might take a minute to send, and it might be in your spam folder to start
 
-### Using Email Templates
+### Email Templates
 
 > Thanks to @mgallea for [surfacing](https://github.com/mgallea/daily-email/blob/master/app/main.py) these email template capabilities
 
