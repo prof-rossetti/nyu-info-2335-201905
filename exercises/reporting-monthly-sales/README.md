@@ -1,4 +1,4 @@
-# Parsing CSV Files (a.k.a. "Monthly Sales Reporting") Exercise
+# Parsing CSV Files (a.k.a. "Reporting Monthly Sales") Exercise
 
 > Prerequisites:
 >   + [Datastores, and Processing CSV Data](/units/unit-4.md)

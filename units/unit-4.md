@@ -37,7 +37,7 @@ In this unit, we'll illustrate the concept of program-data independence as we ex
 ## Activities and Exercises
 
   + ["Parsing TXT Files" (a.k.a. "SEC Filings") Exercise](/exercises/parsing-txt/README.md)
-  + ["Parsing CSV Files" (e.k.a. "Monthly Sales Reporting") Exercise](/exercises/sales-reporting/README.md)
+  + ["Parsing CSV Files" (e.k.a. "Reporting Monthly Sales") Exercise](/exercises/reporting-monthly-sales/README.md)
 
 > FYI:
 >

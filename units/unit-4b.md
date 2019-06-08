@@ -23,9 +23,12 @@ In this unit, we'll learn how to use Python to create business intelligence and 
     + [The `plotly` Package](/notes/python/packages/plotly.md)
     + [The `altair` Package](/notes/python/packages/altair.md)
   + Analytics and Statistics:
-    + [The `NLTK` Package](/notes/python/packages/nltk.md) - for natural language processing
+    + [The `nltk` Package](/notes/python/packages/nltk.md) - for natural language processing
+    + [The `scikitlearn` Package](https://scikit-learn.org/stable/) - for machine learning
+    + [The `keras` Package](http://data-creative.info/projects/2018/12/16/learning-keras-tensorflow-py/) - for machine learning and neural networks
 
 ## Activities and Exercises
 
   + ["Chart Gallery" Exercise](/exercises/chart-gallery/README.md)
   + ["Executive Dashboard" Exercise](/exercises/exec-dash/README.md)
+  + ["Predicting Monthly Sales" Exercise](/exercises/predicting-monthly-sales/README.md)
