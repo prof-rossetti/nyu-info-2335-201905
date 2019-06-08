@@ -8,10 +8,10 @@ Use `json.dumps()` to convert a dictionary to JSON:
 import json
 
 person = {
-    "first": "Santa",
-    "last": "Claus",
-    "message": "Ho Ho Ho",
-    "stops": ["New York", "Denver", "San Francisco"]
+    "first_name": "Ophelia",
+    "last_name": "Clarke",
+    "message": "Hi, thanks for the ice cream!",
+    "fav_flavors": ["Vanilla Bean", "Mocha", "Strawberry"]
 }
 
 json.dumps(person)
