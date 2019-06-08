@@ -29,7 +29,7 @@ In this unit, we'll illustrate the concept of program-data independence as we ex
 >  + Processing Data in other Formats:
 >    + [The `json` Module](/notes/python/modules/json.md) (for processing JSON)
 >    + [The `BeautifulSoup` Package](/notes/python/packages/beautifulsoup.md) (for processing XML and HTML)
->    + [The `________` Package](/notes/python/packages/__________.md) (for reading PDF)
+>    + [The `pdftotext` Utility](/notes/clis/pdftotext.md) (for reading PDF)
 >    + [The `________` Package](/notes/python/packages/__________.md) (for writing to PDF)
 >    + [The `psycopg` Package](/notes/python/packages/psycopg.md) (for PostgreSQL databases)
 >    + [The `pymysql` Package](/notes/python/packages/pymysql.md) (for MySQL databases)
