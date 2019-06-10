@@ -28,13 +28,13 @@ pip install pandas
 
 ## Usage
 
-### The `DataFrame` Datatype
+### Data Frames
 
-The Pandas `DataFrame` data type represents a table of data, like a spreadsheet.
+The Pandas `DataFrame` datatype represents a table of data, like a spreadsheet.
 
-#### Creating DataFrames
+#### Creating Data Frames
 
-When using a list to create a new `DataFrame`, each entry in the list represents another row in the table:
+When using a list to create a new data frame, each entry in the list represents another row in the table:
 
 ```py
 import pandas as pd
@@ -62,7 +62,7 @@ df
 #> 2       3      c
 ```
 
-When using a dictionary to create a new `DataFrame`, each key in the dictionary represents a column with its own values:
+When using a dictionary to create a new data frame, each key in the dictionary represents a column with its own values:
 
 ```py
 import pandas as pd
@@ -81,7 +81,7 @@ df
 #> 2       3      c
 ```
 
-It's also possible to process a spreadsheet or CSV file into a `DataFrame`:
+It's also possible to process a spreadsheet or CSV file into a data frame:
 
 ```py
 import pandas as pd
@@ -114,7 +114,7 @@ stats
 #> 19  2014    145      581    47   149     35
 ```
 
-#### Accessing DataFrames
+#### Accessing Data Frames
 
 Inspect the first and last few rows, respectively:
 
@@ -130,6 +130,12 @@ stats.tail(3)
 #> 17  2012    159      683    99   216     45
 #> 18  2013     17       63     8    12      8
 #> 19  2014    145      581    47   149     35
+```
+
+Count rows:
+
+```py
+stats.count()
 ```
 
 Reference a specific column:
@@ -206,11 +212,16 @@ for index, row in stats.iterrows():
     print(row["year"])
 ```
 
+Convert to list of dictionaries, each representing a row in the dataframe:
+
+```py
+stats.to_dict("records") # "records" is a specific parameter of the to_dict() function, not a characteristic of the underlying data
+```
 
 
-#### Exporting DataFrames
+#### Exporting Data Frames
 
-Save a `DataFrame` back to a spreadsheet or CSV file:
+Save a data frame back to a spreadsheet or CSV file:
 
 ```py
 stats.to_csv("/path/to/jeter_stats_v2.csv")
