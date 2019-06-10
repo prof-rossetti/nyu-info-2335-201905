@@ -1,6 +1,11 @@
 import os
 import pandas as pd
 
+# utility function to convert float or integer to usd-formatted string (for printing)
+def to_usd(my_price):
+  # return "${0:,.2f}".format(my_price)
+  return f"${my_price:,.2f}"
+
 #
 # INFO INPUTS
 #
@@ -32,10 +37,6 @@ year = 2018 # TODO: get from file name or date values
 #
 # INFO OUTPUTS
 #
-
-def to_usd(my_price):
-  # return "${0:,.2f}".format(my_price)
-  return f"${my_price:,.2f}"
 
 print("-------------------------")
 print(f"SALES REPORT!")
