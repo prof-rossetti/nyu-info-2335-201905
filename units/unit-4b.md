@@ -29,4 +29,6 @@ In this unit, we'll learn how to use Python to create business intelligence and 
 
 ## Activities and Exercises
 
-TBA
+  + "Monthly Sales Predictions" Exercise
+  + "Chart Gallery" Exercise
+  + "Executive Dashboard" Exercise
