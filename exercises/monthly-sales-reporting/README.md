@@ -44,7 +44,7 @@ print("GENERATING SALES REPORT FOR MONTH OF OCTOBER 2013...")
 
 Make sure to save Python files like this whenever you're done editing them. After setting up a virtual environment, we will be ready to run this file.
 
-Finally, download one or more of the ["monthly sales data"](/data/monthly-sales) CSV files into your exercise repository, inside a new sub-directory called "data" (e.g. "monthly-sales/data/monthly-sales/sales-201803.csv").
+Finally, download one or more of the ["monthly sales data"](/data/monthly-sales) CSV files into your exercise repository, inside a new sub-directory called "data" (e.g. "monthly-sales/data/monthly-sales/sales-201803.csv"). You can assume that each of these CSV files will have a name resembling "sales-YYYYMM.csv" (where "YYYY" represents the four digit year and "MM" represents the zero-padded month). And you can assume each of these CSV files will have the same header row (`date`, `product`, `unit price`, `units sold`, `sales price`).
 
 ### Environment Setup
 

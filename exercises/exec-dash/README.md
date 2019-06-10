@@ -67,6 +67,8 @@ print("VISUALIZING THE DATA...")
 
 Make sure to save Python files like this whenever you're done editing them. After setting up a virtual environment, we will be ready to run this file.
 
+Finally, download one or more of the ["monthly sales data"](/data/monthly-sales) CSV files into your exercise repository, inside a new sub-directory called "data" (e.g. "exec-dash/data/monthly-sales/sales-201803.csv").
+
 ### Environment Setup
 
 Create and activate a new Anaconda virtual environment:
@@ -98,7 +100,7 @@ If you see the provided output, you're ready to move on to project development. 
 
 ## Basic Requirements
 
-Write a Python program which adheres to the requirements detailed in the sections below.
+Write a Python application which satisfies the basic requirements detailed below.
 
 ### Information Input Requirements
 
