@@ -14,6 +14,7 @@ Reference:
   + [`DataFrame`](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.html) - like a CSV
   + [Input and Output](http://pandas.pydata.org/pandas-docs/stable/api.html#input-output)
   + [`head()` and `tail()`](http://pandas.pydata.org/pandas-docs/stable/basics.html#head-and-tail)
+  + [`iloc[]`](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.iloc.html)
   + [`read_csv()`](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_csv.html)
   + [`iterrows()`](http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.iterrows.html)
   + [`groupby()`](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.groupby.html)
@@ -116,6 +117,8 @@ stats
 
 #### Using Data Frames
 
+##### Row Operations
+
 Inspect the first and last few rows, respectively:
 
 ```py
@@ -137,6 +140,27 @@ Count rows:
 ```py
 stats.count()
 ```
+
+Iterate through rows:
+
+```py
+for index, row in stats.iterrows():
+    print(row["year"])
+```
+
+Reference a specific row by its index (e.g. 0):
+
+```py
+stats.iloc[0]
+```
+
+Convert any row to a dictionary:
+
+```py
+stats.iloc[0].to_dict()
+```
+
+##### Column Operations
 
 Reference a specific column:
 
@@ -205,27 +229,19 @@ stats
 #> 17  2012    159      683    99   216     45  0.316252  0.382138
 ```
 
-Iterate through rows:
+#### Exporting Data Frames
 
-```py
-for index, row in stats.iterrows():
-    print(row["year"])
-```
-
-Convert to list of dictionaries, each representing a row in the data frame:
+Convert a data frame to list of dictionaries, each representing a row in the data frame:
 
 ```py
 stats.to_dict("records") # "records" is a specific parameter of the to_dict() function, not a characteristic of the underlying data
 ```
 
-Convert to list of lists, each representing a row in the data frame:
+Convert a data frame to list of lists, each representing a row in the data frame:
 
 ```py
 stats.values.tolist()
 ```
-
-
-#### Exporting Data Frames
 
 Save a data frame back to a spreadsheet or CSV file:
 
