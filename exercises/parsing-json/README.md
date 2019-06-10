@@ -1,3 +1,0 @@
-# "Parsing JSON" Exercise
-
-TBA

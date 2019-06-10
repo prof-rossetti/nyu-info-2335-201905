@@ -36,10 +36,4 @@ In this unit, we'll illustrate the concept of program-data independence as we ex
 
 ## Activities and Exercises
 
-  + ["Parsing TXT Files" (a.k.a. "SEC Filings") Exercise](/exercises/parsing-txt/README.md)
-  + ["Parsing CSV Files" (e.k.a. "Reporting Monthly Sales") Exercise](/exercises/reporting-monthly-sales/README.md)
-
-> FYI:
->
->  + ["Parsing JSON Files" Exercise](/exercises/parsing-json/README.md) - good prep for working with APIs (in next unit)
->  + ["Parsing HTML Files" Exercise](/exercises/parsing-html/README.md) - good prep for scraping websites (in next unit)
+TBA
