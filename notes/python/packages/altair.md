@@ -1,6 +1,6 @@
 # The `altair` Package
 
-> Prerequisite: The [pandas](/notes/python/packages/pandas.md) Package
+> Prerequisite: The [`pandas`](/notes/python/packages/pandas.md) Package
 
 
 > Altair is a declarative statistical visualization library for Python ... with a minimal amount of code. - [Altair website](https://altair-viz.github.io/)
