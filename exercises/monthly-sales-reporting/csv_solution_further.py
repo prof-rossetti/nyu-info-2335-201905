@@ -3,6 +3,9 @@ import csv
 import itertools
 from operator import itemgetter
 
+def to_usd(my_price):
+  return f"${my_price:,.2f}"
+
 #
 # INFO INPUTS
 #
@@ -41,9 +44,6 @@ year = 2018 # TODO: get from file name or date values
 #
 # INFO OUTPUTS
 #
-
-def to_usd(my_price):
-  return f"${my_price:,.2f}"
 
 print("-------------------------")
 print(f"SALES REPORT!")

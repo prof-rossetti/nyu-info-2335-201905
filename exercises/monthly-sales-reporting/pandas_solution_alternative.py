@@ -1,6 +1,16 @@
 import os
 import pandas as pd
 
+def to_usd(my_price):
+  # return "${0:,.2f}".format(my_price)
+  return f"${my_price:,.2f}"
+
+def month_lookup(month):
+	year_month={'01':'January','02':'February','03':'March','04':'April',
+	'05':'May','06':'June','07':'July','08':'August','09':'September','10':'October',
+	'11':'November', '12':'December'}
+	return year_month[month]
+
 #
 # INFO INPUTS
 #
@@ -26,12 +36,6 @@ sales = pd.read_csv(csv_filepath)
 # total_sales = sum(sales["sales price"].tolist())
 total_sales = sales["sales price"].sum()
 
-def month_lookup(month):
-	year_month={'01':'January','02':'February','03':'March','04':'April',
-	'05':'May','06':'June','07':'July','08':'August','09':'September','10':'October',
-	'11':'November', '12':'December'}
-	return year_month[month]
-
 month = month_lookup(CSV_FILENAME[-6:-4]) # TODO: get from file name or date values
 year = int(CSV_FILENAME[6:10]) # TODO: get from file name or date values
 
@@ -45,12 +49,7 @@ total_price_by_prod=total_price_by_prod.sort_values(by=['sales_price'],ascending
 # INFO OUTPUTS
 #
 for i in range(3):
-	print(str(i+1)+') '+str(total_price_by_prod.iloc[i][0])+' ' "${0:,.2f}".format(total_price_by_prod.iloc[i][1])
-			)
-
-def to_usd(my_price):
-  # return "${0:,.2f}".format(my_price)
-  return f"${my_price:,.2f}"
+	print(str(i+1)+') '+str(total_price_by_prod.iloc[i][0])+' ' "${0:,.2f}".format(total_price_by_prod.iloc[i][1]))
 
 print("-------------------------")
 print(f"SALES REPORT!")
