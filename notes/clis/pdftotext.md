@@ -15,7 +15,7 @@ First see if Git is already installed (it may come pre-installed):
 ```sh
 # Mac Terminal:
 pdftotext --help #> pdftotext version 0.65.0 ...
-which which pdftotext #> /usr/local/bin/pdftotext
+which pdftotext #> /usr/local/bin/pdftotext
 
 # Windows Command Prompt, Anaconda Prompt, or Git Bash:
 # first navigate to the folder where you downloaded the "pdftotext.exe" file, then...
