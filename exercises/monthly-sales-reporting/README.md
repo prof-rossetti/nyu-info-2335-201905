@@ -44,7 +44,7 @@ print("GENERATING SALES REPORT FOR MONTH OF OCTOBER 2013...")
 
 Make sure to save Python files like this whenever you're done editing them. After setting up a virtual environment, we will be ready to run this file.
 
-Finally, download one or more of the ["monthly sales data"](/data/monthly-sales) CSV files into your exercise repository, inside a new sub-directory called "data" (e.g. "monthly-sales/data/monthly-sales/sales-201803.csv").
+Finally, download one or more of the ["monthly sales data"](/data/monthly-sales) CSV files into your exercise repository, inside a new sub-directory called "data" (e.g. "monthly-sales/data/monthly-sales/sales-201803.csv"). You can assume that each of these CSV files will have a name resembling "sales-YYYYMM.csv" (where "YYYY" represents the four digit year and "MM" represents the zero-padded month). And you can assume each of these CSV files will have the same header row (`date`, `product`, `unit price`, `units sold`, `sales price`).
 
 ### Environment Setup
 
@@ -110,3 +110,14 @@ There are many many ways to solve the challenges. Here are some example solution
   + [Further Exploration Solution](/exercises/monthly-sales-reporting/csv_solution_further.py)
   + [Solution (using Pandas)](/exercises/monthly-sales-reporting/pandas_solution.py)
   + [Further Exploration Solution (using Pandas)](/exercises/monthly-sales-reporting/pandas_solution_further.py)
+
+## Submission Instructions
+
+Submission of this exercise is optional, but if you'd like to take this opportunity to practice the project submission process, consult the [Contributor's Guide](/CONTRIBUTING.md) and follow the steps below:
+
+  1. Push your local project repository to GitHub, so you can visit your remote project repository at a URL like `https://github.com/YOUR_USERNAME/monthly-sales`
+  2. Fork the ["upstream" course repository](https://github.com/prof-rossetti/nyu-info-2335-201905) (or refresh your existing fork)
+  3. Update the ["submissions.csv"](submissions.csv) file in your remote fork of the course repository to include an entry linking to your remote project repository URL
+  4. Finally, submit a Pull Request for the changes in your remote fork of the course repository to be accepted back into the "upstream" course repository
+
+This process may seem a little unfamiliar at the moment, but it will become more familiar with each repetition.

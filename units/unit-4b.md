@@ -1,5 +1,5 @@
 
-# Unit 4B (Bonus Material): Business Analytics
+# Unit 4B (Bonus Material): Dataviz and Business Analytics
 
 > Prerequisites: [Datastores, and Processing CSV Data](unit-4.md)
 
@@ -29,6 +29,6 @@ In this unit, we'll learn how to use Python to create business intelligence and 
 
 ## Activities and Exercises
 
-  + "Monthly Sales Predictions" Exercise
-  + "Chart Gallery" Exercise
-  + "Executive Dashboard" Exercise
+  + ["Chart Gallery" Exercise](/exercises/chart-gallery/README.md)
+  + ["Executive Dashboard" Exercise](/exercises/exec-dash/README.md)
+  + ["Monthly Sales Predictions" Exercise](/exercises/monthly-sales-predictions/README.md)
