@@ -1,4 +1,4 @@
-# The "Sales Reporting" Exercise
+# The "Monthly Sales Reporting" Exercise
 
 > Prerequisites:
 >   + [Datastores, and Processing CSV Data](/units/unit-4.md)
@@ -20,17 +20,63 @@ At the end of each calendar month, the online platform makes available for downl
 
 To aid your ability to make data-driven decisions, you decide to create a Python program which will automate the process of gleaning business insights from the monthly sales data.
 
+
+
+
+
 ## Setup
 
-Create a new exercise repository called "sales-reporting" somewhere on your computer, perhaps on your Desktop.
+### Repo Setup
 
-Download any one of the ["monthly sales data"](/data/monthly-sales) CSV files into your exercise repository, either in the root directory or inside a new sub-directory called "data".
+Use the GitHub.com online interface to create a new remote project repository called something like "monthly-sales-reporting". When prompted by the GitHub.com online interface, let's get in the habit of adding a "README.md" file and a Python-flavored ".gitignore" file (and also optionally a "LICENSE") during the repo creation process. After this process is complete, you should be able to view the repo on GitHub.com at an address like `https://github.com/YOUR_USERNAME/monthly-sales-reporting`.
 
-Create a new Python script called something like "sales_reporter.py" and place inside some temporary Python code like `print("SALES REPORT (MONTH YEAR)")` inside. Then save the file and make your first commit with a message like "Setup exercise repo".
+After creating the remote repo, use GitHub Desktop software or the command-line to download or "clone" it onto your computer. Choose a familiar download location like the Desktop.
+
+After cloning the repo, navigate there from the command-line:
+
+```sh
+cd ~/Desktop/monthly-sales-reporting
+```
+
+Use your text editor or the command-line to create a file in that repo called "reporter.py", and then place the following contents inside:
+
+```py
+# reporter.py
+
+print("GENERATING SALES REPORT FOR MONTH OF OCTOBER 2013...")
+```
+
+Make sure to save Python files like this whenever you're done editing them. After setting up a virtual environment, we will be ready to run this file.
+
+Finally, download one or more of the ["monthly sales data"](/data/monthly-sales) CSV files into your exercise repository, inside a new sub-directory called "data" (e.g. "monthly-sales-reporting/data/monthly-sales/sales-201803.csv").
+
+### Environment Setup
+
+Create and activate a new Anaconda virtual environment:
+
+```sh
+conda create -n sales-env python=3.7 # (first time only)
+conda activate sales-env
+```
+
+From within the virtual environment, install any packages you think you'll need:
+
+```sh
+pip install pandas # (only if you're using pandas to parse the CSV files)
+pip install pytest # (only if you're writing tests)
+```
+
+From within the virtual environment, demonstrate your ability to run the Python script from the command-line:
+
+```sh
+python reporter.py
+```
+
+If you see the "GENERATING SALES REPORT FOR MONTH OF OCTOBER 2013..." message, you're ready to move on to project development. This would be a great time to make any desired modifications to your project's "README.md" file (like adding instructions for how to setup and run the app like you've just done), and then make your first commit, with a message like "Setup the repo".
 
 ## Instructions
 
-Adapt the contents of the "sales_reporter.py" script to process the CSV file to display a human-readable representation of the given month and year and the total sales for that month.
+Adapt the contents of the "reporter.py" script to process the CSV file to display a human-readable representation of the given month and year and the total sales for that month.
 
 Example output:
 
@@ -40,7 +86,7 @@ SALES REPORT (MARCH 2018)
 TOTAL SALES: $12,000.71
 ```
 
-## Further Exploration
+## Further Exploration Challenges
 
 Optionally adapt your script to also identify the three top-selling products for that month and the total sales for each.
 
