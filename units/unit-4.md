@@ -34,4 +34,4 @@ In this unit, we'll illustrate the concept of program-data independence as we ex
 ## Activities and Exercises
 
   + "Omniparser" Exercise
-  + "Monthly Sales Reporting" Exercise
+  + ["Monthly Sales Reporting" Exercise](/exercises/monthly-sales-reporting/README.md)
