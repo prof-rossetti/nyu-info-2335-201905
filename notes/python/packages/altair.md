@@ -1,5 +1,8 @@
 # The `altair` Package
 
+> Prerequisite: The [pandas](/notes/python/packages/pandas.md) Package
+
+
 > Altair is a declarative statistical visualization library for Python ... with a minimal amount of code. - [Altair website](https://altair-viz.github.io/)
 
 ## Reference
@@ -66,8 +69,7 @@ chart.serve()
 ```
 
 ![the resulting chart - a bar chart](https://user-images.githubusercontent.com/1328807/52388780-0030c780-2a5e-11e9-8772-5f3264e467d1.png)
+
 > NOTE: it appears altair requires you to specify the data as a [Pandas DataFrame](/notes/python/packages/pandas.md). If you'd rather not use Pandas, consider choosing a different charting library.
-
-
 
 Consult the documentation and examples for a variety of chart customization options.

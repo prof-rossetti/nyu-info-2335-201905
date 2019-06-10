@@ -11,7 +11,7 @@ Reference:
   + [Pandas Website](http://pandas.pydata.org/)
   + [Pandas Docs](http://pandas.pydata.org/pandas-docs/stable/)
   + [Pandas Source](https://github.com/pandas-dev/pandas)
-  + [`DataFrame`](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.html) - like a CSV
+  + [`DataFrame`](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.html) - like a spreadsheet
   + [Input and Output](http://pandas.pydata.org/pandas-docs/stable/api.html#input-output)
   + [`head()` and `tail()`](http://pandas.pydata.org/pandas-docs/stable/basics.html#head-and-tail)
   + [`iloc[]`](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.iloc.html)
@@ -34,6 +34,8 @@ pip install pandas
 The Pandas `DataFrame` datatype represents a table of data, like a spreadsheet.
 
 #### Creating Data Frames
+
+We're able to transform different types of data structures (e.g. a list of lists, a dictionary of lists, etc.) into a Pandas data frame.
 
 When using a list to create a new data frame, each entry in the list represents another row in the table:
 
