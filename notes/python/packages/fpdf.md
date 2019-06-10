@@ -1,6 +1,6 @@
 # The `fpdf` Package
 
-> thanks to @ for surfacing the capabilities of this package
+> thanks to @megc1 for [surfacing](https://github.com/megc1/portfolio-analyst/blob/master/app/stock_analysis.py) the capabilities of this package
 
 Reference:
 
