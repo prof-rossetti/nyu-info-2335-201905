@@ -11,7 +11,7 @@ In this unit, we'll illustrate the concept of program-data independence as we ex
 ## Discussions and Notes
 
   + Program-Data Independence
-  + Datastores, Databases, and CSV Files
+  + [Datastores, Databases, and CSV Files](/notes/info-systems/datastores.md)
 
 ## Reference Documents
 
