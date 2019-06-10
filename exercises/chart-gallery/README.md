@@ -1,7 +1,7 @@
 # "Chart Gallery" Exercise
 
 > Prerequisites:
->   + [Business Analytics](/units/unit-4b.md)
+>   + [Dataviz and Business Analytics](/units/unit-4b.md)
 
 
 ## Learning Objectives

@@ -1,5 +1,5 @@
 
-# Unit 4B (Bonus Material): Business Analytics
+# Unit 4B (Bonus Material): Dataviz and Business Analytics
 
 > Prerequisites: [Datastores, and Processing CSV Data](unit-4.md)
 
