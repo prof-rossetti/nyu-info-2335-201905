@@ -114,7 +114,7 @@ stats
 #> 19  2014    145      581    47   149     35
 ```
 
-#### Accessing Data Frames
+#### Using Data Frames
 
 Inspect the first and last few rows, respectively:
 
@@ -212,10 +212,16 @@ for index, row in stats.iterrows():
     print(row["year"])
 ```
 
-Convert to list of dictionaries, each representing a row in the dataframe:
+Convert to list of dictionaries, each representing a row in the data frame:
 
 ```py
 stats.to_dict("records") # "records" is a specific parameter of the to_dict() function, not a characteristic of the underlying data
+```
+
+Convert to list of lists, each representing a row in the data frame:
+
+```py
+stats.values.tolist()
 ```
 
 
