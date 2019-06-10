@@ -6,7 +6,7 @@
 
 ## Learning Objectives
 
-  + Create a new Python application to automate a business process.
+  + Create a Python application to automate a business process.
   + Practice using Python to process CSV files.
   + Practice researching and leveraging the capabilities provided by Python modules and third-party packages.
 
@@ -20,22 +20,18 @@ At the end of each calendar month, the online platform makes available for downl
 
 To aid your ability to make data-driven decisions, you decide to create a Python program which will automate the process of gleaning business insights from the monthly sales data.
 
-
-
-
-
 ## Setup
 
 ### Repo Setup
 
-Use the GitHub.com online interface to create a new remote project repository called something like "monthly-sales-reporting". When prompted by the GitHub.com online interface, let's get in the habit of adding a "README.md" file and a Python-flavored ".gitignore" file (and also optionally a "LICENSE") during the repo creation process. After this process is complete, you should be able to view the repo on GitHub.com at an address like `https://github.com/YOUR_USERNAME/monthly-sales-reporting`.
+Use the GitHub.com online interface to create a new remote project repository called something like "monthly-sales". When prompted by the GitHub.com online interface, let's get in the habit of adding a "README.md" file and a Python-flavored ".gitignore" file (and also optionally a "LICENSE") during the repo creation process. After this process is complete, you should be able to view the repo on GitHub.com at an address like `https://github.com/YOUR_USERNAME/monthly-sales`.
 
 After creating the remote repo, use GitHub Desktop software or the command-line to download or "clone" it onto your computer. Choose a familiar download location like the Desktop.
 
 After cloning the repo, navigate there from the command-line:
 
 ```sh
-cd ~/Desktop/monthly-sales-reporting
+cd ~/Desktop/monthly-sales
 ```
 
 Use your text editor or the command-line to create a file in that repo called "reporter.py", and then place the following contents inside:
@@ -48,7 +44,7 @@ print("GENERATING SALES REPORT FOR MONTH OF OCTOBER 2013...")
 
 Make sure to save Python files like this whenever you're done editing them. After setting up a virtual environment, we will be ready to run this file.
 
-Finally, download one or more of the ["monthly sales data"](/data/monthly-sales) CSV files into your exercise repository, inside a new sub-directory called "data" (e.g. "monthly-sales-reporting/data/monthly-sales/sales-201803.csv").
+Finally, download one or more of the ["monthly sales data"](/data/monthly-sales) CSV files into your exercise repository, inside a new sub-directory called "data" (e.g. "monthly-sales/data/monthly-sales/sales-201803.csv").
 
 ### Environment Setup
 
@@ -86,11 +82,12 @@ SALES REPORT (MARCH 2018)
 TOTAL SALES: $12,000.71
 ```
 
+> HINT: use either [the `csv` module](/notes/python/modules/csv.md) or [the `pandas` package](/notes/python/packages/pandas.md) to read the CSV file contents into memory for further processing
+
+
 ## Further Exploration Challenges
 
-Optionally adapt your script to also identify the three top-selling products for that month and the total sales for each.
-
-Example output:
+Adapt your script to also identify the top-selling products for that month and the total sales for each. Example output:
 
 ```
 SALES REPORT (MARCH 2018)
@@ -102,3 +99,14 @@ TOP SELLING PRODUCTS:
   2. Super Soft Hoodie: $1,875.00
   3. etc.
 ```
+
+> HINT: use the `groupby()` method provided by either the [the `itertools` module](/notes/python/modules/itertools.md) or [the `pandas` package](/notes/python/packages/pandas.md) to group the rows by product for further processing
+
+## Solutions
+
+There are many many ways to solve the challenges. Here are some example solutions via two different approaches (i.e. the `csv` module vs the `pandas` package):
+
+  + [Solution](/exercises/monthly-sales-reporting/csv_solution.py)
+  + [Further Exploration Solution](/exercises/monthly-sales-reporting/csv_solution_further.py)
+  + [Solution (using Pandas)](/exercises/monthly-sales-reporting/pandas_solution.py)
+  + [Further Exploration Solution (using Pandas)](/exercises/monthly-sales-reporting/pandas_solution_further.py)
