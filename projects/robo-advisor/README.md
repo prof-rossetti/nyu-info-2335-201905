@@ -24,52 +24,79 @@ Your objective is to build yourself a tool to automate the process of providing 
 Specifically, the system should accept one or more stock or cryptocurrency symbols as information inputs, then it should request real live historical trading data from the Internet, and finally it should provide a recommendation as to whether or not the client should purchase the given stocks or cryptocurrencies.
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Setup
 
-### From Starter
+### Repo Setup
 
-To setup your project repository, either fork and clone the professor's ["Robo Advisor" Starter Repository](https://github.com/prof-rossetti/robo-advisor-starter-py), or follow the steps below to setup your own from scratch.
+Use the GitHub.com online interface to create a new remote project repository called something like "robo-advisor". When prompted by the GitHub.com online interface, let's get in the habit of adding a "README.md" file and a Python-flavored ".gitignore" file (and also optionally a "LICENSE") during the repo creation process. After this process is complete, you should be able to view the repo on GitHub.com at an address like `https://github.com/YOUR_USERNAME/robo-advisor`.
 
-### From Scratch
+After creating the remote repo, use GitHub Desktop software or the command-line to download or "clone" it onto your computer. Choose a familiar download location like the Desktop.
 
-Take this time to create a new repository on GitHub.com called something like "stock-rec-system" or "robo-advisor-project". We'll refer to this as your "remote project repository".
+After cloning the repo, navigate there from the command-line:
 
-Clone or download the remote project repository onto your local machine, perhaps on your Desktop. We'll refer to this as your "local project repository".
+```sh
+cd ~/Desktop/robo-advisor
+```
 
-Navigate to your local project repository from the command-line.
+Use your text editor or the command-line to create a new sub-directory called "app" with a file called "robo_advisor.py", and then place the following contents inside:
 
-Within the local project repository, create a new directory called "app" with a "robo_advisor.py" file inside, to include the following contents:
+```py
+# app/robo_advisor.py
+
+print("-----------------------)
+print("STOCK SYMBOL: AMZN")
+
+print("-----------------------)
+print("CRUNCHING THE DATA...")
+
+print("-----------------------)
+print("LATEST CLOSING PRICE: $1,860.63")
+
+```
+
+Make sure to save Python files like this whenever you're done editing them. After setting up a virtual environment, we will be ready to run this file.
+
+### Environment Setup
+
+Create and activate a new Anaconda virtual environment:
+
+```sh
+conda create -n requests-env python=3.7 # (first time only)
+conda activate requests-env
+```
+
+From within the virtual environment, install the `requests` package:
+
+```sh
+pip install requests
+```
+
+From within the virtual environment, demonstrate your ability to run the Python script from the command-line:
+
+```sh
+python get_data.py
+```
+
+If you see the provided message, you're ready to move on to project development. This would be a great time to make any desired modifications to your project's "README.md" file (like adding instructions for how to setup and run the app like you've just done), and then make your first commit, with a message like "Setup the repo".
 
 
 
-Create a new virtual environment named something like "stocks-env" and activate it. Then from inside the virtual environment, execute the Python script to see it print the provided contents.
 
-Finally, make your first commit with a message like "Setup project repository", and push these changes to GitHub. Once you see these changes reflected in your remote project repository on GitHub.com, you are ready to start the project development process.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
