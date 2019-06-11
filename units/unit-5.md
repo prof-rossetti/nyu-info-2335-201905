@@ -1,6 +1,6 @@
 # Unit 5: Networks, and Processing Data from the Internet
 
-> Prerequisites: [Datastores, and Processing CSV Data Language Overview](unit-4.md)
+> Prerequisites: [Datastores, and Processing CSV Data](unit-4.md)
 
 ## Learning Objectives
 
@@ -12,14 +12,18 @@ In this unit, we'll learn how to use Python to process data from the Internet, f
 
   + [Computer Networks, the Internet, and HTTP](/notes/networks.md)
   + [Web Services and APIs](/notes/apis.md)
+  + Information Security and Privacy
+  + Malware
 
 ## Reference Documents
 
-  + [The `requests` Package](/notes/python/packages/requests.md)
-  + [The `json` Module](/notes/python/modules/json.md)
-  + [Environment Variables](/notes/environment-variables.md)
-  + [The `dotenv` Package](/notes/python/packages/dotenv.md)
-
+  + Issuing HTTP Requests:
+    + [The `requests` Package](/notes/python/packages/requests.md)
+  + Processing JSON-formatted data:
+    + [The `json` Module](/notes/python/modules/json.md)
+  + Managing API Credentials
+    + [Environment Variables](/notes/environment-variables.md)
+    + [The `dotenv` Package](/notes/python/packages/dotenv.md)
 
 ## Activities and Exercises
 
