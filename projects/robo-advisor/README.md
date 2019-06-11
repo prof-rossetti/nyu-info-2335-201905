@@ -24,7 +24,61 @@ Your objective is to build yourself a tool to automate the process of providing 
 Specifically, the system should accept one or more stock or cryptocurrency symbols as information inputs, then it should request real live historical trading data from the Internet, and finally it should provide a recommendation as to whether or not the client should purchase the given stocks or cryptocurrencies.
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Setup
+
+### From Starter
+
+To setup your project repository, either fork and clone the professor's ["Robo Advisor" Starter Repository](https://github.com/prof-rossetti/robo-advisor-starter-py), or follow the steps below to setup your own from scratch.
+
+### From Scratch
+
+Take this time to create a new repository on GitHub.com called something like "stock-rec-system" or "robo-advisor-project". We'll refer to this as your "remote project repository".
+
+Clone or download the remote project repository onto your local machine, perhaps on your Desktop. We'll refer to this as your "local project repository".
+
+Navigate to your local project repository from the command-line.
+
+Within the local project repository, create a new directory called "app" with a "robo_advisor.py" file inside, to include the following contents:
+
+
+
+Create a new virtual environment named something like "stocks-env" and activate it. Then from inside the virtual environment, execute the Python script to see it print the provided contents.
+
+Finally, make your first commit with a message like "Setup project repository", and push these changes to GitHub. Once you see these changes reflected in your remote project repository on GitHub.com, you are ready to start the project development process.
+
+
+
+
+
+
+
+
+
 
 
 
@@ -162,47 +216,57 @@ You are free to develop your own custom **recommendation** algorithm. This is pe
 
 
 
-## Setup
-
-### From Starter
-
-To setup your project repository, either fork and clone the professor's ["Robo Advisor" Starter Repository](https://github.com/prof-rossetti/robo-advisor-starter-py), or follow the steps below to setup your own from scratch.
-
-### From Scratch
-
-Take this time to create a new repository on GitHub.com called something like "stock-rec-system" or "robo-advisor-project". We'll refer to this as your "remote project repository".
-
-Clone or download the remote project repository onto your local machine, perhaps on your Desktop. We'll refer to this as your "local project repository".
-
-Navigate to your local project repository from the command-line.
-
-Within the local project repository, create a new directory called "app" with a "robo_advisor.py" file inside, to include the following contents:
-
-
-
-Create a new virtual environment named something like "stocks-env" and activate it. Then from inside the virtual environment, execute the Python script to see it print the provided contents.
-
-Finally, make your first commit with a message like "Setup project repository", and push these changes to GitHub. Once you see these changes reflected in your remote project repository on GitHub.com, you are ready to start the project development process.
 
 
 
 
 
 
-### Further Exploration
 
-If you're able to complete the basic project requirements with relative ease, consider addressing one or more of the ["Robo Advisor" Further Exploration Challenges](robo-advisor/further.md) (e.g. processing multiple stocks, visualizing the stock price over time, etc.).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## [Guided Screencast](https://www.youtube.com/watch?v=UXAVOP1oCog&t=847s)
+
+For a more in-depth guided exercise walkthrough, feel free but not obligated to follow the screencast, but keep in mind a few caveats:
+
+  1. Some of the links reference a previous course repository, but you should be able to find related documents in this course repository as well
+  2. If there are any discrepancies between requirements referenced in the video and requirements stated in this document, defer to the requirements stated in this document
+
+## [Further Exploration Challenges](challenges.md)
+
+If you are able to implement the basic requirements with relative ease, consider addressing one or more of these "Further Exploration Challenges" to enrich and expand your learning experience.
 
 ## Submission
 
-To submit your project:
+To submit your work, consult the [Contributor's Guide](/CONTRIBUTING.md) and follow the steps below:
 
-  1. Push your local project repository to GitHub, so you can visit your remote project repository at a URL like `https://github.com/YOUR_USERNAME/robo-advisor-project`.
-  2. Fork the ["upstream" course repository](https://github.com/prof-rossetti/georgetown-opim-243-201901) (or refresh your existing fork).
-  3. Update your forked course repository's ["Robo Advisor" Submissions CSV file](robo-advisor/submissions.csv).
-to include your GitHub username and your project repository's URL.
-  4. Submit a Pull Request for your forked course repository's changes to be accepted into the "upstream" course repository.
-
+  1. Push your local project repository to GitHub, so you can visit your remote project repository at a URL like `https://github.com/YOUR_USERNAME/shopping-cart`
+  2. Fork the ["upstream" course repository](https://github.com/prof-rossetti/nyu-info-2335-201905) (or refresh your existing fork)
+  3. Update the ["submissions.csv"](submissions.csv) file in your remote fork of the course repository to include an entry linking to your remote project repository URL
+  4. Finally, submit a Pull Request for the changes in your remote fork of the course repository to be accepted back into the "upstream" course repository
 
 ## Evaluation
 
@@ -222,6 +286,6 @@ Dev Process | Submitted via remote Git repository which reflects an incremental 
 
 This rubric is tentative, and may be subject to slight adjustments during the grading process.
 
-If experiencing execution error(s) while evaluating the application's required functionality, evaluators are advised to reduce the project's grade by anywhere between 4% and 50%, depending on the circumstances and severity of the error(s).
+If experiencing execution error(s) while evaluating the application's required functionality, evaluators are advised to reduce the project's grade by between 4% and 25%, depending on the circumstances and severity of the error(s).
 
-In recognition of deliverables which exhibit functionality above and beyond the basic required functionality, including "further exploration" challenges, evaluators are encouraged to award between 0.5% and 5.0% extra credit "engagement points" to be applied towards the final exam.
+In recognition of deliverables which exhibit functionality above and beyond the basic requirements, evaluators are encouraged to award between 4% and 15% "engagement points" to be applied as extra credit.
