@@ -10,8 +10,8 @@ In this unit, we'll learn how to use Python to process data from the Internet, f
 
 ## Discussions and Notes
 
-  + [Computer Networks, the Internet, and HTTP](/notes/networks.md)
-  + [Web Services and APIs](/notes/apis.md)
+  + [Computer Networks, the Internet, and HTTP](/notes/info-systems/networks.md)
+  + [Web Services and APIs](/notes/software/apis.md)
   + Information Security and Privacy
   + Malware
 
@@ -24,6 +24,7 @@ In this unit, we'll learn how to use Python to process data from the Internet, f
   + Managing API Credentials
     + [Environment Variables](/notes/environment-variables.md)
     + [The `dotenv` Package](/notes/python/packages/dotenv.md)
+    + [The `os` Module](/notes/python/modules/os.md#environment-variables), focusing on environment variable capabilities
 
 ## Activities and Exercises
 
