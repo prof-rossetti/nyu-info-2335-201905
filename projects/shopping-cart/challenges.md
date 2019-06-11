@@ -1,16 +1,14 @@
-# "Shopping Cart" Project
+# "Shopping Cart" Project Further Exploration Challenges
 
-## Further Exploration Challenges
+## Functionality Challenges
 
-### Functionality Challenges
-
-#### Handling Pricing per Pound
+### Handling Pricing per Pound
 
 Add a new product called "Organic Bananas" to the products inventory. Assign it a price of `0.79`, but add another attribute called something like `price_per` to indicate the item is priced per "pound". Update all the other product dictionaries to match the new structure, indicating they are priced per "item".
 
 When running the program, if the clerk inputs the identifier of the bananas (or any other item that is priced by pound), the program should ask the clerk to input the number of pounds (e.g. `2.2`), then the program should calculate the price accordingly.
 
-#### Writing Receipts to File
+### Writing Receipts to File
 
 Instead of, or in addition to, displaying a receipt at the end of the checkout process, the program should write the receipt information into a new ".txt" file saved in a new "receipts" directory inside the project repository. The clerk's printer-connected computer should be able to actually print a paper receipt from the information contained in this file.
 
@@ -30,7 +28,7 @@ Each text file should be named according to the date and time the checkout proce
 >     # except this ".gitignore" file:
 >     !.gitignore
 
-#### Sending Receipts via Email
+### Sending Receipts via Email
 
 Instead of, or in addition to, displaying a receipt at the end of the checkout process, the program should prompt the checkout clerk or the customer to indicate whether the customer would like to receive the receipt by email. And if so, it should prompt the checkout clerk or the customer to input the customer's email address, and then it should send the receipt information to the customer by email. The clerk's network-connected computer should be able to send these emails.
 
@@ -38,7 +36,7 @@ At the very least, the email should display the checkout timestamp and the total
 
 > HINT: leverage the email-sending capabilities of [the `sendgrid` package](/notes/python/packages/sendgrid.md), and optionally use [Sendgrid email templates](/notes/python/packages/sendgrid.md#email-templates) to further control the formatting of email contents
 
-#### Integrating with a Google Sheets Datastore
+### Integrating with a Google Sheets Datastore
 
 Instead of using a hard-coded `products` variable or a "products.csv" file as the application's datastore, use this provided [products Google Sheet document](https://docs.google.com/spreadsheets/d/1ItN7Cc2Yn4K90cMIsxi2P045Gzw0y2JHB_EkV4mXXpI/edit?usp=sharing) instead.
 
@@ -50,7 +48,7 @@ Instead of using a hard-coded `products` variable or a "products.csv" file as th
 
 
 
-#### Integrating with a Barcode Scanner
+### Integrating with a Barcode Scanner
 
 Assemble a handful of real products that have barcodes.
 
@@ -96,21 +94,21 @@ After modifying the product list, try re-running the program, using the barcode 
 <hr>
 
 
-### Automated Testing Challenges
+## Automated Testing Challenges
 
-#### Testing Price Formatting
+### Testing Price Formatting
 
 Refactor price-formatting logic into a function called something like `to_usd()`, and implement a corresponding test called something like `test_to_usd()`.
 
 Test various scenarios to ensure the price formatting function displays a dollar sign, two decimal places, and a thousands separator.
 
-#### Testing Timestamp Formatting
+### Testing Timestamp Formatting
 
 Refactor timestamp-formatting logic into a function called something like `human_friendly_timestamp()`, and implement a corresponding test called something like `test_human_friendly_timestamp()`.
 
 Test to ensure the function processes any given datetime object into a corresponding human-friendly string.
 
-#### Testing Product Lookups
+### Testing Product Lookups
 
 Refactor product-finding logic into a function called something like `find_product()`, and implement a corresponding test called something like `test_find_product()`.
 
