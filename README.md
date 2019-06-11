@@ -18,6 +18,7 @@
   + [Unit 4B](/units/unit-4b.md) (Optional Bonus Material): Dataviz and Business Analytics
   + Unit 5: Networks, and Processing Data from the Internet
   + Unit 6: The Systems Development Lifecycle (SDLC), and Design Thinking
+  + Unit 7: Quality Control, Delivery, and Deployment
 
 ## External Resources
 
