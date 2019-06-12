@@ -24,6 +24,8 @@ pip install selenium
 
 ## Usage
 
+First, initialize a new driver object. You can do so in the default mode, which will open a browser window for you to view, or in "headless" mode, which will not open a browser window.
+
 ```py
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
@@ -41,7 +43,11 @@ driver = webdriver.Chrome(CHROMEDRIVER_PATH)
 # options.add_argument('--incognito')
 # options.add_argument('--headless')
 # driver = webdriver.Chrome(CHROMEDRIVER_PATH, chrome_options=options)
+```
 
+After initializing a driver, use it to visit and interact with web pages:
+
+```py
 #
 # NAVIGATE TO GOOGLE.COM...
 #
@@ -75,5 +81,9 @@ driver.save_screenshot("search_results.png")
 
 driver.quit()
 ```
+
+Resulting screenshots:
+
+![](/exercises/automated-browsing/search_page.png)
 
 ![](/exercises/automated-browsing/search_results.png)
