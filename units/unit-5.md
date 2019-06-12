@@ -12,8 +12,9 @@ In this unit, we'll learn how to use Python to process data from the Internet, f
 
   + [Computer Networks, the Internet, and HTTP](/notes/info-systems/networks.md)
   + [Web Services and APIs](/notes/software/apis.md)
-  + Information Security and Privacy
-  + Malware
+  + [Information Security and Privacy](/notes/info-systems/security-privacy.md)
+  + [Ethics, Malware, and Hacking](/notes/software/ethics.md)
+  + [Environment Variables](/notes/environment-variables.md)
 
 ## Reference Documents
 
@@ -22,11 +23,10 @@ In this unit, we'll learn how to use Python to process data from the Internet, f
   + Processing JSON-formatted data:
     + [The `json` Module](/notes/python/modules/json.md)
   + Managing API Credentials
-    + [Environment Variables](/notes/environment-variables.md)
     + [The `dotenv` Package](/notes/python/packages/dotenv.md)
     + [The `os` Module](/notes/python/modules/os.md#environment-variables), focusing on environment variable capabilities
   + Automated Web Browsing (a.k.a. "scraping"):
-    + The `selenium` Package
+    + [The `selenium` Package](/notes/python/packages/selenium.md)
 
 ## Activities and Exercises
 
