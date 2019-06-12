@@ -80,12 +80,12 @@ Test to ensure the function returns the expected response data in a usable forma
 
 ### Processing API Responses
 
-Refactor API data-processing logic into a function called something like `transform_response()`, and implement a corresponding test called something like `test_transform_response()`.
+Refactor API data-processing logic into one or more functions called something like `parse_response()`, `calculate_recent_high()`, etc. Then implement corresponding test(s) called something like `test_parse_response()`,  `test_calculate_recent_high()`, etc.
 
-Test to ensure the function converts the example response data (nested dictionary) into a more usable format (i.e. list of daily dictionaries).
+Test to ensure these functions operate as expected to further process the raw data into more usable structures and/or the final outputs themselves.
 
 ### Writing to CSV
 
 Refactor CSV file-writing logic into a function called something like `write_to_csv()`, and implement a corresponding test called something like `test_write_to_csv()`.
 
-Test to ensure the function processes the provided data (i.e. list of daily dictionaries), creates a new CSV file, and writes the data there. Optionally test to ensure the CSV file contains the proper headers and/or expected values.
+Test to ensure the function processes the provided data (. the parsed response itself or list of daily dictionaries), creates a new CSV file, and writes the data there. Optionally test to ensure the CSV file contains the proper headers and/or expected values.

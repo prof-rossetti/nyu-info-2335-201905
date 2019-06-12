@@ -4,8 +4,9 @@
 >  + [Networks, and Processing Data from the Internet](/units/unit-5.md)
 >  + [APIs](/notes/software/apis.md)
 >  + [Environment Variables](/notes/environment-variables.md)
->  + ["Omniparser" Exercise](/exercises/omniparser/README.md), specifically the stock data parser challenge
->  + ["Web Requests" Exercise](/exercises/web-requests/README.md)
+>  + The ["Omniparser" Exercise](/exercises/omniparser/README.md) (specifically the stock data parsing challenge)
+>  + The ["Web Requests" Exercise](/exercises/web-requests/README.md)
+
 
 ## Learning Objectives
 
@@ -45,6 +46,7 @@ Use your text editor or the command-line to create a new sub-directory called "a
 # app/robo_advisor.py
 
 print("-----------------")
+print("RUN AT: 2019-06-16 10:00 AM")
 print("CRUNCHING THE DATA...")
 print("-----------------")
 print("STOCK SYMBOL: XYZ")
@@ -191,12 +193,7 @@ The ".env" file should absolutely not be tracked in version control or included 
 
 ### Functionality Requirements
 
-Your project should adhere to the following functionality requirements, as detailed in the sections below:
-
-  + Information Input Requirements
-  + Validation Requirements
-  + Information Output Requirements
-  + Calculation Requirements
+Your project should satisfy the functionality requirements detailed in the sections below.
 
 #### Information Input Requirements
 
