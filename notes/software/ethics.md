@@ -13,7 +13,7 @@ Even so, sometimes our creations can be used in unintended and unfortunate ways:
 > San Francisco-based company reached an agreement with California’s housing agency amid complaints of guests being rejected for their race... On social media, black Airbnb users reported experiences of facing a rejection by a host, who later accepted them when they changed their profile to a white person. Earlier this month, an Asian American woman’s account of discrimination in California went viral after she said a host cancelled on her last minute specifically because of her race, leaving her stranded in a storm. ... Harvard Business School professor Ben Edelman previously found that black users were 16% less likely to be accepted than identical guests with white names... - [The Guardian](https://www.theguardian.com/technology/2017/apr/27/airbnb-government-housing-test-black-discrimination) on April 27, 2017
 
 
-
+> More than two weeks ago, hackers seized parts of the computer systems that run Baltimore’s government. It could take months of work to get the disrupted technology back online. That, or the city could give in to the hackers’ ransom demands. "Right now, I say no," Mayor Bernard Young told local reporters on Monday. "But in order to move the city forward? I might think about it. But I have not made a decision yet." ... A copy of a digital ransom note, obtained by The Baltimore Sun, stated that the city could unlock the seized files for a price: three Bitcoins (nearly $24,000) per system or 13 Bitcoins (about $102,000) for them all. - [The New York Times](https://www.nytimes.com/2019/05/22/us/baltimore-ransomware.html) on May 22, 2019
 
 
 ## Malware
