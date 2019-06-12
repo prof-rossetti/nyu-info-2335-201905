@@ -12,7 +12,7 @@ Reference:
 
 Before proceeding, we need to install a special kind of web browser called a "web driver" which the Selenium package will be able to control.
 
-There are options to use a Firefox-based browser, but the professor recommends you [install the Google Chrome-based "Chromedriver"](/notes/clis/chromedriver.md#installation). Identify the path to where you have installed `chromedriver`. Later we'll need to specify this location via environment variable called the `CHROMEDRIVER_PATH`.
+There are options to use a Firefox-based browser, but the professor recommends you [install the Google Chrome-based "Chromedriver"](/notes/clis/chromedriver.md#installation). Identify the path to where you have installed `chromedriver`. We'll need this value later (see `CHROMEDRIVER_PATH` variable below in the "Usage" example).
 
 ## Installation
 
