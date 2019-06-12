@@ -19,7 +19,7 @@
   + [NYU Style Guide](https://www.nyu.edu/employees/resources-and-services/media-and-communications/styleguide/downloads.html)
   + [NYU Colors](https://www.nyu.edu/content/dam/nyu/advertisePublications/documents/standards/ReadyMadeColorPalettes_121214.pdf)
   + [NYU Wagner Slide Templates](https://wagner.nyu.edu/portal/faculty-staff/restricted/OEA/templates)
-
+  + [Groceries Image](https://www.shareicon.net/goods-grocery-food-groceries-shopping-store-supermarket-759867)
 
 ## Python Resources
 

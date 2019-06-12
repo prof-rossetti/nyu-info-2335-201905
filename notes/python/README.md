@@ -58,9 +58,9 @@ Data Processing:
 
 Math and Statistics:
 
-  + The `math` Module
-  + The `random` Module
-  + The `statistics` Module
+  + [The `math` Module](/notes/python/modules/math.md)
+  + [The `random` Module](/notes/python/modules/random.md)
+  + [The `statistics` Module](/notes/python/modules/statistics.md)
 
 ### [Third-party Python Packages](/notes/python/packages)
 
@@ -79,20 +79,21 @@ User Interfaces:
 Data Processing:
 
   + [The `pandas` Package](/notes/python/packages/pandas.md)
-  + The `gspread` Package
-  + The `psycopg` Package
-  + The `pymysql` Package
+  + [The `gspread` Package](/notes/python/packages/gspread.md)
+  + [The `psycopg` Package](/notes/python/packages/psycopg.md)
+  + [The `pymysql` Package](/notes/python/packages/pymysql.md)
 
 Data Visualization:
 
-  + The `plotly` Package
-  + The `matplotlib` Package
-  + The `altair` Package
+  + [The `plotly` Package](/notes/python/packages/plotly.md)
+  + [The `matplotlib` Package](/notes/python/packages/matplotlib.md)
+  + [The `altair` Package](/notes/python/packages/altair.md)
 
 Math and Statistics:
 
-  + The `nltk` Package
-  + The `keras` Package
+  + [The `nltk` Package](/notes/python/packages/nltk.md)
+  + [The `scikitlearn` Package](https://scikit-learn.org/stable/) - for machine learning
+  + [The `keras` Package](http://data-creative.info/projects/2018/12/16/learning-keras-tensorflow-py/)
 
 Internet Connectivity (HTTP Requests and Web Scraping):
 

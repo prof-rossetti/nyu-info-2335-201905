@@ -49,16 +49,16 @@ Access individual object attributes by their key:
 ```python
 person = {
     "first_name": "Ophelia",
-    "last_name": "Clark",
-    "message": "Hello Again",
-    "stops": ["New York", "Denver", "San Francisco"]
+    "last_name": "Clarke",
+    "message": "Hi, thanks for the ice cream!",
+    "fav_flavors": ["Vanilla Bean", "Mocha", "Strawberry"]
 }
 
 person["first_name"] #> "Ophelia"
 person["last_name"] #> "Clark"
-person["message"] #> "Hello Again"
-person["stops"] #> ["New York", "Denver", "San Francisco"]
-person["stops"][1] #> "Denver" (an array is still an array, even if it exists inside a dictionary!)
+person["message"] #> "Hi, thanks for the ice cream!"
+person["fav_flavors"] #> ["Vanilla Bean", "Mocha", "Strawberry"]
+person["fav_flavors"][1] #> "Mocha" (an array is still an array, even if it exists inside a dictionary!)
 ```
 
 Add or update or remove attributes from an object:
@@ -66,16 +66,16 @@ Add or update or remove attributes from an object:
 ```python
 person = {
     "first_name": "Ophelia",
-    "last_name": "Clark",
-    "message": "Hello Again",
-    "stops": ["New York", "Denver", "San Francisco"],
+    "last_name": "Clarke",
+    "message": "Hi, thanks for the ice cream!",
+    "fav_flavors": ["Vanilla Bean", "Mocha", "Strawberry"]
 }
 
 person["message"] = "New Message" # this is mutating
 
 person["fav_color"] = "blue" # this is mutating
 
-del person["stops"] # this is mutating
+del person["fav_flavors"] # this is mutating
 
 person #> {'first_name': 'Ophelia', 'last_name': 'Clark', 'message': 'New Message', 'fav_color': 'blue' }
 ```
@@ -85,29 +85,29 @@ Its possible to separate the dictionaries keys from its values, and also to iter
 ```python
 person = {
     "first_name": "Ophelia",
-    "last_name": "Clark",
-    "message": "Hello Again",
-    "stops": ["New York", "Denver", "San Francisco"]
+    "last_name": "Clarke",
+    "message": "Hi, thanks for the ice cream!",
+    "fav_flavors": ["Vanilla Bean", "Mocha", "Strawberry"]
 }
 
 person.keys()
-#> dict_keys(['first_name', 'last_name', 'message', 'stops'])
+#> dict_keys(['first_name', 'last_name', 'message', 'fav_flavors'])
 list(person.keys())
-#> ['first_name', 'last_name', 'message', 'stops']
+#> ['first_name', 'last_name', 'message', 'fav_flavors']
 
 person.values()
-#> dict_values(['Ophelia', 'Clark', 'Hello Again', ['New York', 'Denver', 'San Francisco']])
+#> dict_values(['Ophelia', 'Clark', 'Hi, thanks for the ice cream!', ["Vanilla Bean", "Mocha", "Strawberry"]])
 list(person.values())
-#> ['Ophelia', 'Clark', 'Hello Again', ['New York', 'Denver', 'San Francisco']]
+#> ['Ophelia', 'Clark', 'Hi, thanks for the ice cream!', ["Vanilla Bean", "Mocha", "Strawberry"]]
 
 person.items()
-#> dict_items([('first_name', 'Ophelia'), ('last_name', 'Clark'), ('message', 'Hello Again'), ('stops', ['New York', 'Denver', 'San Francisco'])])
+#> dict_items([('first_name', 'Ophelia'), ('last_name', 'Clark'), ('message', 'Hi, thanks for the ice cream!'), ('fav_flavors', ["Vanilla Bean", "Mocha", "Strawberry"])])
 
 for k, v in person.items():
     print("KEY:", k, "... VALUE:", v)
 
 #> KEY: first ... VALUE: Ophelia
 #> KEY: last ... VALUE: Clark
-#> KEY: message ... VALUE: Hello Again
-#> KEY: stops ... VALUE: ['New York', 'Denver', 'San Francisco']
+#> KEY: message ... VALUE: Hi, thanks for the ice cream!
+#> KEY: fav_flavors ... VALUE: ["Vanilla Bean", "Mocha", "Strawberry"]
 ```
