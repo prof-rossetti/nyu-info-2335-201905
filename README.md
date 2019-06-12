@@ -16,8 +16,9 @@
   + [Unit 3](/units/unit-3.md): Python Language Overview, and Processing Data in Memory
   + [Unit 4](/units/unit-4.md): Datastores, and Processing CSV Data
   + [Unit 4B](/units/unit-4b.md) (Optional Bonus Material): Dataviz and Business Analytics
-  + Unit 5: Networks, and Processing Data from the Internet
+  + [Unit 5](/units/unit-5.md): Networks, and Processing Data from the Internet
   + Unit 6: The Systems Development Lifecycle (SDLC), and Design Thinking
+  + Unit 7: Quality Control, Delivery, and Deployment
 
 ## External Resources
 
