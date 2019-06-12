@@ -44,31 +44,60 @@ Use your text editor or the command-line to create a new sub-directory called "a
 ```py
 # app/robo_advisor.py
 
-print("-----------------------)
-print("STOCK SYMBOL: AMZN")
-
-print("-----------------------)
+print("-----------------")
 print("CRUNCHING THE DATA...")
-
-print("-----------------------)
-print("LATEST CLOSING PRICE: $1,860.63")
+print("-----------------")
+print("STOCK SYMBOL: XYZ")
+print("LATEST DAY: 2019-06-15")
+print("-----------------")
+print("LATEST CLOSE: $100,000.00")
+print("RECENT HIGH: $101,000.00")
+print("RECENT LOW: $99,000.00")
+print("-----------------")
+print("RECOMMENDATION: TODO")
+print("RECOMMENDATION REASON: TODO")
+print("-----------------")
 ```
 
 Make sure to save Python files like this whenever you're done editing them. After setting up a virtual environment, we will be ready to run this file.
+
+
+
+
+Use your text editor or the command-line to create a new file called "requirements.txt", and then place the following contents inside:
+
+```
+requests
+python-dotenv
+```
+
+After setting up a virtual environment, we will be ready to install these packages.
+
+
+
+
+
+
+
+
+
+
+
 
 ### Environment Setup
 
 Create and activate a new Anaconda virtual environment:
 
 ```sh
-conda create -n requests-env python=3.7 # (first time only)
-conda activate requests-env
+conda create -n stocks-env python=3.7 # (first time only)
+conda activate stocks-env
 ```
 
-From within the virtual environment, install the `requests` package:
+From within the virtual environment, install the required packages specified in the "requirements.txt" file you created:
 
 ```sh
-pip install requests
+pip install -r requirements.txt
+pip install pytest # (only if you'll be writing tests)
 ```
 
 From within the virtual environment, demonstrate your ability to run the Python script from the command-line:
@@ -77,35 +106,7 @@ From within the virtual environment, demonstrate your ability to run the Python 
 python robo_advisor.py
 ```
 
-If you see the provided message, you're ready to move on to project development. This would be a great time to make any desired modifications to your project's "README.md" file (like adding instructions for how to setup and run the app like you've just done), and then make your first commit, with a message like "Setup the repo".
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+If you see the example output, you're ready to move on to project development. This would be a great time to make any desired modifications to your project's "README.md" file (like adding instructions for how to setup and run the app like you've just done), and then make your first commit, with a message like "Setup the repo".
 
 
 
@@ -139,38 +140,54 @@ Your project repository should contain an "app" directory with a "robo_advisor.p
 
 Your project repository should contain a "README.md" file. The README file should provide instructions to help someone else install, setup, and run your program. This includes instructions for installing package dependencies, for example using Pip. It also includes instructions for setting an environment variable named `ALPHAVANTAGE_API_KEY` (see "Security Requirements" section below).
 
-If your desired approach to setting environment variables uses a ".env" file (see "Security Requirements" section below), your project repository should contain a file called ".gitignore" with the following contents inside to prevent that file from being tracked in version control:
+Your project repository should contain a file called ".gitignore" which prevents the ".env" file and its secret credentials from being tracked in version control. The ".gitignore" file generated during the GitHub repo creation process should already do this, otherwise you can create your own ".gitignore" file and place inside the following contents:
 
 ```
 # .gitignore
 
-# ignore secret environment variable values
+# ignore secret environment variable values in the ".env" file:
 .env
 ```
 
-Finally, your project repository should contain a "data" directory with another ".gitignore" file inside, with the following contents in it to ignore CSV files stored inside the data directory:
+Finally, your project repository should contain a "data" directory with another ".gitignore" file inside, with the following contents in it to ignore CSV files which will be written inside the data directory:
 
 ```
 # data/.gitignore
 
 # h/t: https://stackoverflow.com/a/5581995/670433
 
-# ignore all files in this directory ...
+# ignore all files in this directory:
 *
 
-# ... except this gitignore file
+# except this gitignore file:
 !.gitignore
 ```
 
 ### Security Requirements
 
-Your program will need an API Key to issue requests to the [AlphaVantage API](https://www.alphavantage.co). But the program's source code should **absolutely not** include the secret API Key value.
+Your program will need an API Key to issue requests to the [AlphaVantage API](https://www.alphavantage.co). But the program's source code should absolutely not include the secret API Key value. Instead, you should set an environment variable called `ALPHAVANTAGE_API_KEY`, and your program should read the API Key from this environment variable at run-time.
 
-Instead, you should set an environment variable called `ALPHAVANTAGE_API_KEY`, and your program should read the API Key from this environment variable at run-time.
+You are encouraged to use a "dotenv" approach to setting project-specific environment variables by using a file called ".env" in conjunction with [the `dotenv` package](/notes/python/packages/dotenv.md). Example ".env" contents:
 
-You are encouraged to use a "dotenv" approach to setting project-specific environment variables by using a file called ".env" in conjunction with [the `dotenv` package](/notes/python/packages/dotenv.md). If you do, the ".env" file should **absolutely not** be tracked in version control or included in your GitHub repository.
+```
+ALPHAVANTAGE_API_KEY="abc123"
+```
 
-> HINT: you may need to use a [local ".gitignore" file](https://help.github.com/articles/ignoring-files/#create-a-local-gitignore) (see "Repository Requirements" section above), or just don't upload the ".env" file to GitHub.
+
+The ".env" file should absolutely not be tracked in version control or included in your GitHub repository.
+
+> HINT: use a [local ".gitignore" file](https://help.github.com/articles/ignoring-files/#create-a-local-gitignore) (see "Repository Requirements" section above), or just don't upload the ".env" file to GitHub.
+
+
+
+
+
+
+
+
+
+
+
 
 ### Functionality Requirements
 
