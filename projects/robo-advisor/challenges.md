@@ -44,7 +44,7 @@ Modify the logic of your application such that if it detects the stock's price h
 
 > Prerequisite: The SMS-sending component of the Notification Service app, referenced in the ["Interface Capabilities" Exercise](/exercises/interface-capabilities.md)
 
-Modify the logic of your application such that if it detects the stock's price has moved past a given threshold within a given time period (e.g. the price has increased or decreased by more than 5% within the past day), it will send the user a "Price Movement Alert" message via email.
+Modify the logic of your application such that if it detects the stock's price has moved past a given threshold within a given time period (e.g. the price has increased or decreased by more than 5% within the past day), it will send the user a "Price Movement Alert" message via SMS.
 
 > HINT: leverage the SMS-sending capabilities of [the `twilio` package](/notes/python/packages/twilio.md)
 
