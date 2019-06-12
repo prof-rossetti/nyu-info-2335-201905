@@ -1,4 +1,4 @@
-# "Shopping Cart" Project Further Exploration Challenges
+# "Shopping Cart" Further Exploration Challenges
 
 ## Functionality Challenges
 
@@ -30,6 +30,9 @@ Each text file should be named according to the date and time the checkout proce
 
 ### Sending Receipts via Email
 
+> Prerequisite: The email-sending component of the Notification Service app, referenced in the ["Interface Capabilities" Exercise](/exercises/interface-capabilities.md)
+
+
 Instead of, or in addition to, displaying a receipt at the end of the checkout process, the program should prompt the checkout clerk or the customer to indicate whether the customer would like to receive the receipt by email. And if so, it should prompt the checkout clerk or the customer to input the customer's email address, and then it should send the receipt information to the customer by email. The clerk's network-connected computer should be able to send these emails.
 
 At the very least, the email should display the checkout timestamp and the total price. But ideally it should contain all the receipt information described in the basic requirements.
@@ -41,12 +44,6 @@ At the very least, the email should display the checkout timestamp and the total
 Instead of using a hard-coded `products` variable or a "products.csv" file as the application's datastore, use this provided [products Google Sheet document](https://docs.google.com/spreadsheets/d/1ItN7Cc2Yn4K90cMIsxi2P045Gzw0y2JHB_EkV4mXXpI/edit?usp=sharing) instead.
 
 > HINT: leverage the capabilities of [the `gspread` package](/notes/python/packages/gspread.md)
-
-
-
-
-
-
 
 ### Integrating with a Barcode Scanner
 
@@ -114,7 +111,7 @@ Refactor product-finding logic into a function called something like `find_produ
 
 Test various scenarios to ensure the product lookup function finds and returns the proper product, even if the products are not sorted in order of their unique identifiers. What should happen when the function is passed a numeric identifier vs a string identifier? What should happen when there is no product matching the given identifier?
 
-#### Testing Tax and Total Calculations
+### Testing Tax and Total Calculations
 
 Refactor subtotal and/or total price calculation logic into one or more function(s) called something like `calculate_total_price()`, and implement a corresponding test(s) called something like `test_calculate_total_price()`.
 
