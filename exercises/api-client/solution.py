@@ -1,3 +1,5 @@
+# SEE: https://github.com/prof-rossetti/products-api-flask/blob/csv/DOCS.md
+
 import json
 
 import requests
