@@ -24,23 +24,43 @@ The **52-week low** should be calculated in a similar manner as the 52-week high
 ### Plotting Prices over Time
 
 > Prerequisites:
->   + ["Chart Gallery" Exercise](______)
->   + ["Executive Dashboard" Exercise](______)
+>   + ["Chart Gallery" Exercise](/exercises/chart-gallery/README.md)
+>   + ["Executive Dashboard" Exercise](/exercises/exec-dash/README.md)
 
 In addition to writing the historical stock prices to a CSV file, your program should also display a line graph of the stock prices over time. :smiley_cat:
 
 Optionally include any other data visualizations as desired, to add context to and increase confidence in the final recommendations.
 
 
-### Automated Testing Challenges
+### Sending Alerts via Email
 
-#### Formatting Prices
+> Prerequisite: The email-sending component of the Notification Service app, referenced in the ["Interface Capabilities" Exercise](/exercises/interface-capabilities.md)
+
+Modify the logic of your application such that if it detects the stock's price has moved past a given threshold within a given time period (e.g. the price has increased or decreased by more than 5% within the past day), it will send the user a "Price Movement Alert" message via email.
+
+> HINT: leverage the email-sending capabilities of [the `sendgrid` package](/notes/python/packages/sendgrid.md), and optionally use [Sendgrid email templates](/notes/python/packages/sendgrid.md#email-templates) to further control the formatting of email contents
+
+### Sending Alerts via SMS
+
+> Prerequisite: The SMS-sending component of the Notification Service app, referenced in the ["Interface Capabilities" Exercise](/exercises/interface-capabilities.md)
+
+Modify the logic of your application such that if it detects the stock's price has moved past a given threshold within a given time period (e.g. the price has increased or decreased by more than 5% within the past day), it will send the user a "Price Movement Alert" message via email.
+
+> HINT: leverage the SMS-sending capabilities of [the `twilio` package](/notes/python/packages/twilio.md)
+
+<hr>
+
+
+
+## Automated Testing Challenges
+
+### Formatting Prices
 
 Refactor price-formatting logic into a function called something like `to_usd()`, and implement a corresponding test called something like `test_to_usd()`.
 
 Test various scenarios to ensure the price formatting function displays a dollar sign, two decimal places, and a thousands separator.
 
-#### Compiling Request URLs
+### Compiling Request URLs
 
 Refactor request URL compilation logic into a function called something like `compile_url()`, and implement a corresponding test called something like `test_compile_url()`.
 
@@ -52,19 +72,19 @@ Test to ensure the function accepts a stock symbol input parameter, and construc
 >
 >   B) interpolate / concatenate the `ALPHAVANTAGE_API_KEY` environment variable value into the expected URL
 
-#### Issuing API Requests
+### Issuing API Requests
 
 Refactor API request logic into a function called something like `get_response()`, and implement a corresponding test called something like `test_get_response()`.
 
 Test to ensure the function returns the expected response data in a usable format (i.e. a dictionary with keys `"Meta Data"` and `"Time Series (Daily)"`).
 
-#### Processing API Responses
+### Processing API Responses
 
 Refactor API data-processing logic into a function called something like `transform_response()`, and implement a corresponding test called something like `test_transform_response()`.
 
 Test to ensure the function converts the example response data (nested dictionary) into a more usable format (i.e. list of daily dictionaries).
 
-#### Writing to CSV
+### Writing to CSV
 
 Refactor CSV file-writing logic into a function called something like `write_to_csv()`, and implement a corresponding test called something like `test_write_to_csv()`.
 

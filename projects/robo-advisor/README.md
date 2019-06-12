@@ -1,9 +1,10 @@
 # "Robo Advisor" Project
 
 > Prerequisites:
+>  + [Networks, and Processing Data from the Internet](/units/unit-5.md)
+>  + [APIs](/notes/software/apis.md)
 >  + [Environment Variables](/notes/environment-variables.md)
 >  + ["Omniparser" Exercise](/exercises/omniparser/README.md), specifically the stock data parser challenge
->  + [Networks, and Processing Data from the Internet](/units/unit-5.md), including [APIs](/notes/software/apis.md)
 >  + ["Web Requests" Exercise](/exercises/web-requests/README.md)
 
 ## Learning Objectives
@@ -51,7 +52,6 @@ print("CRUNCHING THE DATA...")
 
 print("-----------------------)
 print("LATEST CLOSING PRICE: $1,860.63")
-
 ```
 
 Make sure to save Python files like this whenever you're done editing them. After setting up a virtual environment, we will be ready to run this file.
@@ -74,7 +74,7 @@ pip install requests
 From within the virtual environment, demonstrate your ability to run the Python script from the command-line:
 
 ```sh
-python get_data.py
+python robo_advisor.py
 ```
 
 If you see the provided message, you're ready to move on to project development. This would be a great time to make any desired modifications to your project's "README.md" file (like adding instructions for how to setup and run the app like you've just done), and then make your first commit, with a message like "Setup the repo".
