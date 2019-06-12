@@ -26,7 +26,7 @@ In this unit, we'll learn how to use Python to process data from the Internet, f
     + [The `dotenv` Package](/notes/python/packages/dotenv.md)
     + [The `os` Module](/notes/python/modules/os.md#environment-variables), focusing on environment variable capabilities
   + Automated Web Browsing (a.k.a. "scraping"):
-    + The `selenium` Package
+    + [The `selenium` Package](/notes/python/packages/selenium.md)
 
 ## Activities and Exercises
 
