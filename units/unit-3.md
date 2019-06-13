@@ -35,8 +35,7 @@ In this unit, we will take a high-level guided tour of the Python programming la
       + [The `datetime` Module](/notes/python/modules/datetime.md)
       + [The `random` Module](/notes/python/modules/random.md)
       + [The `operator` Module](https://docs.python.org/3/library/operator.html)
-      + [The `itertools` Module](/notes/python/modules/itertools.md)
-    + [Packages](/notes/python/packages):
+    + Packages:
       + [The `dotenv` Package](/notes/python/packages/dotenv.md) (just for your awareness, should have shared this info earlier)
       + [The `pytest` Package](/notes/python/packages/pytest.md) (intermediate / advanced topic)
 

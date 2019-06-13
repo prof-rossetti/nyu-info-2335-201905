@@ -1,6 +1,6 @@
 # The `dotenv` Package
 
-> Prerequisite: [Environment Variables](/notes/environment-variables.md), [The `os` Module](/notes/python/modules/os.md)
+> Prerequisites: [Environment Variables](/notes/environment-variables.md), [The `os` Module](/notes/python/modules/os.md#environment-variables)
 
 The `dotenv` package allows a program to reference environment variables from a project-specific ".env" file. This makes environment variables much easier to manage, especially for Windows users.
 
@@ -54,7 +54,7 @@ The lesson is that the `load_dotenv()` function will load environment variables 
 
 ### Ignoring ".env" Files from Version Control
 
-> SECURITY NOTE: Because these ".env" files often contain sensative information like secret passwords and API Keys, we should absolutely avoid checking them into version control! To do this, we'll use a special ".gitignore" file. 
+> SECURITY NOTE: Because these ".env" files often contain sensative information like secret passwords and API Keys, we should absolutely avoid checking them into version control! To do this, we'll use a special ".gitignore" file.
 
 Create another file in the "my-secure-project" directory named ".gitignore", and place inside the following contents:
 
@@ -67,3 +67,5 @@ Create another file in the "my-secure-project" directory named ".gitignore", and
 ```
 
 Great! Now all subsequent commits will ignore the ".env" file from your project's version history, so you can push your code to GitHub without divulging your secret credentials.
+
+> NOTE: if your repository already contained a ".env" file before you added the corresponding entry to the ".gitignore" file, you'll need to commit the ".gitignore" file then delete / move the ".env" file and make another commit, and then afterwards you can feel free to restore your ".env" file and it will be ignored
