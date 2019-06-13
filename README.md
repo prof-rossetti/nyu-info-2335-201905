@@ -13,10 +13,12 @@
   + [Unit 0](/units/unit-0.md): Onboarding
   + [Unit 1](/units/unit-1.md): Software Products and Services
   + [Unit 2](/units/unit-2.md): User Interfaces and Experiences (UI/UX)
-  + Unit 3: Python Language Overview, and Processing Data in Memory
-  + Unit 4: Datastores, and Processing Data from CSV Files
-  + Unit 5: Networks, Application Programming Interfaces (APIs), and Processing Data from the Internet
+  + [Unit 3](/units/unit-3.md): Python Language Overview, and Processing Data in Memory
+  + [Unit 4](/units/unit-4.md): Datastores, and Processing CSV Data
+  + [Unit 4B](/units/unit-4b.md) (Optional Bonus Material): Dataviz and Business Analytics
+  + [Unit 5](/units/unit-5.md): Networks, and Processing Data from the Internet
   + Unit 6: The Systems Development Lifecycle (SDLC), and Design Thinking
+  + Unit 7: Quality Control, Delivery, and Deployment
 
 ## External Resources
 
@@ -25,6 +27,7 @@
   + [Python 3 Built-in Functions](https://docs.python.org/3/library/functions.html)
   + [Python 3 Built-in Constants](https://docs.python.org/3/library/constants.html)
   + [PEP 8 Style Guide](https://www.python.org/dev/peps/pep-0008/)
+  + [Markdown Cheatsheet](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
 
 ## [Contributor's Guide](/CONTRIBUTING.md)
 
