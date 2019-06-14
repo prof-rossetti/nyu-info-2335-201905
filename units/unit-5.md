@@ -22,11 +22,13 @@ In this unit, we'll learn how to use Python to process data from the Internet, f
     + [The `requests` Package](/notes/python/packages/requests.md)
   + Processing JSON-formatted data:
     + [The `json` Module](/notes/python/modules/json.md)
-  + Managing API Credentials
-    + [The `dotenv` Package](/notes/python/packages/dotenv.md)
-    + [The `os` Module](/notes/python/modules/os.md#environment-variables), focusing on environment variable capabilities
+  + Processing HTML-formatted data:
+    + [The `beautifulsoup` Package](/notes/python/packages/beautifulsoup.md)
   + Automated Web Browsing (a.k.a. "scraping"):
     + [The `selenium` Package](/notes/python/packages/selenium.md)
+  + Reading API Credentials from Environment Variables:
+    + [The `dotenv` Package](/notes/python/packages/dotenv.md)
+    + [The `os` Module](/notes/python/modules/os.md#environment-variables), focusing on environment variable capabilities
 
 ## Activities and Exercises
 
