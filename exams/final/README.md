@@ -30,3 +30,5 @@ Each student should hand-in their exam booklet to the professor when finished.
 ## Evaluation Methodology
 
 The relative weights of each question on the exam will be denoted on the exam's cover page.
+
+When asked to write Python code, students will be expected to do so with precision, but if there are syntax errors the professor will award partial credit based on the severity of the error(s). So students are encouraged to try their best even if they don't remember the exact answer.
