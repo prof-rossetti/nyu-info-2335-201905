@@ -1,6 +1,6 @@
-# "Freestyle" Project Planning and Requirements Document
+# "Freestyle" Project Documentation
 
-> Prerequisite: ["Freestyle" Project Description](/projects/freestyle.md)
+> Prerequisite: ["Freestyle" Project Description](README.md)
 
 ## Instructions
 

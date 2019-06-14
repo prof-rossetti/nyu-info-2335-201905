@@ -1,8 +1,8 @@
 # "Freestyle" Project Demonstration
 
-> Prerequisite: ["Freestyle" Project Description](/projects/freestyle.md)
+> Prerequisite: ["Freestyle" Project Description](README.md)
 
-## Objectives
+## Learning Objectives
 
   + Show-off your hard work to the rest of the class
   + Learn more about the other student projects and share in each other's successes

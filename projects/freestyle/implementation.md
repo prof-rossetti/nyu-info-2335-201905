@@ -1,14 +1,14 @@
 # "Freestyle" Project Implementation
 
-> Prerequisite: ["Freestyle" Project Description](/projects/freestyle.md)
+> Prerequisite: ["Freestyle" Project Description](README.md)
 
 ## Instructions
 
-After producing a written [Planning and Requirements Document](/projects/freestyle/requirements.md), it's time to write application software in the Python programming language to implement your proposed solution.
+After producing a written [Planning and Requirements Document](documentation.md), it's time to write application software in the Python programming language to implement your proposed solution.
 
 In addition to addressing your system's written functionality requirements, the implementation should adhere to the requirements below.
 
-### Documentation Requirements
+### Repository Requirements
 
 Your project repository should contain a "README.md" file. The README file should provide instructions to help someone else install, setup, run, and test your program. This includes instructions for installing package dependencies, for example using Pip. It also includes instructions for setting environment variables as necessary.
 
