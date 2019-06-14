@@ -4,11 +4,9 @@
 
 The final exam is designed to evaluate students' knowledge of programming concepts, software development practices, and technology management concepts.
 
-The exam will be administered during the first 90 minutes of a designated class period. The exam will be administered in paper format, so students should remember to bring a pen or pencil.
+The exam will be administered during the first 90 minutes of a designated class period. The exam will be administered in paper format, so students should remember to bring a pen or pencil. The exam is "closed book" and students will not be allowed to consult any outside sources of information during the exam period.
 
-The exam consists primarily of free-response questions, but may also contain multiple-choice and matching questions.
-
-Details about the contents of the final exam will be announced during class. But generally anything discussed in class is fair game, as well as anything in the [notes](/notes), slides, exercises, or projects. However the following concepts will be important to review:
+The exam consists primarily of free-response questions, but may also contain multiple-choice and matching questions. Details about the contents of the final exam will be announced during class. But generally anything discussed in class is fair game, as well as anything in the [notes](/notes), slides, exercises, or projects. However the following concepts will be important to review:
 
   + [Information Systems](/notes/info-systems)
   + [Software](/notes/software)
