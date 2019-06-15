@@ -29,7 +29,8 @@ To specify a project's dependencies, first create a new "requirements.txt" file 
     requests
     pandas
     python-dotenv
-    git+https://github.com/eskerda/pybikes.git # can install from github source, if necessary
+    git+https://github.com/eskerda/pybikes.git # can install from GitHub source via HTTPS
+    git+ssh://git@github.com/s2t2/game-utils-py.git # can install from GitHub source via SSH
 
 Make sure to save the file. Then finally, use Pip to install package dependencies by specifying the requirements filepath:
 

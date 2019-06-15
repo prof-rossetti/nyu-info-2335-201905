@@ -25,37 +25,48 @@ conda --version
 which conda
 #> /anaconda3/bin/conda
 
-# Windows Anaconda Prompt:
+# Windows Anaconda Prompt or Git Bash:
 where conda
 #> C:\Users\YOUR_USERNAME\Anaconda3\Library\bin\conda.bat
 #> C:\Users\YOUR_USERNAME\Anaconda3\Scripts\conda.exe
 ```
 
+### Detection on Mac
+
 On a Mac, you can invoke these commands directly in the Terminal.
 
-![](/img/notes/anaconda/mac-terminal.png)
+![](/img/notes/clis/conda/mac-terminal.png)
 
 ### Detection on Windows
 
 However, on Windows, you can alternatively search for the "Anaconda Prompt" application to know whether or not you have it installed.
 
-![](/img/notes/anaconda/windows-detecting-anaconda-prompt.png)
+![](/img/notes/clis/conda/windows-detecting-anaconda-prompt.png)
 
-After the Anaconda Prompt is installed, you can invoke these commands from within it.
+After the Anaconda Prompt is installed, you can invoke `conda` commands from within it:
 
-![](/img/notes/anaconda/windows-anaconda-prompt.png)
+![](/img/notes/clis/conda/windows-anaconda-prompt.png)
+
+If Anaconda is installed the way we need it to be, we should also be able to invoke `conda` commands from within the Git Bash console:
+
+![](/img/notes/dev-tools/git-bash/git-bash-where-conda.png)
+
+If Git Bash doesn't recognize your `conda` commands, you might have to uninstall Anaconda and when re-installing it, make sure to check the "Add Anaconda to my PATH environment variable" option (see installation instructions below).
 
 ## Installation
 
-If not yet installed, [download Anaconda Version 3.7](https://www.anaconda.com/download) for either Mac or Windows. NOTE: This might take a while, so prefer to do it over a strong WiFi connection. And feel free to ignore any email capture forms which may pop up afterwards.
+If not yet installed, [download Anaconda Version 3.7](https://www.anaconda.com/download) for either Mac or Windows.
 
-![](/img/notes/anaconda/downloading-anaconda-windows.png)
+> NOTE: This might take a while, so prefer to do it over a strong WiFi connection. And feel free to ignore any email capture forms which may pop up afterwards.
 
-After the download has finished, run the installer program and accept all the default options. The installation will take a few minutes to complete. After a while it may ask you whether or not you'd like to also install a text editor called "VS Code". Since VS Code is the preferred text editor for this course, you can feel free to keep this option checked, and the installer will ensure it is installed.
+![](/img/notes/clis/conda/downloading-anaconda-windows.png)
 
-![](/img/notes/anaconda/anaconda-install-vs-code.png)
+After the download has finished, run the installer program and accept all the default options, except for this important exception to "Add Anaconda to my PATH environment variable", which will allow other programs like Git Bash to recognize the Anaconda installation:
 
-> DISCLAIMER: the professor had already installed VS Code before installing Anaconda, so if installing VS Code via Anaconda presents any issues, please report them immediately. Alternatively, you can always install VS Code separately.
+![](/img/notes/clis/conda/anaconda-install-add-to-path.png)
+
+
+The installation will take a few minutes to complete.
 
 > NOTE: After installing Anaconda on a Mac, you will need to restart your terminal for the changes to take effect.
 
@@ -114,7 +125,7 @@ which pip #> /anaconda3/envs/my-first-env/bin/pip
 pip --version #> pip 18.1 from /anaconda3/envs/my-first-env/lib/python3.6/site-packages/pip (python 3.6)
 ```
 
-![](/img/notes/anaconda/managing-envs.png)
+![](/img/notes/clis/conda/managing-envs.png)
 
 
 For more information, see notes on [the `python` utility](python.md) and [the `pip` utility](pip.md).

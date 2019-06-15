@@ -48,6 +48,8 @@ Change directories (specifying absolute file path):
 cd C:\Users\YOUR_USERNAME\Desktop\ # where YOUR_USERNAME is the name of the user currently operating your local machine
 ```
 
+> NOTE: if your username has a space in it (e.g. "Sammy Student"), then you may run into issues unless you surround the name of that directory with quotes (e.g. `cd C:\Users\"Sammy Student"\Desktop\`. This usage of quotes applies to any / all files and directories which may have spaces in them, so in general you are encouraged to create new files and directories without any spaces in them, to make life easier on yourself.
+
 Make a new directory:
 
 ```sh
@@ -90,8 +92,8 @@ del index.html
 Edit and save a file, using a command-line utility provided by your preferred text editor (just choose one of these, depending on which editor you're using):
 
 ```sh
-code my_message.txt # VS Code
-atom my_message.txt # Atom, requires "Install Shell Commands" from the Atom Settings
+code my_message.txt # VS Code text editor, may first require installation of shell commands from the settings
+atom my_message.txt # Atom text editor, may first require installation of shell commands from the settings
 ```
 
 Print file contents:
@@ -144,7 +146,7 @@ Download the [cURL](https://curl.haxx.se/download.html) utility if necessary, th
 ```sh
 curl google.com
 curl http://www.google.com
-curl https://raw.githubusercontent.com/prof-rossetti/georgetown-opim-243-201901/master/data/products.json
+curl https://raw.githubusercontent.com/prof-rossetti/nyu-info-2335-201905/master/data/products.json
 ```
 
 You may need to execute these commands from within the downloaded directory. See ["Installing cURL on Windows"](http://stackoverflow.com/questions/9507353/how-do-i-install-set-up-and-use-curl-on-a-windows) for more support.
