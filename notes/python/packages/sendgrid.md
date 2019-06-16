@@ -92,7 +92,7 @@ except Exception as e:
 
 ### Email Templates
 
-> Thanks to @mgallea for [surfacing](https://github.com/mgallea/daily-email/blob/master/app/main.py) these email template capabilities
+> Thanks to @mgallea for surfacing these email template capabilities
 
 If you'd like further control over the content displayed in the email's body, you can use Sendgrid's email templates.
 
