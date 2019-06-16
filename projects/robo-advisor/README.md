@@ -45,20 +45,22 @@ Use your text editor or the command-line to create a new sub-directory called "a
 ```py
 # app/robo_advisor.py
 
-print("-----------------")
-print("RUN AT: 2019-06-16 10:00 AM")
-print("CRUNCHING THE DATA...")
-print("-----------------")
-print("STOCK SYMBOL: XYZ")
-print("LATEST DAY: 2019-06-15")
-print("-----------------")
+print("-------------------------")
+print("SELECTED SYMBOL: XYZ")
+print("-------------------------")
+print("REQUESTING STOCK MARKET DATA...")
+print("REQUEST AT: 2018-02-20 02:00pm")
+print("-------------------------")
+print("LATEST DAY: 2018-02-20")
 print("LATEST CLOSE: $100,000.00")
 print("RECENT HIGH: $101,000.00")
 print("RECENT LOW: $99,000.00")
-print("-----------------")
-print("RECOMMENDATION: TODO")
+print("-------------------------")
+print("RECOMMENDATION: BUY!")
 print("RECOMMENDATION REASON: TODO")
-print("-----------------")
+print("-------------------------")
+print("HAPPY INVESTING!")
+print("-------------------------")
 ```
 
 Make sure to save Python files like this whenever you're done editing them. After setting up a virtual environment, we will be ready to run this file.

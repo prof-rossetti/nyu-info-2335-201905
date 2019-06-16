@@ -51,3 +51,5 @@ Request to create a new product in the inventory.
 API Documentation: [Update Product](https://github.com/prof-rossetti/products-api-flask/blob/csv/DOCS.md#update-product)
 
 Request to update the new product you recently created.
+
+## [Solutions](solution.py)
