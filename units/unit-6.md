@@ -1,0 +1,27 @@
+# Unit 6: The Systems Development Lifecycle (SDLC), and Technology Management
+
+## Learning Objectives
+
+In this unit, we'll become more familiar with the preliminary phases of the Systems Development Lifecycle (SDLC), focusing on system planning, analysis, and design. We'll analyze business processes and employ Design Thinking methods to identify user needs and business opportunities. And we'll learn how to translate these activities into written system requirements.
+
+## [Slides](https://docs.google.com/presentation/d/1x20QoKXQgK6JSvRyWRiEYOVf4iMP0Rnwrrt35vnP_zw/edit?usp=sharing)
+
+## Discussions and Notes
+
+  + [Project Management](/notes/project-mgmt/README.md)
+  + [Project Management Tools](/notes/project-mgmt/tools.md)
+  + [The Systems Development Lifecycle (SDLC)](/notes/project-mgmt/dev-lifecycle.md):
+    + Iterative Development Methodologies and Minimum Viable Products (MVPs)
+  + [Users, User Needs, and User-Centered Design](/notes/info-systems/people.md)
+  + [Process Analysis, Diagramming, and Re-engineering](/notes/info-systems/processes.md)
+
+## Activities and Exercises
+
+  + "Design Thinking" Workshop
+  + "Data Flow Diagramming" Exercise
+  + "Process Diagramming" Exercise
+
+## Deliverables
+
+  + ["Freestyle" Project Proposal](/projects/freestyle/proposal.md) ("Learning" Phase)
+  + ["Freestyle" Project Plan](/projects/freestyle/plan.md) ("Planning" Phase)
