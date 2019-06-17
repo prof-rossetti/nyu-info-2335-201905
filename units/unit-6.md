@@ -19,7 +19,7 @@ In this unit, we'll become more familiar with the preliminary phases of the Syst
 
   + "Design Thinking" Workshop
   + "Data Flow Diagramming" Exercise
-  + "Process Diagramming" Exercise
+  + ["Process Diagramming" Exercise](/exercises/process-diagramming/README.md)
 
 ## Deliverables
 
