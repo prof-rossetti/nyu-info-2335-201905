@@ -17,9 +17,9 @@ In this unit, we'll become more familiar with the preliminary phases of the Syst
 
 ## Activities and Exercises
 
-  + "Design Thinking" Workshop
-  + "Data Flow Diagramming" Exercise
+  + ["Data Flow Diagramming" Exercise](/exercises/data-flow-diagramming/README.md)
   + ["Process Diagramming" Exercise](/exercises/process-diagramming/README.md)
+  + "Design Thinking" Workshop
 
 ## Deliverables
 
