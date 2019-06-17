@@ -99,7 +99,7 @@ Internet Connectivity (HTTP Requests and Web Scraping):
 
   + [The `requests` Package](/notes/python/packages/requests.md)
   + [The `BeautifulSoup` Package](/notes/python/packages/beautifulsoup.md)
-  + The `selenium` Package
+  + [The `selenium` Package](/notes/python/packages/selenium.md)
 
 Sending Messages:
 
@@ -109,4 +109,4 @@ Sending Messages:
 
 Other Services:
 
-  + The `spotipy` Package
+  + [The `spotipy` Package](/notes/python/packages/spotipy.md)
