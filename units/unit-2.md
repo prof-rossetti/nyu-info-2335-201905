@@ -2,7 +2,7 @@
 
 > Prerequisites: [Software Products and Services](unit-1.md)
 
-## Objectives
+## Learning Objectives
 
 In this unit, we'll discuss how people can interact with software applications. And we'll explore various user interface capabilities of Python, to provide a better understanding of what is possible later in the semester when students create their own user-facing Python applications.
 
