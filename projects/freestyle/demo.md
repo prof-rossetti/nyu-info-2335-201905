@@ -1,6 +1,8 @@
 # "Freestyle" Project Demonstration
 
-> Prerequisite: [The "Freestyle" Project](README.md)
+> Prerequisites:
+>   + [The "Freestyle" Project Proposal](/projects/freestyle/proposal.md)
+>   + [The "Freestyle" Project Implementation](/projects/freestyle/implementation.md), ideally but not necessarily completed before the demo
 
 ## Learning Objectives
 

@@ -1,6 +1,6 @@
 # "Freestyle" Project Implementation
 
-> Prerequisite: [The "Freestyle" Project](README.md)
+> Prerequisite: [The "Freestyle" Project Proposal](/projects/freestyle/proposal.md)
 
 ## Learning Objectives
 

@@ -1,8 +1,6 @@
 # "Freestyle" Project Proposal
 
-> Prerequisites:
->   + [The "Freestyle" Project](README.md)
->   + ["Data Flow Diagramming" Exercise](/exercises/data-flow-diagramming/README.md)
+> Prerequisite: [The "Freestyle" Project](README.md)
 
 ## Learning Objectives
 
@@ -16,9 +14,11 @@
 
 Please use your university-issued email address to submit this [Freestyle Project Proposal Form](https://forms.gle/bhEN7PY5ZBeg5jjn9) before the designated due date. If submitting on behalf of other group members, only one member needs to submit the form.
 
+The questions are detailed below, for your reference.
+
 ### Group Selection
 
-You may work by yourself, or in a group with up to three members total. If working by yourself, write "N/A" below. Otherwise if working in a group, write the email address(es) of all other group members, separated by commas (e.g. "partner1@stern.nyu.edu" for a two-person group or "partner1@stern.nyu.edu, partner2@stern.nyu.edu" for a three-person group).
+You may work by yourself, or in a group with up to three members total. If working by yourself, write "N/A". Otherwise if working in a group, write the email address(es) of all other group members, separated by commas (e.g. "partner1@stern.nyu.edu" for a two-person group or "partner1@stern.nyu.edu, partner2@stern.nyu.edu" for a three-person group).
 
 ### Demo Day Preferences
 
