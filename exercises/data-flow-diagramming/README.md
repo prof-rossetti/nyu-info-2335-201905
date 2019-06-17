@@ -15,7 +15,7 @@ Identify **three information systems you are familiar with**: one should ideally
 For each system:
 
   1. Identify its **Information Requirements**:
-     1. What **Information Inputs does the system require in order to function, and where does this information come from?
+     1. What **Information Inputs** does the system require in order to function, and where does this information come from?
      2. What **Information Outputs** does the system produce, and who consumes these outputs?
   2. Visually depict the flow of information using a Data Flow Diagram (DFD). Include any people or other "entities" within the scope of the system which provide information to the system or receive information from the system.
 
