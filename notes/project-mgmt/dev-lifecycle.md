@@ -6,9 +6,9 @@ The **Systems Development Lifecycle (SDLC)** refers to an end-to-end process by 
 
 ## Methodologies
 
-If you have a well-defined problem, a clear set of requirements, and your team has experience building similar systems in the past, then a traditional "waterfall" approach may be the most efficient choice. It will allow your team to deliver the final product more quickly.
+If you have a well-defined problem, a clear set of requirements, and your team has experience building similar systems in the past, then a Traditional, or "Waterfall", approach may be the most efficient choice. It will allow your team to deliver the final product more quickly.
 
-However, if the problem is not well defined, or the system requirements are not entirely clear, or your team doesn't have previous experience building similar systems, then an "agile" approach may be the best choice. It will allow your team to be flexible to changing requirements and deliver a **minimum viable product (MVP)** more quickly.
+However, if the problem is not well defined, or the system requirements are not entirely clear, or your team doesn't have previous experience building similar systems, then an Iterative, or "Agile", approach may be the best choice. It will allow your team to be flexible to changing requirements and deliver a **Minimum Viable Product (MVP)** more quickly.
 
 ![](https://user-images.githubusercontent.com/1328807/54934314-afcdd600-4ef4-11e9-93b6-0f4325a713f5.jpg)
 
@@ -21,7 +21,7 @@ A traditional, or "waterfall" approach involves gathering system requirements up
 
 Phases:
 
-order | phase | description
+Order | Phase | Description
 --- | --- | --
 1 | **Planning** / **Ideation** | Gathering requirements, discovering user needs, and brainstorming potential solutions. Includes setting system objectives and hypotheses.
 2 | **Analysis** / **Investigation** | Determining the feasibility of certain potential solutions and choosing one to implement.
@@ -50,12 +50,12 @@ its behavior accordingly."*
 
 > "Start small and continuously improve... get a working Minimum Viable Product (MVP) into people's hands as early as possible, test with users frequently, and make continuous improvements based on feedback." - ["Iterative Development", from the Code for America Playbook](https://www.codeforamerica.org/practices/iterative-development)
 
-The professor recommends a hybrid approach of **"Plan", "Build", "Learn"**, or a **"Learn", "Plan", "Build"** variant:
+The professor recommends a hybrid approach of **"Plan, Build, Learn"** (or a **"Learn, Plan, Build"** variant):
 
-phase | description
+Phase | Description
 --- | --
 **Plan** | Determining what to build and how to build it. Defining the system's objectives, as well as its expected functionality and success criteria.
 **Build** | Implementing the system's functionality and delivering the finished product to users. Maintaining the system and implementing quality control mechanisms.
-**Learn** | Observing user interactions with the system, analyzing user data, performing user research
+**Learn** | Observing user interactions with the system, analyzing user data, performing user and market research.
 
 ![](https://user-images.githubusercontent.com/1328807/54887304-d2fe7400-4e67-11e9-8530-83566d0a1352.png)

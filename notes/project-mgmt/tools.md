@@ -1,7 +1,9 @@
 
 # Project Management Tools and Techniques
 
-> Prerequisite: [Project Management](project-mgmt.md)
+> Prerequisites:
+>   + [Technology Project Management](README.md)
+>   + [The Systems Development Lifecycle (SDLC)](dev-lifecycle.md)
 
 ## Gantt Charts
 
