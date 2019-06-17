@@ -25,7 +25,7 @@ Also, your codebase should be reasonably organized and documented with comments 
 
 ### Licensing Requirements
 
-[Choose a software license](/notes/licensing.md), and include a corresponding file called "LICENSE" or "LICENSE.md" in the root directory of your repository.
+[Choose a software license](/notes/software/licensing.md), and include a corresponding file called "LICENSE" or "LICENSE.md" in the root directory of your repository.
 
 ### Security Requirements
 
@@ -37,11 +37,11 @@ Use environment variables in conjunction with a ".env" file and a ".gitignore" f
 
 #### Code Simplification
 
-Scan your application's codebase for duplication of terms, and refactor to remove that duplication.
+Scan your application's codebase for duplication of terms, and refactor (using custom functions as necessary) to remove that duplication.
 
 #### Automated Tests
 
-Implement automated tests using the `pytest` package.
+Implement automated tests using the Pytest package.
 
 As you think about ways to test your application, consider asking yourself questions like the following:
 
@@ -54,11 +54,13 @@ As you think about ways to test your application, consider asking yourself quest
 
 #### Continuous Integration
 
-Configure your GitHub repository to integrate with a continuous integration (CI) platform like [Travis CI](/notes/travis-ci.md), such that automated tests are run on a CI server whenever new code is pushed to the remote GitHub repository.
+Configure your GitHub repository to integrate with a continuous integration (CI) platform like Travis CI, such that automated tests are run on a CI server whenever new code is pushed to the remote GitHub repository.
 
 ### Dev Process Requirements
 
-Develop your updates [on a branch](/notes/git.md#branch-operations), push that branch to GitHub in order to create a Pull Request, where you can further review your proposed changes and allow automated tests to run and pass on the CI server before finally "merging" the code into the master branch.
+Iteratively develop your project using version control practices. Save new versions of your source code as you reach key milestones.
+
+Optionally: Instead of committing your versions directly to the "master" branch, use [branch operations](/notes/git.md#branch-operations) to develop logically-related updates on a separate branch, then push that branch to GitHub in order to create a Pull Request, where you can further review your proposed changes and allow automated tests to run and pass on the CI server before finally "merging" the code back into the master branch.
 
 
 
@@ -70,11 +72,10 @@ Develop your updates [on a branch](/notes/git.md#branch-operations), push that b
 
 To submit:
 
-  1. Push your local project repository to GitHub, so you can visit your remote project repository at a URL like `https://github.com/YOUR_USERNAME/YOUR_REPO`.
-  2. Fork the ["upstream" course repository](https://github.com/prof-rossetti/georgetown-opim-243-201901) (or refresh your existing fork).
-  3. Update your forked course repository's ["Freestyle" Submissions CSV file](/projects/freestyle/submissions.csv).
-to include your GitHub username and your project repository's URL.
-  4. Submit a Pull Request for your forked course repository's changes to be accepted into the "upstream" course repository.
+  1. Push your local project repository to GitHub, so you can visit your remote project repository at a URL like `https://github.com/YOUR_USERNAME/YOUR_PROJECT`
+  2. Fork the ["upstream" course repository](https://github.com/prof-rossetti/nyu-info-2335-201905) (or refresh your existing fork)
+  3. Update the ["submissions.csv"](submissions.csv) file in your remote fork of the course repository to include an entry linking to your remote project repository URL
+  4. Finally, submit a Pull Request for the changes in your remote fork of the course repository to be accepted back into the "upstream" course repository
 
 ## Evaluation
 
