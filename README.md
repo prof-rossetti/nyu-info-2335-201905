@@ -17,7 +17,7 @@
   + [Unit 4](/units/unit-4.md): Datastores, and Processing CSV Data
   + [Unit 4B](/units/unit-4b.md) (Optional Bonus Material): Dataviz and Business Analytics
   + [Unit 5](/units/unit-5.md): Networks, and Processing Data from the Internet
-  + [Unit 6](/units/unit-6.md): The Systems Development Lifecycle (SDLC), and Technology Management
+  + [Unit 6](/units/unit-6.md): Technology Management, and the Systems Development Lifecycle (SDLC)
   + Unit 7: Quality Control, Delivery, and Deployment
 
 ## External Resources

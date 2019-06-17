@@ -1,4 +1,4 @@
-# Unit 6: The Systems Development Lifecycle (SDLC), and Technology Management
+# Unit 6: Technology Management, and the Systems Development Lifecycle (SDLC)
 
 ## Learning Objectives
 
