@@ -1,5 +1,7 @@
 # The `PySimpleGUI` Package
 
+> Thanks to @windy030 and @oaw6 for surfacing the capabilities of this package
+
 The `PySimpleGUI` package provides an application with a graphical user interface capable of being run on a personal computer.
 
 Reference:

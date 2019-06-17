@@ -11,9 +11,10 @@ Reference:
   + [Pandas Website](http://pandas.pydata.org/)
   + [Pandas Docs](http://pandas.pydata.org/pandas-docs/stable/)
   + [Pandas Source](https://github.com/pandas-dev/pandas)
-  + [`DataFrame`](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.html) - like a CSV
+  + [`DataFrame`](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.html) - like a spreadsheet
   + [Input and Output](http://pandas.pydata.org/pandas-docs/stable/api.html#input-output)
   + [`head()` and `tail()`](http://pandas.pydata.org/pandas-docs/stable/basics.html#head-and-tail)
+  + [`iloc[]`](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.iloc.html)
   + [`read_csv()`](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_csv.html)
   + [`iterrows()`](http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.iterrows.html)
   + [`groupby()`](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.groupby.html)
@@ -28,13 +29,15 @@ pip install pandas
 
 ## Usage
 
-### The `DataFrame` Datatype
+### Data Frames
 
-The Pandas `DataFrame` data type represents a table of data, like a spreadsheet.
+The Pandas `DataFrame` datatype represents a table of data, like a spreadsheet.
 
-#### Creating DataFrames
+#### Creating Data Frames
 
-When using a list to create a new `DataFrame`, each entry in the list represents another row in the table:
+We're able to transform different types of data structures (e.g. a list of lists, a dictionary of lists, etc.) into a Pandas data frame.
+
+When using a list to create a new data frame, each entry in the list represents another row in the table:
 
 ```py
 import pandas as pd
@@ -62,7 +65,7 @@ df
 #> 2       3      c
 ```
 
-When using a dictionary to create a new `DataFrame`, each key in the dictionary represents a column with its own values:
+When using a dictionary to create a new data frame, each key in the dictionary represents a column with its own values:
 
 ```py
 import pandas as pd
@@ -81,7 +84,7 @@ df
 #> 2       3      c
 ```
 
-It's also possible to process a spreadsheet or CSV file into a `DataFrame`:
+It's also possible to process a spreadsheet or CSV file into a data frame:
 
 ```py
 import pandas as pd
@@ -114,7 +117,9 @@ stats
 #> 19  2014    145      581    47   149     35
 ```
 
-#### Accessing DataFrames
+#### Using Data Frames
+
+##### Row Operations
 
 Inspect the first and last few rows, respectively:
 
@@ -131,6 +136,33 @@ stats.tail(3)
 #> 18  2013     17       63     8    12      8
 #> 19  2014    145      581    47   149     35
 ```
+
+Count rows:
+
+```py
+stats.count()
+```
+
+Iterate through rows:
+
+```py
+for index, row in stats.iterrows():
+    print(row["year"])
+```
+
+Reference a specific row by its index (e.g. 0):
+
+```py
+stats.iloc[0]
+```
+
+Convert any row to a dictionary:
+
+```py
+stats.iloc[0].to_dict()
+```
+
+##### Column Operations
 
 Reference a specific column:
 
@@ -199,18 +231,21 @@ stats
 #> 17  2012    159      683    99   216     45  0.316252  0.382138
 ```
 
-Iterate through rows:
+#### Exporting Data Frames
+
+Convert a data frame to list of dictionaries, each representing a row in the data frame:
 
 ```py
-for index, row in stats.iterrows():
-    print(row["year"])
+stats.to_dict("records") # "records" is a specific parameter of the to_dict() function, not a characteristic of the underlying data
 ```
 
+Convert a data frame to list of lists, each representing a row in the data frame:
 
+```py
+stats.values.tolist()
+```
 
-#### Exporting DataFrames
-
-Save a `DataFrame` back to a spreadsheet or CSV file:
+Save a data frame back to a spreadsheet or CSV file:
 
 ```py
 stats.to_csv("/path/to/jeter_stats_v2.csv")
