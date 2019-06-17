@@ -1,4 +1,4 @@
-# "Freestyle" Project Implementation
+# "Freestyle" Project Demonstration
 
 > Prerequisite: [The "Freestyle" Project](README.md)
 

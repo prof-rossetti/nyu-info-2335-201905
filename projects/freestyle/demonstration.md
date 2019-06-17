@@ -1,3 +1,0 @@
-# "Freestyle" Project Demonstration
-
-TBA
