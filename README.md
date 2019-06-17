@@ -1,32 +1,19 @@
-# NYU INFO 2335: Programming in Python & Fundamentals of Software Development (Summer 2019)
+# shopping-cart-project
+First Python project
+
+[Project Description]
+https://github.com/prof-rossetti/nyu-info-2335-201905/blob/master/projects/shopping-cart/README.md
 
 
-This is a repository of instructional materials for a graduate business school elective on programming and software development.
+## Basic requirements
 
-> Today’s businesses rely on application software to perform operations, aid decision-making, and drive competitive advantage. In this course, students will learn how to write practical business applications in the Python programming language. No prior programming experience is required. Students will also explore business models and best practices involved in the production and management of application software. Throughout the semester, students will be immersed in hands-on Python programming projects and should emerge with marketable technology skills.
+A grocery store name of your choice
+A grocery store phone number and/or website URL and/or address of choice
+The date and time of the beginning of the checkout process, formatted in a human-friendly way (e.g. 2019-06-06 11:31 AM)
+The name and price of each shopping cart item, price being formatted as US dollars and cents (e.g. $1.50)
+The total cost of all shopping cart items, formatted as US dollars and cents (e.g. $4.50), calculated as the sum of their prices
+The amount of tax owed (e.g. $0.39), calculated by multiplying the total cost by a New York City sales tax rate of 8.75% (for the purposes of this project, groceries are not exempt from sales tax)
+The total amount owed, formatted as US dollars and cents (e.g. $4.89), calculated by adding together the amount of tax owed plus the total cost of all shopping cart items
+A friendly message thanking the customer and/or encouraging the customer to shop again -->
 
-## [Syllabus](/SYLLABUS.pdf)
-
-## Instructional Units
-
-  + [Unit 0](/units/unit-0.md): Onboarding
-  + [Unit 1](/units/unit-1.md): Software Products and Services
-  + [Unit 2](/units/unit-2.md): User Interfaces and Experiences (UI/UX)
-  + Unit 3: Python Language Overview, and Processing Data in Memory
-  + Unit 4: Datastores, and Processing Data from CSV Files
-  + Unit 5: Networks, Application Programming Interfaces (APIs), and Procssing net
-  + Unit 6: The Systems Development Lifecycle (SDLC), and Design Thinking
-
-## External Resources
-
-  + [Python 3 Documentation](https://docs.python.org/3/reference/index.html)
-  + [Python 3 Tutorial](https://docs.python.org/3/tutorial/index.html)
-  + [Python 3 Built-in Functions](https://docs.python.org/3/library/functions.html)
-  + [Python 3 Built-in Constants](https://docs.python.org/3/library/constants.html)
-  + [PEP 8 Style Guide](https://www.python.org/dev/peps/pep-0008/)
-
-## [Contributor's Guide](/CONTRIBUTING.md)
-
-## [Acknowledgements](/CREDITS.md)
-
-## [License](/LICENSE.md)
+## Example Output
