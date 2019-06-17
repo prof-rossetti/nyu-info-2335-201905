@@ -1,5 +1,7 @@
 # Processes
 
+> Prerequisites: [Information Systems](README.md)
+
 Computer-based information systems enable or facilitate some set of defined processes or procedures.
 
 ## Process Analysis
@@ -16,16 +18,13 @@ One good way of demonstrating and communicating your understanding of a process 
 
 ### Process Diagramming Tools
 
-Tools with basic diagramming capabilities:
+Tools with diagramming capabilities:
 
-  + Word Processing Software
-  + Presentation Software
-
-Tools with full diagramming capabilities:
-
-   + [MS Visio](https://products.office.com/en-us/visio/flowchart-software)
-   + [Omnigraffle](https://www.omnigroup.com/omnigraffle)
-   + [LucidChart](https://www.lucidchart.com/) (recommended)
+  + Word Processing Software (e.g. Google Docs, MS Word)
+  + Presentation Software (e.g. Google Slides, MS PowerPoint)
+  + [MS Visio](https://products.office.com/en-us/visio/flowchart-software)
+  + [Omnigraffle](https://www.omnigroup.com/omnigraffle)
+  + [LucidChart](https://www.lucidchart.com/) (recommended)
 
 ### Process Diagram Shapes
 
@@ -43,7 +42,7 @@ Additionally, some process diagrams use visual separators called "swim lanes" to
 
 ## Process Re-engineering
 
-After learning more about the process, analysts are able to identify ways to simplify or re-engineer it.
+After learning more about the process, analysts are able to identify "pain points", or areas in need of improvement. And they can identify ways to simplify or re-engineer the process.
 
 Example "Current State" Process Diagram:
 
