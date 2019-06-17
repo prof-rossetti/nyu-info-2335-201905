@@ -35,6 +35,7 @@ If you get stuck, try thinking about responses for each of the sections outlined
     + Functionality Requirements / Features
     + Interface Requirements
     + Technology Requirements
+  + Development Plan
 
 
 
@@ -46,7 +47,9 @@ What problem would you like to solve, or what opportunity will you address? Why 
 
 #### User Needs
 
-Who are the individuals affected by the problem? How are they impacted? How could their experience be improved? What are their needs? Please include language like: "[who] needs [what] so that they can [why]".
+Who are the individuals affected by the problem? How are they impacted? How could their experience be improved? What are their needs? Please include language like: **"[who] needs [what] so that they can [why]"**.
+
+These statements of user needs should focus more on the problem than any potential solutions to the problem (e.g. **"Office workers need a way to get to work quickly and affordably, so they can save time and money to be spent on other more important things"**, NOT: "Office workers need the city to implement a subway system, so they can get to work").
 
 #### Current State Processes
 
@@ -100,6 +103,14 @@ Which APIs or third-party services, if any, does your system require in order to
 Which third-party Python packages, if any, does your system require in order to produce its desired functionality? What functionality do these packages provide? Why are they necessary or helpful?
 
 Will your software be deployed to a remote server (i.e. web app or scheduled service)? Will your system need to integrate with other hardware like scanners and sensors? Describe these hardware integrations as necessary.
+
+
+
+
+
+### Development Plan
+
+How will you prioritize which parts of the system to work on first? If working with other individuals, how will you split-up the work? Include any supporting charts, tables, or diagrams.
 
 <hr>
 
