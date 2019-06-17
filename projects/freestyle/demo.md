@@ -32,7 +32,7 @@ Describe the problem addressed by your project. Who are the affected users and w
 
 ### Proposed Solution / Info Requirements
 
-Describe your proposed solution to the problem, including a high-level Data Flow Diagram (DFD). What does it do? At a high-level, describe how it works, how users interact with it, and any other services or platforms it interfaces with
+Describe your proposed solution to the problem, including a high-level Data Flow Diagram (DFD). What does it do? At a high-level, describe how it works, how users interact with it, and any other services or platforms it interfaces with.
 
 ### Live Demo
 
@@ -40,13 +40,12 @@ Transition into a live demonstration of your project in action. Depending on whi
 
 ### Reflections
 
-Remark on your reactions to the process. For example, you might think about the following questions:
+Remark on your reactions to the process. For example, you might address the following questions:
 
   + What was the hardest part of the planning and/or implementation processes? Did you run into any unforeseen issues?
-  + How did you prioritize features?
+  + How did you prioritize features? For groups, how did you split up the work?
   + What did you learn while working on this project? How did you learn what you needed to learn? Did you find any helpful resources?
   + What went well, and/or what would you do differently next time?
-  + etc.
 
 ## Submission Instructions
 
