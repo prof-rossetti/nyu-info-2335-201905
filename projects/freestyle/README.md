@@ -1,5 +1,7 @@
 # The "Freestyle" Project
 
+> Prerequisite: [Technology Management, and the Systems Development Lifecycle (SDLC)](/units/unit-6.md)
+
 The Self-Directed (a.k.a. "Freestyle") Project provides students with the flexibility and support to create basic application software to suit their own business or personal interests.
 
 > GROUP OPTION: Students have the option of working by themselves, or in groups of up to three members. Group membership designations must be specified during the proposal phase. For evaluation purposes, projects will be ranked against others of the same group composition (e.g. solo projects vs other solo projects, two-person teams vs other two-person teams, and three-person teams against other three-person teams). To incentivize individual effort within larger groups, each group member will be asked to submit a form describing and rating the roles and relative contributions of all other group members.

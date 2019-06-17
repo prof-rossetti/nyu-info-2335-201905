@@ -1,5 +1,7 @@
 # Unit 6: Technology Management, and the Systems Development Lifecycle (SDLC)
 
+> Prerequisites: [Networks, and Processing Data from the Internet](/units/unit-5.md)
+
 ## Learning Objectives
 
 In this unit, we'll become more familiar with the preliminary phases of the Systems Development Lifecycle (SDLC), focusing on system planning, analysis, and design. We'll analyze business processes and employ Design Thinking methods to identify user needs and business opportunities. And we'll learn how to translate these activities into written system requirements.

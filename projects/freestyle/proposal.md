@@ -1,6 +1,8 @@
 # "Freestyle" Project Proposal
 
-> Prerequisite: [The "Freestyle" Project](README.md)
+> Prerequisites:
+>   + [The "Freestyle" Project](README.md)
+>   + ["Data Flow Diagramming" Exercise](/exercises/data-flow-diagramming/README.md)
 
 ## Learning Objectives
 
