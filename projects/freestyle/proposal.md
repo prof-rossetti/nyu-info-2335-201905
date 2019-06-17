@@ -4,7 +4,11 @@
 
 ## Learning Objectives
 
-TBA
+  + Practice researching and describing user needs within the context of a proposed computer-based information system.
+  + Practice identifying and describing the information requirements and high-level objectives of a proposed computer-based information system.
+  + Practice researching the technical capabilities of various third-party APIs and Python packages, using an active learning process which leverages information available on the Internet.
+  + Practice decomposing system requirements and functionality into smaller, more manageable pieces, and then prioritizing the development of those features.
+  + Optional: Practice collaborating and ideating with other individuals.
 
 ## Instructions
 
