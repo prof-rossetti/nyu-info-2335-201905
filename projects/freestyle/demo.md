@@ -50,7 +50,7 @@ Remark on your reactions to the process. For example, you might think about the 
 
 The professor will assign your group to present on one of two "Demo Days".
 
-At least an hour before the beginning of class on your designated demo day, [upload a PDF version of your presentation document to NYU Classes](https://newclasses.nyu.edu/portal/site/e7aed58f-c4e8-4fbd-b8ab-40c86414d0ab/tool/f1178530-8a47-4ef7-831d-d554df55b4eb).
+At least an hour before the beginning of class on your designated demo day, [upload a PDF version of your presentation document to NYU Classes](https://newclasses.nyu.edu/portal/site/e7aed58f-c4e8-4fbd-b8ab-40c86414d0ab/tool/f1178530-8a47-4ef7-831d-d554df55b4eb?assignmentId=/assignment/a/e7aed58f-c4e8-4fbd-b8ab-40c86414d0ab/ea14ea83-1336-4949-b945-d46aaf6b0146&panel=Main&sakai_action=doView_assignment).
 
 During the first few minutes of class on your designated demo day, practice connecting your computer to the projector using either of the provided VGA or HDMI cables.
 
