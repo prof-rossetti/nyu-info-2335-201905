@@ -29,8 +29,6 @@ Order | Phase | Description
 4 | **Implementation** | Developing the system, including writing code, deploying servers, and delivering the finished product.
 5 | **Maintenance** | Monitoring system operations, implementing quality control mechanisms, and fixing bugs as necessary.
 
-See also: http://www.umsl.edu/~hugheyd/is6840/waterfall.html
-
 ### Agile Methodologies
 
 ![](https://user-images.githubusercontent.com/1328807/54886719-8021be00-4e61-11e9-8cfe-b665ac08b560.jpg)
