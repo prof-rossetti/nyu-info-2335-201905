@@ -51,3 +51,9 @@ print(books[2]["title"]) #> Macbeth
 ```
 
 It's easier to parse HTML once you know the document structure. Try using your browser's developer tools to examine the document structure of any web page. For example, in Google Chrome you can right-click on a webpage and select "Inspect".
+
+### Waiting for Page Contents
+
+Sometimes websites employ advanced mechanisms to hide certain page contents during initial page load, which makes the process of parsing these contents more difficult. If you navigate to and inspect a page in the browser and see the desired contents there, but not in a response returned by the requests package, you'll know you're in this situation.
+
+In cases like these, we have to implement a workaround in which we use [the selenium package](/notes/python/packages/selenium.md) to perform an automated web browsing process instead. After instructing a selenium web driver to ["wait" for the desired page contents to load](/notes/python/packages/selenium.md#waiting-for-page-contents), we can then parse them via Beautifulsoup as we originally hoped.
