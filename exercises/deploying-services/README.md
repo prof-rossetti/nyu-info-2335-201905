@@ -18,7 +18,7 @@ Learn how to "deploy" a Python script to a "production" environment, namely an a
 
 Fork [this repository](https://github.com/prof-rossetti/notification-service-py) which contains a simple Python script for sending emails ("app/send_email.py").
 
-> NOTE: this project might be using an older version of the `sendgrid` package (5.6.0) than the one currently referenced in the course repository (6.0.5), so be aware you may see some  code that only works with that previous version. If you'd like to create your own email-sending project, use the newer version and defer to the notes in the course repository.
+> NOTE: this project might be using an older version of the `sendgrid` package (5.6.0) than the one currently referenced in the course repository (6.0.5), so be aware you may see some code that only works with that previous version. If you'd like to create your own email-sending project, use the newer version and defer to the notes in the course repository.
 
 Clone your fork to download it onto your local computer and automatically associate it with a remote address named "origin".
 
