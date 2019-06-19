@@ -21,9 +21,9 @@ In this unit, we'll ________. We'll also practice delivering software services t
 
 ## Activities and Exercises
 
-
-  + ["Refreshing your Fork" Exercise](/CONTRIBUTING.md#refreshing-your-fork)
-  + ["Scheduling a Script in Production" Exercise](/exercises/deploy-script-production.md)
-  + ["Deploying a Web App to Production" Exercise](/exercises/deploy-app-production.md)
+  + Software Delivery and Distribution:
+    + [Managing and Refreshing your Fork of the Course Repository](/CONTRIBUTING.md#step-1-fork-the-repository)
+    + ["Deploying a Background Service to Production" Exercise](/exercises/deploying-services/server.md)
+    + ["Deploying a Web App to Production" Exercise](/exercises/deploying-web-apps/README.md)
   + ["Freestyle" Project Implementation](/projects/freestyle/implementation.md) ("Building" Phase)
   + ["Freestyle" Project Demonstration](/projects/freestyle/demonstration.md)

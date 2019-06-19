@@ -2,7 +2,6 @@
 
 > Prerequisite: [Remote Servers](/notes/hardware/servers.md)
 
-
 > Heroku is a cloud platform that lets companies build, deliver, monitor and scale apps — we're the fastest way to go from idea to URL, bypassing all those infrastructure headaches. - [Heroku website](https://www.heroku.com/what)
 
 Heroku provides developers with the ability to configure and manage remote servers. Each Heroku server has its own unique HTTP address. Users usually access the server by visiting its address in a web browser, whereas developers and administrators usually access the server from the command-line over what is usually an HTTPS or SSH connection.
