@@ -1,24 +1,25 @@
 
 
-# Unit 7: Quality Control, Delivery, and Deployment
+# Unit 7: Software Delivery and Distribution
 
 ## Learning Objectives
 
-TBA
+In this unit, we'll learn how to deliver software services to end users. We'll focus on two different kinds of software services, namely, web applications and background jobs.
 
-## Slides
-
-TBA
+## [Slides](https://docs.google.com/presentation/d/1iv5kLKJKrGmApFYsNMYbf7QOWsaDUu2AwrQchMWZyjg/edit?usp=sharing)
 
 ## Discussions and Notes
 
-TBA
+  + [Delivery and Distribution Models](/notes/software/README.md#distribution-models)
+  + [Remote Servers](/notes/hardware/servers.md)
 
 ## Reference Documents
 
-TBA
+  + [The `git` Utility](/notes/clis/git.md), with focus on [Managing Remote Repositories and Addresses](/notes/clis/git.md#remote-repositories)
+  + [The `heroku` Utility](/notes/clis/heroku.md)
 
 ## Activities and Exercises
 
-  + ["Freestyle" Project Implementation](/projects/freestyle/implementation.md) ("Building" Phase)
-  + ["Freestyle" Project Demonstration](/projects/freestyle/demonstration.md)
+  + [Managing and Refreshing your Fork of the Course Repository](/CONTRIBUTING.md#step-1-fork-the-repository)
+  + ["Deploying a Background Service to Production" Exercise](/exercises/deploying-services/README.md)
+  + ["Deploying a Web App to Production" Exercise](/exercises/deploying-web-apps/README.md)
