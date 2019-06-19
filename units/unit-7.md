@@ -23,5 +23,3 @@ In this unit, we'll learn how to deliver software services to end users. We'll f
   + [Managing and Refreshing your Fork of the Course Repository](/CONTRIBUTING.md#step-1-fork-the-repository)
   + ["Deploying a Background Service to Production" Exercise](/exercises/deploying-services/server.md)
   + ["Deploying a Web App to Production" Exercise](/exercises/deploying-web-apps/README.md)
-  + ["Freestyle" Project Implementation](/projects/freestyle/implementation.md) ("Building" Phase)
-  + ["Freestyle" Project Demonstration](/projects/freestyle/demo.md)
