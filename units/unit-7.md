@@ -10,6 +10,7 @@ In this unit, we'll learn how to deliver software services to end users. We'll f
 
 ## Discussions and Notes
 
+  + [Delivery and Distribution Models](/notes/software/README.md#distribution-models)
   + [Remote Servers](/notes/hardware/servers.md)
 
 ## Reference Documents
