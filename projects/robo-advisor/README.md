@@ -45,20 +45,22 @@ Use your text editor or the command-line to create a new sub-directory called "a
 ```py
 # app/robo_advisor.py
 
-print("-----------------")
-print("RUN AT: 2019-06-16 10:00 AM")
-print("CRUNCHING THE DATA...")
-print("-----------------")
-print("STOCK SYMBOL: XYZ")
-print("LATEST DAY: 2019-06-15")
-print("-----------------")
+print("-------------------------")
+print("SELECTED SYMBOL: XYZ")
+print("-------------------------")
+print("REQUESTING STOCK MARKET DATA...")
+print("REQUEST AT: 2018-02-20 02:00pm")
+print("-------------------------")
+print("LATEST DAY: 2018-02-20")
 print("LATEST CLOSE: $100,000.00")
 print("RECENT HIGH: $101,000.00")
 print("RECENT LOW: $99,000.00")
-print("-----------------")
-print("RECOMMENDATION: TODO")
+print("-------------------------")
+print("RECOMMENDATION: BUY!")
 print("RECOMMENDATION REASON: TODO")
-print("-----------------")
+print("-------------------------")
+print("HAPPY INVESTING!")
+print("-------------------------")
 ```
 
 Make sure to save Python files like this whenever you're done editing them. After setting up a virtual environment, we will be ready to run this file.
@@ -226,7 +228,7 @@ After writing historical data to a CSV file, the system should perform calculati
   + The **date when the data was last refreshed**, usually the same as the latest available day of daily trading data (e.g. "Latest Data from: June 4th, 2018")
   + For each stock symbol: its **latest closing price**, its **recent high price**, and its **recent low price**, calculated according to the instructions below, and formatted as currency with a dollar sign and two decimal places with a thousands separator as applicable (e.g. "Recent High: $1,234.56", etc.)
   + A **recommendation** as to whether or not the client should buy the stock (see guidance below), and optionally what quantity to purchase. The nature of the recommendation for each symbol can be binary (e.g. "Buy" or "No Buy"), qualitative (e.g. a "Low", "Medium", or "High" level of confidence), or quantitative (i.e. some numeric rating scale).
-  + A **recommendation explanation**, describing in a human-friendly way the reason why the program produced the recommendation it did (e.g. "because the stock's latest closing price is exceeds threshold XYZ")
+  + A **recommendation explanation**, describing in a human-friendly way the reason why the program produced the recommendation it did (e.g. "because the stock's latest closing price exceeds threshold XYZ, etc...")
 
 > NOTE: the CSV files are information outputs of this system, not information inputs. So it shouldn't be necessary for your program to read a CSV file to perform calculations. The JSON API responses should have all the information your program needs to perform calculations.
 
@@ -302,7 +304,7 @@ If you are able to implement the basic requirements with relative ease, consider
 
 To submit your work, consult the [Contributor's Guide](/CONTRIBUTING.md) and follow the steps below:
 
-  1. Push your local project repository to GitHub, so you can visit your remote project repository at a URL like `https://github.com/YOUR_USERNAME/shopping-cart`
+  1. Push your local project repository to GitHub, so you can visit your remote project repository at a URL like `https://github.com/YOUR_USERNAME/robo-advisor`
   2. Fork the ["upstream" course repository](https://github.com/prof-rossetti/nyu-info-2335-201905) (or refresh your existing fork)
   3. Update the ["submissions.csv"](submissions.csv) file in your remote fork of the course repository to include an entry linking to your remote project repository URL
   4. Finally, submit a Pull Request for the changes in your remote fork of the course repository to be accepted back into the "upstream" course repository
