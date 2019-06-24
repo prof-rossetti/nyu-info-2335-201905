@@ -1,6 +1,8 @@
 # "Freestyle" Project Implementation
 
-> Prerequisite: [The "Freestyle" Project Proposal](/projects/freestyle/proposal.md)
+> Prerequisites:
+>   + [The "Freestyle" Project Proposal](/projects/freestyle/proposal.md)
+>   + [The "Freestyle" Project Plan](/projects/freestyle/plan.md), ideally but not necessarily completed
 
 ## Learning Objectives
 
