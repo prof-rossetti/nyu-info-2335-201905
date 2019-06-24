@@ -4,7 +4,7 @@
 
 For businesses which provide software products and services, improved code quality leads to fewer user experience errors, higher customer satisfaction and retention, and lower maintenance costs. In this unit, we'll learn ways to control and improve the quality of our applications. Specifically, we'll focus on refactoring, automated testing, and continuous integration.
 
-## Slides
+## [Slides](https://docs.google.com/presentation/d/14QOUrGNlzHogoHuEctc-xpuQ2IlmlJh91b8ZAMySpzc/edit?usp=sharing)
 
 ## Discussions and Notes
 
