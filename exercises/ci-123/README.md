@@ -1,14 +1,14 @@
 # "Continuous Integration 1, 2, 3" Exercise
 
+> Prerequisites:
+>   + [Maintenance and Quality Control](/units/unit-8.md)
+>   + ["Testing 1, 2, 3" Exercise](/exercises/testing-123/README.md)
+>   + [Travis CI](/notes/travis-ci.md)
+
 ## Learning Objectives
 
   + Learn how to configure an application's automated tests to be run on a continuous integration server.
   + Practice techniques for preventing bugs and undesired application functionality from reaching end users.
-
-## Prerequisites
-
-  + ["Testing 1, 2, 3" Exercise](/exercises/testing-123.md)
-  + [Travis CI](/notes/travis-ci.md)
 
 ## Setup
 

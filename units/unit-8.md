@@ -1,5 +1,8 @@
 # Unit 8: Maintenance and Quality Control
 
+> Prerequisites:
+>   + [Technology Management, and the Systems Development Lifecycle (SDLC)](/units/unit-6.md)
+
 ## Learning Objectives
 
 For businesses which provide software products and services, improved code quality leads to better user experiences, higher customer satisfaction and retention, and lower maintenance costs. In this unit, we'll learn ways to control and improve the quality of our applications.
