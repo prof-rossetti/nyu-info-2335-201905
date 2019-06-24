@@ -98,7 +98,7 @@ Implementations will be evaluated based on the criteria below:
 
 Category | Requirement | Weight
 --- | --- | ---
-Satisfies Proposed Requirements | Addresses a problem discussed in the previously-delivered requirements document, in a manner generally consistent with the plan discussed in that document | 10%
+Satisfies Proposed Requirements | Addresses a problem discussed in the accompanying requirements document, in a manner generally consistent with the plan discussed in that document | 10%
 Uniqueness and Individuality | Exhibits creativity, and a unique set of functionality | 10%
 User Experience | Provides a simple, pleasant, and intuitive experience for the user, with clear usage instructions, and free of idiosyncrasies or errors | 15%
 Documentation | Contains a comprehensive README file | 20%
@@ -107,7 +107,7 @@ Security | Excludes sensitive information and credentials | 12.5%
 Quality | Simplified to remove or minimize code duplication | 7.5%
 Dev Process | Submitted via Git repository which reflects an incremental revision history, branch operations, a Pull Request workflow, and contributions from all team members | 20%
 
-Bonus:
+Bonus / Optional Extra Credit:
 
 Category | Requirement | Weight
 --- | --- | ---
