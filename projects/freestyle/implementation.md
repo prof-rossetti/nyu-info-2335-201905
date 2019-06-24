@@ -3,6 +3,8 @@
 > Prerequisites:
 >   + [The "Freestyle" Project Proposal](/projects/freestyle/proposal.md)
 >   + [The "Freestyle" Project Plan](/projects/freestyle/plan.md), ideally but not necessarily completed
+>   + [Software Maintenance and Quality Control](/units/unit-8.md)
+>   + ["Continuous Integration 1, 2, 3" Exercise](/exercises/ci-123/README.md)
 
 ## Learning Objectives
 
