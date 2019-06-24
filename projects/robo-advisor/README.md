@@ -197,7 +197,7 @@ Your project should satisfy the functionality requirements detailed in the secti
 
 #### Information Input Requirements
 
-The system should prompt the user to input one or more stock symbols (e.g. `"MSFT"`, `"AAPL"`, etc.). It may optionally allow the user to specify multiple symbols, either one-by-one or all at the same time (e.g. `"MSFT, AAPL, GOOG, AMZN"`). It may also optionally prompt the user to specify additional inputs such as risk tolerance and/or other trading preferences, as desired and applicable.
+The system should prompt the user to input one stock or cryptocurrency symbol (e.g. `"MSFT"`, `"AAPL"`, etc.). It may optionally allow the user to specify multiple symbols, either one-by-one or all at the same time (e.g. `"MSFT, AAPL, GOOG, AMZN"`). It may also optionally prompt the user to specify additional inputs such as risk tolerance and/or other trading preferences, as desired and applicable.
 
 #### Validation Requirements
 
