@@ -1,4 +1,4 @@
-# Unit 8: Maintenance and Quality Control
+# Unit 8: Software Maintenance and Quality Control
 
 > Prerequisites:
 >   + [Technology Management, and the Systems Development Lifecycle (SDLC)](/units/unit-6.md)

@@ -3,6 +3,7 @@
 > Prerequisites:
 >   + [The "Freestyle" Project Proposal](/projects/freestyle/proposal.md)
 >   + [The "Freestyle" Project Plan](/projects/freestyle/plan.md), ideally but not necessarily completed
+>   + [Software Maintenance and Quality Control](/units/unit-8.md)
 
 ## Learning Objectives
 
