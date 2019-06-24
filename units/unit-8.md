@@ -2,7 +2,7 @@
 
 ## Learning Objectives
 
-For businesses which provide software products and services, improved code quality leads to fewer user experience errors, higher customer satisfaction and retention, and lower maintenance costs. In this unit, we'll learn ways to control and improve the quality of our applications. Specifically, we'll focus on refactoring, automated testing, and continuous integration.
+For businesses which provide software products and services, improved code quality leads to better user experiences, higher customer satisfaction and retention, and lower maintenance costs. In this unit, we'll learn ways to control and improve the quality of our applications.
 
 ## [Slides](https://docs.google.com/presentation/d/14QOUrGNlzHogoHuEctc-xpuQ2IlmlJh91b8ZAMySpzc/edit?usp=sharing)
 
@@ -10,6 +10,7 @@ For businesses which provide software products and services, improved code quali
 
   + Version Control:
     + [Branch Operations](/notes/clis/git.md#branch-operations)
+    + [Reverting Changes](/notes/clis/git.md#reverting-changes)
  + Quality Control:
     + [Code Refactoring and Simplification](/notes/software/refactoring.md)
     + [Automated Testing](/notes/software/testing.md)
