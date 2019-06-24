@@ -85,6 +85,13 @@ To submit:
   3. Update the ["submissions.csv"](submissions.csv) file in your remote fork of the course repository to include an entry linking to your remote project repository URL
   4. Finally, submit a Pull Request for the changes in your remote fork of the course repository to be accepted back into the "upstream" course repository
 
+### Group Project Submission
+
+For groups with multiple users, your repository can be owned by one of the members, or a shared organization. And your entry in the "submissions.csv" file should resemble the following (including the quotes):
+
+    github_username, repository_url
+    "user1, user2, user3", https://github.com/USER_OR_ORG_NAME/REPO_NAME
+
 ## Evaluation
 
 Implementations will be evaluated based on the criteria below:
