@@ -68,7 +68,7 @@ Configure your GitHub repository to integrate with a continuous integration (CI)
 
 Iteratively develop your project using version control practices. Save new versions of your source code as you reach key milestones.
 
-Optionally: Instead of committing your versions directly to the "master" branch, use [branch operations](/notes/git.md#branch-operations) to develop logically-related updates on a separate branch, then push that branch to GitHub in order to create a Pull Request, where you can further review your proposed changes and allow automated tests to run and pass on the CI server before finally "merging" the code back into the master branch.
+Optionally: Instead of committing your versions directly to the "master" branch, use [branch operations](/notes/clis/git.md#branch-operations) to develop logically-related updates on a separate branch, then push that branch to GitHub in order to create a Pull Request, where you can further review your proposed changes and allow automated tests to run and pass on the CI server before finally "merging" the code back into the master branch.
 
 If working in a group, each group member must make significant contributions to the application's source code! Any group member not committing significant portions of the code may be subject to deductions.
 
