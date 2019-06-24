@@ -1,24 +1,30 @@
-
-
 # Unit 8: Maintenance and Quality Control
 
 ## Learning Objectives
 
-TBA
+For businesses which provide software products and services, improved code quality leads to fewer user experience errors, higher customer satisfaction and retention, and lower maintenance costs. In this unit, we'll learn ways to control and improve the quality of our applications. Specifically, we'll focus on refactoring, automated testing, and continuous integration.
 
 ## Slides
 
-TBA
-
 ## Discussions and Notes
 
-TBA
+  + Version Control:
+    + [Branch Operations](/notes/clis/git.md#branch-operations)
+ + Quality Control:
+    + [Code Refactoring and Simplification](/notes/software/refactoring.md)
+    + [Automated Testing](/notes/software/testing.md)
+    + [Continuous Integration](/notes/software/testing.md#continuous-integration)
 
 ## Reference Documents
 
-TBA
+  + Automated Testing:
+    + [The `pytest` Package](/notes/python/packages/pytest.md)
+  + Continuous Integration:
+    + [The Travis CI Platform](/notes/travis-ci.md)
 
 ## Activities and Exercises
 
+  + ["Testing 1, 2, 3" Exercise](/exercises/testing-123/README.md)
+  + ["Continuous Integration 1, 2, 3" Exercise](/exercises/ci-123/README.md)
   + ["Freestyle" Project Implementation](/projects/freestyle/implementation.md) ("Building" Phase)
   + ["Freestyle" Project Demonstration](/projects/freestyle/demo.md)
