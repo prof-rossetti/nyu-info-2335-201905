@@ -20,6 +20,8 @@ After cloning it, navigate to the local repo from the command-line:
 cd nyu-info-2335-201905
 ```
 
+### Managing Remote Addresses
+
 As a one-time setup step which will allow you to keep your fork up-to-date in the future, we need to ensure the local repo has an association with each of two different remote addresses (called "origin" and "upstream", respectively).
 
 As a result of the cloning process, the remote address called "origin" should have already been established:
