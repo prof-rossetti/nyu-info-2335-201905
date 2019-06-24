@@ -98,8 +98,14 @@ Documentation | Contains a comprehensive README file | 20%
 Licensing | Contains an appropriate LICENSE file | 5%
 Security | Excludes sensitive information and credentials | 12.5%
 Quality | Simplified to remove or minimize code duplication | 7.5%
+Dev Process | Submitted via Git repository which reflects an incremental revision history, branch operations, a Pull Request workflow, and contributions from all team members | 20%
+
+Bonus:
+
+Category | Requirement | Weight
+--- | --- | ---
 Quality | Contains relevant automated tests | 10% BONUS
 Quality | Deployed to a continuous integration (CI) server | 5% BONUS
-Dev Process | Submitted via Git repository which reflects an incremental revision history, branch operations, a Pull Request workflow, and contributions from all team members | 20%
+
 
 This rubric is tentative, and may be subject to slight adjustments during the grading process.
