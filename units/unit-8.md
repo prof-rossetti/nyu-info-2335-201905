@@ -1,6 +1,7 @@
 # Unit 8: Software Maintenance and Quality Control
 
 > Prerequisites:
+>   + [Software Delivery and Distribution](/units/unit-7.md)
 >   + [Technology Management, and the Systems Development Lifecycle (SDLC)](/units/unit-6.md)
 
 ## Learning Objectives

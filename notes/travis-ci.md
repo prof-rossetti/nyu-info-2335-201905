@@ -1,8 +1,8 @@
 # Travis CI
 
-> Make sure every Pull Request to your project is tested before it's merged.
+> The simplest way to test and deploy your projects... At Travis CI we aim to empower people to build and ship great software. - [Travis CI Website](https://about.travis-ci.com/)
 
-> Travis CI makes it so much easier for us to coordinate the thousands of commits and contributors that flow through the Rails code base. The test suite for such a large project is vast, and we wouldn't be catching issues as quickly or smoothly without the help of Travis. - @dhh
+> Travis CI makes it so much easier for us to coordinate the thousands of commits and contributors that flow through the Rails code base. The test suite for such a large project is vast, and we wouldn't be catching issues as quickly or smoothly without the help of Travis. - [Testimonial from @dhh](https://about.travis-ci.com/)
 
 ## References
 
