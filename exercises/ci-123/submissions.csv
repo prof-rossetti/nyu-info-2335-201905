@@ -1,0 +1,4 @@
+github_username, repository_url, ci_builds_page
+s2t2, https://github.com/s2t2/testing-456-py, https://travis-ci.com/s2t2/testing-456-py
+s2t2, https://github.com/s2t2/playlist-service-py, https://travis-ci.com/s2t2/playlist-service-py
+..., ..., ...
