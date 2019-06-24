@@ -45,6 +45,8 @@ Scan your application's codebase for duplication of terms, and refactor (using c
 
 #### Automated Tests
 
+> FYI: this is optional, for extra credit
+
 Implement automated tests using the Pytest package.
 
 As you think about ways to test your application, consider asking yourself questions like the following:
@@ -57,6 +59,8 @@ As you think about ways to test your application, consider asking yourself quest
   + If the application processes data from a CSV file or database: Is there a way to test the application's functionality without affecting the development environment datastore?
 
 #### Continuous Integration
+
+> FYI: this is optional, for extra credit
 
 Configure your GitHub repository to integrate with a continuous integration (CI) platform like Travis CI, such that automated tests are run on a CI server whenever new code is pushed to the remote GitHub repository.
 
@@ -89,13 +93,13 @@ Category | Requirement | Weight
 --- | --- | ---
 Satisfies Proposed Requirements | Addresses a problem discussed in the previously-delivered requirements document, in a manner generally consistent with the plan discussed in that document | 10%
 Uniqueness and Individuality | Exhibits creativity, and a unique set of functionality | 10%
-User Experience | Provides a simple, pleasant, and intuitive experience for the user, free of idiosyncrasies | 10%
-Documentation | Contains a comprehensive README file | 10%
+User Experience | Provides a simple, pleasant, and intuitive experience for the user, with clear usage instructions, and free of idiosyncrasies or errors | 15%
+Documentation | Contains a comprehensive README file | 20%
 Licensing | Contains an appropriate LICENSE file | 5%
-Security | Excludes sensitive information and credentials | 10%
-Quality | Simplified to remove or minimize code duplication | 10%
-Quality | Contains relevant automated tests | 10%
-Quality | Deployed to a continuous integration (CI) server | 5%
+Security | Excludes sensitive information and credentials | 12.5%
+Quality | Simplified to remove or minimize code duplication | 7.5%
+Quality | Contains relevant automated tests | 10% BONUS
+Quality | Deployed to a continuous integration (CI) server | 5% BONUS
 Dev Process | Submitted via Git repository which reflects an incremental revision history, branch operations, a Pull Request workflow, and contributions from all team members | 20%
 
 This rubric is tentative, and may be subject to slight adjustments during the grading process.
