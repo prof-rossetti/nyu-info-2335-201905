@@ -195,3 +195,5 @@ git checkout my-new-feature
 # after committing some changes, push the branch up to GitHub:
 git push origin my-new-feature
 ```
+
+> FYI: when you switch branches, you're able to change between different versions of various files, so try making some changes and committing them and inspecting the files before and after you switch branches, to see the effects in action.
