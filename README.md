@@ -19,7 +19,7 @@
   + [Unit 5](/units/unit-5.md): Networks, and Processing Data from the Internet
   + [Unit 6](/units/unit-6.md): Technology Management, and the Systems Development Lifecycle (SDLC)
   + [Unit 7](/units/unit-7.md): Software Delivery and Distribution
-  + Unit 8: Maintenance and Quality Control
+  + [Unit 8](/units/unit-8.md): Software Maintenance and Quality Control
 
 ## External Resources
 

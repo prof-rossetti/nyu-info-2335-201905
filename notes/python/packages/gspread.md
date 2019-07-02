@@ -1,6 +1,6 @@
 # The `gspread` Package
 
-The `gspread` package provides and interface to Google Sheet documents via the Google Sheets and Google Drive APIs.
+The `gspread` package provides an interface to Google Sheet documents via the Google Sheets and Google Drive APIs.
 
 ## Reference
 
