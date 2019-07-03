@@ -16,13 +16,13 @@ salads = [
 # ... "print" the name of the salad whose identifier is equal to ​3​ (i.e. ​"Waldorf"​):
 #
 
-# SOLUTION
+# SOLUTION:
 
 matching_salads = [salad for salad in salads if salad["id"] == 3]
 matching_salad = matching_salads[0]
 print(matching_salad["name"])
 
-# ALTERNATIVE SOLUTION
+# ALTERNATIVE SOLUTION:
 
 matching_salads = []
 
@@ -33,7 +33,7 @@ for salad in salads:
 matching_salad = matching_salads[0]
 print(matching_salad["name"])
 
-# ALTERNATIVE SOLUTION
+# ALTERNATIVE SOLUTION:
 
 for salad in salads:
     if salad["id"] == 3:
@@ -46,13 +46,13 @@ for salad in salads:
 # ... "print" the number of salads which are more expensive than ten dollars (i.e. ​3​):
 #
 
-# SOLUTION
+# SOLUTION:
 
 expensive_salads = [salad for salad in salads if salad["price"] > 10]
 
 print(len(expensive_salads))
 
-# ALTERNATIVE SOLUTION
+# ALTERNATIVE SOLUTION:
 
 expensive_salads = []
 
