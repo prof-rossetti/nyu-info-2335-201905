@@ -3,7 +3,7 @@ from rideshare import trip
 #
 # QUESTION 10-A
 #
-# “Print” a human-friendly message to denote the driver’s first name (i.e. ​“Your driver is Danny”)​:
+# "Print" a human-friendly message to denote the driver’s first name (i.e. ​"Your driver is Danny")​:
 #
 
 # SOLUTION:
@@ -21,7 +21,7 @@ print("Your driver is", trip["driver"]["first_name"])
 #
 # QUESTION 10-B
 #
-# “Print” the number of stops this trip makes (i.e.​ 3)​:
+# "Print" the number of stops this trip makes (i.e.​ 3)​:
 #
 
 # SOLUTION:
@@ -41,7 +41,7 @@ print(n)
 # QUESTION 10-C
 #
 # Assuming the stops will always be listed in ascending order of their stop sequence,
-# ... “print” the name of the passenger who is traveling to the first stop (i.e. ​“Vishal”)​:
+# ... "print" the name of the passenger who is traveling to the first stop (i.e. ​"Vishal")​:
 #
 
 # SOLUTION:
