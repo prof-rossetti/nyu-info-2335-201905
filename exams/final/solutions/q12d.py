@@ -12,15 +12,15 @@ from rideshare import trip
 for stop in trip["stops"]:
     print(stop["destination"])
 
+# ALTERNATIVE SOLUTION:
+
+[print(stop["destination"]) for stop in trip["stops"]]
+
 # ALTERNATIVE SOLUTION (ACCEPTED BUT NOT INTENDED):
 
 destinations = [stop["destination"] for stop in trip["stops"]]
 for d in destinations:
     print(d)
-
-# ALTERNATIVE SOLUTION (ACCEPTED BUT NOT INTENDED):
-
-[print(stop["destination"]) for stop in trip["stops"]]
 
 # ALTERNATIVE SOLUTION (ACCEPTED BUT NOT INTENDED):
 
