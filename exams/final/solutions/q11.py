@@ -61,3 +61,13 @@ for salad in salads:
         expensive_salads.append(salad)
 
 print(len(expensive_salads))
+
+# ALTERNATIVE SOLUTION:
+
+n = 0
+
+for salad in salads:
+    if salad["price"] > 10:
+        n = n + 1
+
+print(n)
