@@ -20,7 +20,7 @@ Even so, sometimes our creations can be used in unintended and unfortunate ways:
 
 The term **Malware** refers to software that is created with malicious intent.
 
-> Malware is an abbreviated term meaning “malicious software.”  This is software that is specifically designed to gain access or damage a computer without the knowledge of the owner. There are various types of malware including spyware, keyloggers, true viruses, worms, or any type of malicious code that infiltrates a computer.
+> Malware is an abbreviated term meaning "malicious software."  This is software that is specifically designed to gain access or damage a computer without the knowledge of the owner. There are various types of malware including spyware, keyloggers, true viruses, worms, or any type of malicious code that infiltrates a computer.
 >
 > Generally, software is considered malware based on the intent of the creator rather than its actual features. Malware creation is on the rise due to the sheer volume of new types created daily and the lure of money that can be made through organized Internet crime. Malware was originally created as experiments and pranks, but eventually led to vandalism and destruction of targeted machines. Today, much of malware is created for profit through forced advertising (adware), stealing sensitive information (spyware), spreading email spam or child pornography (zombie computers), or to extort money (ransomware). - [Norton website](https://us.norton.com/internetsecurity-malware.html)
 
