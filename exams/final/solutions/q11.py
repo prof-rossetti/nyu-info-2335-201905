@@ -42,7 +42,7 @@ for salad in salads:
 #
 # QUESTION 11-B
 #
-# Assuming the ​"price"​ attribute represents a salad’s cost to the consumer,
+# Assuming the ​"price"​ attribute represents a salad's cost to the consumer,
 # ... "print" the number of salads which are more expensive than ten dollars (i.e. ​3​):
 #
 

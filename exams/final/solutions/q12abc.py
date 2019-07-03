@@ -3,7 +3,7 @@ from rideshare import trip
 #
 # QUESTION 10-A
 #
-# "Print" a human-friendly message to denote the driver’s first name (i.e. ​"Your driver is Danny")​:
+# "Print" a human-friendly message to denote the driver's first name (i.e. ​"Your driver is Danny")​:
 #
 
 # SOLUTION:

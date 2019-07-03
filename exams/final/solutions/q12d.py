@@ -3,7 +3,7 @@ from rideshare import trip
 #
 # QUESTION 10-D
 #
-# Loop through each of the trip’s stops and "print" that stop’s destination, one at a time
+# Loop through each of the trip's stops and "print" that stop's destination, one at a time
 # ... (i.e. "Madison Square", then "Union Square", then "Washington Square", each on its own line):
 #
 

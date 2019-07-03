@@ -8,16 +8,16 @@ from rideshare import trip
 # ... and "returns" (NOT "prints") a textual message about that given driver.
 #
 # ... Valid ​driver​ parameter values are assumed to resemble the structure of the one found within the provided ​trip​ variable
-# ... (i.e. has attributes indicating the driver’s first name, last name, average rating, and number of total trips).
+# ... (i.e. has attributes indicating the driver's first name, last name, average rating, and number of total trips).
 #
-# ... In the event the given driver’s average rating is greater than ​4.5,
-# ... then the message should include language about the driver’s average rating
-# ... (e.g. "Your driver has an average rating of 4.8"​, where 4.8 refers to the given driver’s average rating).
+# ... In the event the given driver's average rating is greater than ​4.5,
+# ... then the message should include language about the driver's average rating
+# ... (e.g. "Your driver has an average rating of 4.8"​, where 4.8 refers to the given driver's average rating).
 # ... Otherwise, the message should include language about the number of trips the given driver has completed
-# ... (e.g.​ "Your driver has completed 100 trips",​ where 100 refers to the given driver’s total trips).
+# ... (e.g.​ "Your driver has completed 100 trips",​ where 100 refers to the given driver's total trips).
 #
-# ... The function’s invocation has been written for you below.
-# ... Write the function’s definition below such that it will be able to be invoked in the manner prescribed.
+# ... The function's invocation has been written for you below.
+# ... Write the function's definition below such that it will be able to be invoked in the manner prescribed.
 #
 
 # FUNCTION DEFINITION
