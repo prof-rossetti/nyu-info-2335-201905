@@ -26,6 +26,6 @@ print(july_fourth.day) #> 4
 print(july_fourth.weekday()) #> 1
 print(july_fourth.strftime("%Y-%m-%d")) #> "2017-07-04"
 
-some_day = datetime.datetime.strptime("2020, 12, 31", "%Y, %m, %d")
+some_day = datetime.datetime.strftime('%Y-%m-%d %H:%M:%S')
 str(some_day) #> '2020-12-31 00:00:00'
 ```
